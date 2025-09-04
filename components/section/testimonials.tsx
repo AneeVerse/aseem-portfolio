@@ -130,14 +130,14 @@ export function TestimonialsSection() {
               key={t.name}
               data-testimonial-card
               className="
-                min-w-[280px] sm:min-w-[320px] md:min-w-[400px] lg:min-w-[500px]
-                snap-start relative overflow-hidden rounded-2xl bg-[#141513] ring-1 ring-white/8 p-6 md:p-10
+                min-w-[320px] sm:min-w-[380px] md:min-w-[480px] lg:min-w-[620px]
+                snap-start relative overflow-hidden rounded-2xl bg-[#141513] ring-1 ring-white/8 p-8 md:p-12
               "
             >
               {/* Top row: name/role left, avatar right */}
               <div className="flex items-start justify-between gap-4">
                 <figcaption>
-                  <div className="text-lg md:text-xl font-semibold text-[#FEFCE1]">{t.name}</div>
+                  <div className="text-lg md:text-xl lg:text-2xl font-normal text-[#FEFCE1]">{t.name}</div>
                   <div className="text-sm md:text-base text-[#FEFCE1]/70">{t.role}</div>
                 </figcaption>
 
@@ -152,7 +152,7 @@ export function TestimonialsSection() {
               <Quote className="mt-6 h-6 w-6 md:h-7 md:w-7 text-[#FEFCE1]/35" aria-hidden="true" />
 
               {/* Quote text */}
-              <blockquote className="mt-4 md:mt-6 text-base md:text-lg leading-7 md:leading-8 text-[#FEFCE1]/85">
+              <blockquote className="mt-4 md:mt-6 text-base md:text-lg leading-7 md:leading-8 text-[#FEFCE1]/50">
                 "{t.quote}"
               </blockquote>
             </figure>
