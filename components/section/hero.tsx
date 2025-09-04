@@ -56,18 +56,22 @@ export function HeroSection() {
             <div className="chip-orbit chip-orbit--brand absolute left-8 sm:left-10 md:left-12 lg:left-8 top-[58%] z-[9999]">
               <span className="hero-chip hero-chip--brand" title="Brand Research">
                 Brand Research
-                <svg className="chip-pointer chip-pointer--brand" viewBox="0 0 10 10" aria-hidden="true">
-                  <polygon points="0,5 10,0 10,10" />
-                </svg>
+                                 <img 
+                   src="images/icons8-mouse-cursor-24.png" 
+                   alt="Mouse cursor" 
+                   className="chip-pointer chip-pointer--brand"
+                 />
               </span>
             </div>
             {/* Chip 2: Visual Presentation */}
             <div className="chip-orbit chip-orbit--visual absolute left-20 sm:left-24 md:left-28 lg:left-46 bottom-12 sm:bottom-14 md:bottom-16">
               <span className="hero-chip hero-chip--visual" title="Visual Presentation">
                 Visual Presentation
-                <svg className="chip-pointer chip-pointer--visual" viewBox="0 0 10 10" aria-hidden="true">
-                  <polygon points="0,5 10,0 10,10" />
-                </svg>
+                                 <img 
+                   src="images/icons8-mouse-cursor-24.png" 
+                   alt="Mouse cursor" 
+                   className="chip-pointer chip-pointer--visual"
+                 />
               </span>
             </div>
           </div>
@@ -158,7 +162,7 @@ export function HeroSection() {
         .chip-pointer--brand {
           right: -12px;
           top: 35%;
-          transform: rotate(-25deg); /* adjust rotation angle */
+          transform: rotate(-280deg); /* adjust rotation angle */
         }
         
         @media (min-width: 640px) {
@@ -171,7 +175,7 @@ export function HeroSection() {
         .chip-pointer--visual {
           left: -26px;
           top: 15%;
-          transform: rotate(400deg); /* adjust rotation angle */
+          transform: rotate(-40deg); /* adjust rotation angle */
         }
         
         @media (min-width: 640px) {
