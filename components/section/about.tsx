@@ -40,7 +40,7 @@ function Card({ children, className = "" }: { children: React.ReactNode; classNa
 
 function DateChip({ start, end }: { start: string; end: string }) {
   return (
-    <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-black/20 px-4 py-2 text-[12px] font-medium text-[#FEFCE1]/80">
+    <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-black/20 px-5 py-2.5 text-[13px] font-medium text-[#FEFCE1]/80">
       {start}
       <span className="opacity-60">›</span>
       {end}
@@ -88,7 +88,7 @@ export function AboutSection() {
   return (
     <section id="about" className="bg-[#0e0f0f] text-[#FEFCE1] border-b border-white/5">
       <div className="mx-auto max-w-[1365px] px-5 md:px-8 py-14 md:py-20">
-        <h2 className="text-3xl md:text-5xl font-normal tracking-tight text-[#FEFCE1]">About Me</h2>
+        <h2 className="text-3xl md:text-5xl font-normal tracking-tight text-[#FEFCE1]/85">About Me</h2>
 
         {/* Top: Portrait + Intro */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -104,16 +104,21 @@ export function AboutSection() {
           {/* Intro card (spans 2 columns) */}
           <Card className="md:col-span-2 p-10">
             <div className="flex items-start gap-3">
-              <span className="inline-flex items-center gap-2 rounded-full bg-[#0e0f0f] px-4 py-2 text-sm ring-1 ring-white/10 text-[#FEFCE1]/80">
-                <Sparkles className="h-4 w-4" />
-                Hi 👋 I am Olyve Schwarz
+              <span className="text-lg lg:text-3xl font-medium text-[#FEFCE1] flex items-center gap-2">
+                Hi 
+                <img 
+                  src="/images/513.webp" 
+                  alt="👋" 
+                  className="h-8 w-8 object-contain"
+                />
+                I am Olyve Schwarz
               </span>
             </div>
-            <p className="mt-6 text-base md:text-lg leading-7 text-[#FEFCE1]/80">
+            <p className="mt-6 text-base md:text-lg leading-7 text-[#FEFCE1]/50">
               A product designer with a knack for turning problems and opportunities into user‑driven strategic
               solutions.
             </p>
-            <p className="mt-4 text-base md:text-lg leading-7 text-[#FEFCE1]/80">
+            <p className="mt-4 text-base md:text-lg leading-7 text-[#FEFCE1]/50">
               As a product designer, I specialize in creating unique visual identities for digital products. I believe that a
               stunning design starts with common values, open communication, and respect for your audience.
             </p>
@@ -123,9 +128,8 @@ export function AboutSection() {
         {/* Middle: Experience + Education */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card className="p-10">
-            <header className="flex items-center gap-3">
-              <Briefcase className="h-8 w-8" />
-              <h3 className="text-3xl font-medium">Experience</h3>
+            <header className="flex items-start">
+              <h3 className="text-3xl font-normal text-[#FEFCE1]/85 -ml-2">Experience</h3>
             </header>
 
             <ul className="mt-8 space-y-6">
@@ -152,9 +156,8 @@ export function AboutSection() {
           </Card>
 
           <Card className="p-10">
-            <header className="flex items-center gap-3">
-              <GraduationCap className="h-8 w-8" />
-              <h3 className="text-3xl font-medium">Education</h3>
+            <header className="flex items-start">
+              <h3 className="text-3xl font-normal text-[#FEFCE1]/85 -ml-2">Education</h3>
             </header>
 
             <ul className="mt-8 space-y-6">
@@ -182,7 +185,7 @@ export function AboutSection() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Skills (span 2) */}
           <Card className="md:col-span-2 p-6 md:p-10">
-            <h3 className="text-xl font-medium">Skills</h3>
+            <h3 className="text-3xl font-normal text-[#FEFCE1]/85 -ml-2">Skills</h3>
             <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
               {skills.map((s) => (
                 <div key={s.name} className="flex flex-col items-center gap-3 md:gap-4">
@@ -204,8 +207,8 @@ export function AboutSection() {
           <div className="flex flex-col gap-6">
             <Card className="p-6 md:p-10 h-full">
               <div className="h-full flex flex-col items-center justify-center text-center">
-                <div className="text-4xl md:text-6xl lg:text-7xl font-semibold">12</div>
-                <div className="mt-2 md:mt-3 text-sm md:text-base text-[#FEFCE1]/70">
+                <div className="text-4xl md:text-6xl lg:text-5xl font-semibold">12</div>
+                <div className="mt-2 md:mt-3 text-sm lg:text-lg text-[#FEFCE1]/70">
                   Years of
                   <br />
                   Experience
@@ -214,8 +217,8 @@ export function AboutSection() {
             </Card>
             <Card className="p-6 md:p-10 h-full">
               <div className="h-full flex flex-col items-center justify-center text-center">
-                <div className="text-4xl md:text-6xl lg:text-7xl font-semibold">3K</div>
-                <div className="mt-2 md:mt-3 text-sm md:text-base text-[#FEFCE1]/70">
+                <div className="text-4xl md:text-6xl lg:text-5xl font-semibold">3K</div>
+                <div className="mt-2 md:mt-3 lg:text-lg text-sm md:text-base text-[#FEFCE1]/70">
                   Projects
                   <br />
                   Completed

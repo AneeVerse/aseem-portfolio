@@ -61,10 +61,10 @@ export function WorksSection() {
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`rounded-full px-4 py-2 sm:px-7 sm:py-3 text-sm sm:text-base font-medium whitespace-nowrap flex-shrink-0 cursor-pointer ${
+                className={`rounded-full px-4 py-1.5  lg:px-7 lg:py-2 text-sm lg:text-base font-medium whitespace-nowrap flex-shrink-0 cursor-pointer transition-all ${
                   activeFilter === filter
                     ? "gradient-button text-[#0e0f0f]"
-                    : "bg-transparent text-[#FEFCE1]/70 hover:text-[#FEFCE1] ring-1 ring-white/10 hover:ring-white/20"
+                    : "bg-transparent text-[#FEFCE1]/70 hover:text-[#FEFCE1] border border-white/10 hover:border-white/20"
                 }`}
               >
                 {filter}
@@ -77,12 +77,14 @@ export function WorksSection() {
           {filteredProjects.map((project) => (
             <article key={project.title} className="group cursor-pointer animate-in fade-in duration-300">
               <div className="relative overflow-hidden rounded-2xl bg-[#141513] ring-1 ring-white/5 hover:ring-white/10 transition-all">
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <img
-                    src={project.img || "/placeholder.svg"}
-                    alt={`${project.title} project showcase`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                <div className="relative aspect-[4/3] overflow-hidden p-4">
+                  <div className="w-full h-full overflow-hidden rounded-lg">
+                    <img
+                      src={project.img || "/placeholder.svg"}
+                      alt={`${project.title} project showcase`}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
                 </div>
 
                 <div className="p-6">
