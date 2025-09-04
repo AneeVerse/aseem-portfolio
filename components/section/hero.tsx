@@ -161,7 +161,7 @@ export function HeroSection() {
         /* Brand Research pointer sits on the right edge, pointing right towards the image */
         .chip-pointer--brand {
           right: -12px;
-          top: 35%;
+          top: 20%;
           transform: rotate(-280deg); /* adjust rotation angle */
         }
         
