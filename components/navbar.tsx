@@ -22,7 +22,20 @@ export default function Navbar() {
     href: string
     children: React.ReactNode
   }) => (
-    <a href={href} className="text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors">
+    <a 
+      href={href} 
+      className="text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors"
+      onClick={(e) => {
+        e.preventDefault()
+        const target = document.querySelector(href)
+        if (target) {
+          target.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          })
+        }
+      }}
+    >
       {children}
     </a>
   )
@@ -33,14 +46,38 @@ export default function Navbar() {
         <div className="relative mx-auto max-w-[1420px] h-20 md:h-24">
           {/* Left: Brand */}
           <div className="absolute left-0 top-1/2 -translate-y-1/2 flex items-center gap-2.5">
-            <div className="relative h-11 w-11 lg:h-12 lg:w-12 rounded-2xl shadow-sm overflow-hidden">
+            <div 
+              className="relative h-11 w-11 lg:h-12 lg:w-12 rounded-2xl shadow-sm overflow-hidden cursor-pointer"
+              onClick={() => {
+                const target = document.querySelector('#home')
+                if (target) {
+                  target.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                  })
+                }
+              }}
+            >
               <img 
                 src="/images/experience/sm-logo1.png" 
                 alt="Olyve Schwarz Logo" 
                 className="h-full w-full object-contain"
               />
             </div>
-            <span className="text-lg lg:text-2xl font-medium tracking-tight">Olyve Schwarz</span>
+            <span 
+              className="text-lg lg:text-2xl font-medium tracking-tight cursor-pointer"
+              onClick={() => {
+                const target = document.querySelector('#home')
+                if (target) {
+                  target.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                  })
+                }
+              }}
+            >
+              Olyve Schwarz
+            </span>
           </div>
 
           <div className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-4 lg:gap-8">
@@ -68,6 +105,16 @@ export default function Navbar() {
               <a
                 href="#contact"
                 className="hidden lg:inline-flex items-center rounded-full px-6 py-2.5 lg:px-7 lg:py-3 text-[16px] lg:text-[18px] font-medium text-[#0e0f0f] shadow-sm border border-[#FEFCE1]/20 cursor-pointer gradient-button"
+                onClick={(e) => {
+                  e.preventDefault()
+                  const target = document.querySelector('#contact')
+                  if (target) {
+                    target.scrollIntoView({ 
+                      behavior: 'smooth',
+                      block: 'start'
+                    })
+                  }
+                }}
               >
                 Hire Me
               </a>
@@ -100,14 +147,40 @@ export default function Navbar() {
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-white/5">
               <div className="flex items-center gap-2.5">
-                <div className="relative h-10 w-10 rounded-2xl shadow-sm overflow-hidden">
+                <div 
+                  className="relative h-10 w-10 rounded-2xl shadow-sm overflow-hidden cursor-pointer"
+                  onClick={() => {
+                    setOpen(false)
+                    const target = document.querySelector('#home')
+                    if (target) {
+                      target.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                      })
+                    }
+                  }}
+                >
                   <img 
                     src="/images/experience/sm-logo1.png" 
                     alt="Olyve Schwarz Logo" 
                     className="h-full w-full object-contain"
                   />
                 </div>
-                <span className="text-lg font-medium tracking-tight text-[#FEFCE1]">Olyve Schwarz</span>
+                <span 
+                  className="text-lg font-medium tracking-tight text-[#FEFCE1] cursor-pointer"
+                  onClick={() => {
+                    setOpen(false)
+                    const target = document.querySelector('#home')
+                    if (target) {
+                      target.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                      })
+                    }
+                  }}
+                >
+                  Olyve Schwarz
+                </span>
               </div>
               <button
                 onClick={() => setOpen(false)}
@@ -125,7 +198,17 @@ export default function Navbar() {
                   <a 
                     href="#services" 
                     className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
-                    onClick={() => setOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      setOpen(false)
+                      const target = document.querySelector('#services')
+                      if (target) {
+                        target.scrollIntoView({ 
+                          behavior: 'smooth',
+                          block: 'start'
+                        })
+                      }
+                    }}
                   >
                     Services
                   </a>
@@ -134,7 +217,17 @@ export default function Navbar() {
                   <a 
                     href="#works" 
                     className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
-                    onClick={() => setOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      setOpen(false)
+                      const target = document.querySelector('#works')
+                      if (target) {
+                        target.scrollIntoView({ 
+                          behavior: 'smooth',
+                          block: 'start'
+                        })
+                      }
+                    }}
                   >
                     Works
                   </a>
@@ -143,7 +236,17 @@ export default function Navbar() {
                   <a 
                     href="#about" 
                     className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
-                    onClick={() => setOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      setOpen(false)
+                      const target = document.querySelector('#about')
+                      if (target) {
+                        target.scrollIntoView({ 
+                          behavior: 'smooth',
+                          block: 'start'
+                        })
+                      }
+                    }}
                   >
                     About
                   </a>
@@ -152,7 +255,17 @@ export default function Navbar() {
                   <a 
                     href="#testimonials" 
                     className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
-                    onClick={() => setOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      setOpen(false)
+                      const target = document.querySelector('#testimonials')
+                      if (target) {
+                        target.scrollIntoView({ 
+                          behavior: 'smooth',
+                          block: 'start'
+                        })
+                      }
+                    }}
                   >
                     Testimonials
                   </a>
@@ -161,7 +274,17 @@ export default function Navbar() {
                   <a 
                     href="#contact" 
                     className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
-                    onClick={() => setOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      setOpen(false)
+                      const target = document.querySelector('#contact')
+                      if (target) {
+                        target.scrollIntoView({ 
+                          behavior: 'smooth',
+                          block: 'start'
+                        })
+                      }
+                    }}
                   >
                     Say Hello
                   </a>
@@ -174,7 +297,17 @@ export default function Navbar() {
               <a
                 href="#contact"
                 className="block w-full text-center rounded-full px-7 py-3 text-[18px] font-medium text-[#0e0f0f] border border-[#FEFCE1]/20 cursor-pointer gradient-button"
-                onClick={() => setOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault()
+                  setOpen(false)
+                  const target = document.querySelector('#contact')
+                  if (target) {
+                    target.scrollIntoView({ 
+                      behavior: 'smooth',
+                      block: 'start'
+                    })
+                  }
+                }}
               >
                 Hire Me
               </a>
