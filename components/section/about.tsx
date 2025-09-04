@@ -232,15 +232,17 @@ export function AboutSection() {
         <div className="mt-12 flex items-center gap-6 flex-wrap">
           <a
             href="#resume"
-            className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-base text-[#0e0f0f] ring-1 ring-white/10 cursor-pointer gradient-button"
+            className="inline-flex items-center rounded-full px-8 py-4 text-lg text-[#0e0f0f] ring-1 ring-white/10 cursor-pointer gradient-button"
           >
             View Resume
-            <ArrowRight className="h-5 w-5" />
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-full px-5 py-3 text-base ring-1 ring-white/10 text-[#FEFCE1]/90 cursor-pointer"
+            className="inline-flex items-center gap-2 text-lg text-[#FEFCE1]/90 cursor-pointer hover:opacity-70 transition-opacity"
           >
+            <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
             Get in Touch
           </a>
         </div>
