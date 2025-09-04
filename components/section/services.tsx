@@ -23,7 +23,7 @@ export function ServicesSection() {
   return (
     <section id="services" className="bg-[#0e0f0f] text-[#FEFCE1]">
       <div className="mx-auto max-w-[1365px] px-5 md:px-8 py-14 md:py-20">
-        <h2 className="text-4xl md:text-6xl lg:text-[48px] font-normal tracking-tight">Services</h2>
+        <h2 className="text-4xl md:text-6xl lg:text-[48px] text-[#FEFCE1]/85 font-normal tracking-tight">Services</h2>
 
         <div className="mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-5 md:gap-8 justify-items-stretch">
           {services.map((s, i) => {
@@ -46,8 +46,8 @@ export function ServicesSection() {
                   <ArrowUpRight className="h-4 w-4" />
                 </span>
 
-                <h3 className="mt-8 text-2xl md:text-3xl font-semibold">{s.title}</h3>
-                <p className="mt-3 md:mt-4 text-sm md:text-base leading-relaxed text-[#FEFCE1]/70">{s.desc}</p>
+                <h3 className="mt-12 -ml-5 text-2xl md:text-3xl font-normal lg:text-4xl">{s.title}</h3>
+                <p className="mt-3 md:mt-4 -ml-5 text-sm md:text-base leading-relaxed text-[#FEFCE1]/70">{s.desc}</p>
               </article>
             )
           })}
