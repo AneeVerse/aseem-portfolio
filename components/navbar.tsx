@@ -45,7 +45,7 @@ export default function Navbar() {
 
           <div className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-4 lg:gap-8">
             {/* Nav links */}
-            <ul className="hidden lg:flex items-center gap-4 xl:gap-6 2xl:gap-10">
+            <ul className="hidden lg:flex items-center gap-4 lg:gap-11 2xl:gap-10">
               <li>
                 <LinkItem href="#services">Services</LinkItem>
               </li>
