@@ -16,10 +16,16 @@ function BehanceIcon(props: React.SVGProps<SVGSVGElement>) {
 
 export function SiteFooter() {
   return (
-    <footer className="bg-[#0e0f0f] text-[#FEFCE1] border-t border-white/5">
+    <footer className="bg-[#0e0f0f] text-[#FEFCE1] border-t border-white/16">
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="flex flex-col items-center gap-6 md:gap-8">
-          <BrandBadge size={52} />
+          <div className="relative h-13 w-13 rounded-2xl shadow-sm overflow-hidden">
+            <img 
+              src="/images/experience/sm-logo1.png" 
+              alt="Olyve Schwarz Logo" 
+              className="h-full w-full object-contain"
+            />
+          </div>
 
           <nav aria-label="Footer" className="text-sm md:text-base">
             <ul className="flex items-center gap-6 md:gap-10 text-[#FEFCE1]/75">
@@ -66,8 +72,8 @@ export function SiteFooter() {
             </a>
           </div>
 
-          <p className="mt-2 text-xs md:text-sm text-[#FEFCE1]/60 text-center">
-            © {new Date().getFullYear()} Olyve Schwarz — All rights reserved.
+          <p className="mt-2 text-xs md:text-sm lg:text-base text-[#FEFCE1]/60 text-center">
+            © {new Date().getFullYear()} © 2024. Olyve WordPress Theme by Tansh
           </p>
         </div>
       </div>

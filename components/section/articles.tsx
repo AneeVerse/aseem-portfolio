@@ -124,7 +124,7 @@ export function ArticlesSection() {
   return (
     <section id="articles" className="bg-[#0e0f0f] text-[#FEFCE1] border-b border-white/5">
       <div className="mx-auto max-w-[1365px] px-5 md:px-8 py-12 md:py-16">
-        <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-[#FEFCE1]">Articles</h2>
+        <h2 className="text-3xl md:text-5xl font-normal tracking-tight text-[#FEFCE1]/85">Articles</h2>
 
         {/* Track */}
         <div
@@ -151,45 +151,41 @@ export function ArticlesSection() {
               key={p.title}
               data-card
               className="
-                min-w-[320px] sm:min-w-[380px] lg:min-w-[420px]
-                snap-start rounded-2xl bg-[#141513]/95 ring-1 ring-white/8
-                overflow-hidden shadow-[0_0_0_1px_rgba(255,255,255,0.04)]"
+                min-w-[300px] sm:min-w-[360px] lg:min-w-[400px]
+                snap-start rounded-2xl bg-[#141513]/95 
+                overflow-hidden shadow-[0_0_0_1px_rgba(255,255,255,0.04)]
+                group cursor-pointer hover:ring-white/15 transition-all"
             >
-              <div className="p-3 md:p-4">
+              <div className="p-4 md:p-6 lg:py-3 lg:px-4">
                 <div className="relative">
                   <img
                     src={p.img || "/placeholder.svg?height=240&width=420&query=article%20image"}
                     alt=""
-                    className="h-52 md:h-60 w-full object-cover rounded-xl"
+                    className="h-56 md:h-64 w-full lg:h-80 lg:w-full object-cover rounded-t-xl lg:rounded-t-2xl lg:rounded-b-xl"
                   />
                 </div>
 
                 {/* Category chip */}
                 <div className="mt-4">
-                  <span className="inline-flex items-center gap-2 rounded-lg bg-white/5 ring-1 ring-white/10 px-3 py-1 text-sm text-[#FEFCE1]">
-                    <Tag className="h-4 w-4 opacity-80" />
+                  <span className="inline-flex items-center rounded-lg bg-[#141513] border border-white/20 text-[#FEFCE1] px-3 py-1.5 text-sm font-medium group-hover:bg-[#ECE8C8] group-hover:text-[#0e0f0f] group-hover:border-[#ECE8C8] transition-all">
                     {p.tag || "Article"}
                   </span>
                 </div>
 
                 {/* Title */}
-                <h3 className="mt-3 md:mt-4 text-2xl md:text-3xl font-semibold leading-tight text-[#FEFCE1]">
+                <h3 className="mt-4 text-base md:text-xl font-normal leading-tight text-[#FEFCE1] ">
                   {p.title}
                 </h3>
 
                 {/* Meta */}
-                <div className="mt-4 md:mt-6 flex items-center gap-5 text-sm text-[#FEFCE1]/70">
-                  <span className="inline-flex items-center gap-2">
+                <div className="mt-4 flex items-center gap-4 text-sm text-[#FEFCE1]/60 lg:mt-10">
+                  <span className="inline-flex items-center gap-1.5">
                     <Calendar className="h-4 w-4" />
                     {p.date}
                   </span>
-                  <span className="inline-flex items-center gap-2">
+                  <span className="inline-flex items-center gap-1.5">
                     <Clock3 className="h-4 w-4" />
                     {p.read}
-                  </span>
-                  <span className="inline-flex items-center gap-2">
-                    <Eye className="h-4 w-4" />
-                    {p.views}
                   </span>
                 </div>
               </div>

@@ -12,43 +12,43 @@ export function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left: Copy + details */}
           <div>
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight text-balance">
-              {"It’s time to talk about"} <br className="hidden md:block" />
+            <h2 className="text-2xl text-[#FEFCE1]/85 md:text-3xl lg:text-5xl font-normal leading-tight tracking-tight text-balance">
+              {"It's time to talk about"} <br className="hidden md:block" />
               {"your project."}
             </h2>
-            <p className="mt-4 text-sm md:text-base text-[#FEFCE1]/70 max-w-2xl">
+            <p className="mt-4 text-sm md:text-base text-[#FEFCE1]/50 max-w-2xl leading-7">
               Let’s embark on a creative journey together by shaping a visual narrative of your brand in the crowded
               digital space.
             </p>
 
             <ul className="mt-10 space-y-6">
               <li className="flex items-center gap-4">
-                <span className="h-12 w-12 rounded-xl bg-[#141513] ring-1 ring-white/10 flex items-center justify-center">
-                  <Phone className="h-5 w-5 text-[#FEFCE1]" aria-hidden />
+                <span className="h-14 w-14 rounded-xl bg-[#141513] ring-1 ring-white/10 flex items-center justify-center">
+                  <Phone className="h-6 w-6 text-[#FEFCE1]" aria-hidden />
                 </span>
                 <div>
-                  <div className="text-xs uppercase tracking-wide text-[#FEFCE1]/55">Phone</div>
-                  <div className="text-[15px] md:text-base">+01 234 567 8902</div>
+                  <div className="text-sm uppercase tracking-wide text-[#FEFCE1]/55">Phone</div>
+                  <div className="text-base md:text-lg mt-1">+01 234 567 8902</div>
                 </div>
               </li>
 
               <li className="flex items-center gap-4">
-                <span className="h-12 w-12 rounded-xl bg-[#141513] ring-1 ring-white/10 flex items-center justify-center">
-                  <Mail className="h-5 w-5 text-[#FEFCE1]" aria-hidden />
+                <span className="h-14 w-14 rounded-xl bg-[#141513] ring-1 ring-white/10 flex items-center justify-center">
+                  <Mail className="h-6 w-6 text-[#FEFCE1]" aria-hidden />
                 </span>
                 <div>
-                  <div className="text-xs uppercase tracking-wide text-[#FEFCE1]/55">Email</div>
-                  <div className="text-[15px] md:text-base">sayhello@olyveschwarz.me</div>
+                  <div className="text-sm uppercase tracking-wide text-[#FEFCE1]/55">Email</div>
+                  <div className="text-base md:text-lg mt-1">sayhello@olyveschwarz.me</div>
                 </div>
               </li>
 
               <li className="flex items-center gap-4">
-                <span className="h-12 w-12 rounded-xl bg-[#141513] ring-1 ring-white/10 flex items-center justify-center">
-                  <MapPin className="h-5 w-5 text-[#FEFCE1]" aria-hidden />
+                <span className="h-14 w-14 rounded-xl bg-[#141513] ring-1 ring-white/10 flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-[#FEFCE1]" aria-hidden />
                 </span>
                 <div>
-                  <div className="text-xs uppercase tracking-wide text-[#FEFCE1]/55">Address</div>
-                  <div className="text-[15px] md:text-base">Borough 47, Aveton Gifford, Devon, UK, EX4 1QU</div>
+                  <div className="text-sm uppercase tracking-wide text-[#FEFCE1]/55">Address</div>
+                  <div className="text-base md:text-lg mt-1">Borough 47, Aveton Gifford, Devon, UK, EX4 1QU</div>
                 </div>
               </li>
             </ul>
@@ -56,57 +56,37 @@ export function ContactSection() {
 
           {/* Right: Form card */}
           <form
-            className="rounded-2xl bg-[#141513] ring-1 ring-white/8 p-6 md:p-8 space-y-5"
+            className="p-6 md:p-8 bg-[#141513] space-y-5 rounded-2xl"
             onSubmit={(e) => {
               e.preventDefault()
             }}
             aria-labelledby="contact-heading"
           >
-            <div className="space-y-2">
-              <Label htmlFor="name" className="text-[#FEFCE1] text-sm">
-                Name
-              </Label>
-              <Input
-                id="name"
-                placeholder="John Doe"
-                className="h-12 rounded-lg bg-[#0e0f0f] border-white/10 text-[#FEFCE1] placeholder:text-[#FEFCE1]/40 focus-visible:ring-2 focus-visible:ring-[#D9CF9C]/40"
-              />
-            </div>
+            <Input
+              id="name"
+              placeholder="John Doe"
+              className="h-12 rounded-lg bg-[#0e0f0f] border-0 text-[#FEFCE1] placeholder:text-[#FEFCE1]/40 focus-visible:ring-0"
+            />
 
-            <div className="space-y-2">
-              <Label htmlFor="email" className="text-[#FEFCE1] text-sm">
-                Email
-              </Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="hello@example.com"
-                className="h-12 rounded-lg bg-[#0e0f0f] border-white/10 text-[#FEFCE1] placeholder:text-[#FEFCE1]/40 focus-visible:ring-2 focus-visible:ring-[#D9CF9C]/40"
-              />
-            </div>
+            <Input
+              id="email"
+              type="email"
+              placeholder="hello@example.com"
+              className="h-12 rounded-lg bg-[#0e0f0f] border-0 text-[#FEFCE1] placeholder:text-[#FEFCE1]/40 focus-visible:ring-0"
+            />
 
-            <div className="space-y-2">
-              <Label htmlFor="subject" className="text-[#FEFCE1] text-sm">
-                Subject
-              </Label>
-              <Input
-                id="subject"
-                placeholder="How can I help?"
-                className="h-12 rounded-lg bg-[#0e0f0f] border-white/10 text-[#FEFCE1] placeholder:text-[#FEFCE1]/40 focus-visible:ring-2 focus-visible:ring-[#D9CF9C]/40"
-              />
-            </div>
+            <Input
+              id="subject"
+              placeholder="Subject"
+              className="h-12 rounded-lg bg-[#0e0f0f] border-0 text-[#FEFCE1] placeholder:text-[#FEFCE1]/40 focus-visible:ring-0"
+            />
 
-            <div className="space-y-2">
-              <Label htmlFor="message" className="text-[#FEFCE1] text-sm">
-                Message
-              </Label>
-              <Textarea
-                id="message"
-                rows={6}
-                placeholder="Share a brief about your project…"
-                className="min-h-[160px] rounded-lg bg-[#0e0f0f] border-white/10 text-[#FEFCE1] placeholder:text-[#FEFCE1]/40 focus-visible:ring-2 focus-visible:ring-[#D9CF9C]/40"
-              />
-            </div>
+            <Textarea
+              id="message"
+              rows={6}
+              placeholder="Message in brief..."
+              className="min-h-[160px] rounded-lg bg-[#0e0f0f] border-0 text-[#FEFCE1] placeholder:text-[#FEFCE1]/40 focus-visible:ring-0"
+            />
 
             <div className="pt-2">
               <button

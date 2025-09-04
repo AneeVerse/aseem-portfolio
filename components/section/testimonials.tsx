@@ -102,7 +102,7 @@ export function TestimonialsSection() {
   return (
     <section id="testimonials" className="bg-[#0e0f0f] text-[#FEFCE1] border-y border-white/5">
       <div className="mx-auto max-w-[1365px] px-5 md:px-8 py-16 md:py-24">
-        <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-[#FEFCE1]">Testimonials</h2>
+        <h2 className="text-3xl md:text-5xl font-normal tracking-tight text-[#FEFCE1]/85">Testimonials</h2>
 
         {/* Track */}
         <div

@@ -28,7 +28,7 @@ export default function Navbar() {
   )
 
   return (
-    <header className="sticky top-0 z-50 shadow-[0_1px_0_0_rgba(255,255,255,0.1)]" role="banner">
+    <header className="fixed top-0 left-0 right-0 z-50 shadow-[0_1px_0_0_rgba(255,255,255,0.1)]" role="banner">
       <nav aria-label="Primary" className="bg-[#0e0f0f] text-[#FEFCE1] px-5 md:px-8">
         <div className="relative mx-auto max-w-[1420px] h-20 md:h-24">
           {/* Left: Brand */}
