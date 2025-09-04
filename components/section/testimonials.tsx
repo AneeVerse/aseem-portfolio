@@ -100,9 +100,9 @@ export function TestimonialsSection() {
   }
 
   return (
-    <section id="testimonials" className="bg-[#0B0C0B] text-[#EAE6CF] border-y border-white/5">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-8 py-16 md:py-24">
-        <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-[#EAE6CF]">Testimonials</h2>
+    <section id="testimonials" className="bg-[#0e0f0f] text-[#FEFCE1] border-y border-white/5">
+      <div className="mx-auto max-w-[1365px] px-5 md:px-8 py-16 md:py-24">
+        <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-[#FEFCE1]">Testimonials</h2>
 
         {/* Track */}
         <div
@@ -137,8 +137,8 @@ export function TestimonialsSection() {
               {/* Top row: name/role left, avatar right */}
               <div className="flex items-start justify-between gap-4">
                 <figcaption>
-                  <div className="text-lg md:text-xl font-semibold text-[#EAE6CF]">{t.name}</div>
-                  <div className="text-sm md:text-base text-[#EAE6CF]/70">{t.role}</div>
+                  <div className="text-lg md:text-xl font-semibold text-[#FEFCE1]">{t.name}</div>
+                  <div className="text-sm md:text-base text-[#FEFCE1]/70">{t.role}</div>
                 </figcaption>
 
                 <img
@@ -149,10 +149,10 @@ export function TestimonialsSection() {
               </div>
 
               {/* Decorative opening quote */}
-              <Quote className="mt-6 h-6 w-6 md:h-7 md:w-7 text-[#EAE6CF]/35" aria-hidden="true" />
+              <Quote className="mt-6 h-6 w-6 md:h-7 md:w-7 text-[#FEFCE1]/35" aria-hidden="true" />
 
               {/* Quote text */}
-              <blockquote className="mt-4 md:mt-6 text-base md:text-lg leading-7 md:leading-8 text-[#EAE6CF]/85">
+              <blockquote className="mt-4 md:mt-6 text-base md:text-lg leading-7 md:leading-8 text-[#FEFCE1]/85">
                 "{t.quote}"
               </blockquote>
             </figure>
@@ -165,7 +165,7 @@ export function TestimonialsSection() {
             type="button"
             aria-label="Previous testimonials"
             onClick={() => scrollStep(-1)}
-            className="h-10 w-10 rounded-full bg-[#141513] ring-1 ring-white/10 text-[#EAE6CF]/80 hover:text-[#EAE6CF] hover:ring-white/20 transition"
+            className="h-10 w-10 rounded-full bg-[#141513] ring-1 ring-white/10 text-[#FEFCE1]/80 hover:text-[#FEFCE1] hover:ring-white/20 transition"
           >
             <span className="sr-only">Previous</span>
             <ChevronLeft className="mx-auto h-5 w-5" />
@@ -174,7 +174,7 @@ export function TestimonialsSection() {
             type="button"
             aria-label="Next testimonials"
             onClick={() => scrollStep(1)}
-            className="h-10 w-10 rounded-full bg-[#141513] ring-1 ring-white/10 text-[#EAE6CF]/80 hover:text-[#EAE6CF] hover:ring-white/20 transition"
+            className="h-10 w-10 rounded-full bg-[#141513] ring-1 ring-white/10 text-[#FEFCE1]/80 hover:text-[#FEFCE1] hover:ring-white/20 transition"
           >
             <span className="sr-only">Next</span>
             <ChevronRight className="mx-auto h-5 w-5" />

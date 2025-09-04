@@ -51,8 +51,8 @@ export function WorksSection() {
     ? projects 
     : projects.filter(project => project.tag === activeFilter)
   return (
-    <section id="works" className="bg-[#0B0C0B] text-[#EAE6CF] border-b border-white/5">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-8 py-16 md:py-20">
+    <section id="works" className="bg-[#0e0f0f] text-[#FEFCE1] border-b border-white/5">
+      <div className="mx-auto max-w-[1365px] px-5 md:px-8 py-16 md:py-20">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-12">
           <h2 className="text-4xl md:text-5xl font-light">Works</h2>
 
@@ -61,10 +61,10 @@ export function WorksSection() {
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`rounded-full px-4 py-2 sm:px-7 sm:py-3 text-sm sm:text-base font-medium transition-all whitespace-nowrap flex-shrink-0 ${
+                className={`rounded-full px-4 py-2 sm:px-7 sm:py-3 text-sm sm:text-base font-medium whitespace-nowrap flex-shrink-0 cursor-pointer ${
                   activeFilter === filter
-                    ? "bg-gradient-to-r from-[#ECE8C8] to-[#CFC99D] text-[#0B0C0B]"
-                    : "bg-transparent text-[#EAE6CF]/70 hover:text-[#EAE6CF] ring-1 ring-white/10 hover:ring-white/20"
+                    ? "gradient-button text-[#0e0f0f]"
+                    : "bg-transparent text-[#FEFCE1]/70 hover:text-[#FEFCE1] ring-1 ring-white/10 hover:ring-white/20"
                 }`}
               >
                 {filter}
@@ -88,10 +88,10 @@ export function WorksSection() {
                 <div className="p-6">
                   <div className="flex items-start justify-between">
                     <div>
-                      <h3 className="text-2xl font-light text-[#EAE6CF] mb-2">{project.title}</h3>
-                      <p className="text-[#EAE6CF]/60 text-sm">{project.description}</p>
+                      <h3 className="text-2xl font-light text-[#FEFCE1] mb-2">{project.title}</h3>
+                      <p className="text-[#FEFCE1]/60 text-sm">{project.description}</p>
                     </div>
-                    <ArrowUpRight className="w-5 h-5 text-[#EAE6CF]/40 group-hover:text-[#EAE6CF] transition-colors flex-shrink-0 ml-4" />
+                    <ArrowUpRight className="w-5 h-5 text-[#FEFCE1]/40 group-hover:text-[#FEFCE1] transition-colors flex-shrink-0 ml-4" />
                   </div>
                 </div>
               </div>

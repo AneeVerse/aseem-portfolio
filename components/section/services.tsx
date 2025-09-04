@@ -21,8 +21,8 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="bg-[#0B0C0B] text-[#EAE6CF]">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-8 py-14 md:py-20">
+    <section id="services" className="bg-[#0e0f0f] text-[#FEFCE1]">
+      <div className="mx-auto max-w-[1365px] px-5 md:px-8 py-14 md:py-20">
         <h2 className="text-4xl md:text-6xl font-semibold tracking-tight">Services</h2>
 
         <div className="mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-5 md:gap-8 justify-items-stretch">
@@ -35,19 +35,19 @@ export function ServicesSection() {
                 key={s.title}
                 className={`group relative rounded-2xl bg-[#141513] border border-white/8 hover:border-white/15 transition-colors p-8 md:p-10 min-h-[220px] md:min-h-[240px] shadow-[0_0_0_1px_rgba(255,255,255,0.02)] ${spanClass}`}
               >
-                <span className="absolute left-5 top-5 inline-flex items-center justify-center rounded-md px-2.5 py-1 text-xs text-[#EAE6CF]/70 ring-1 ring-white/10 bg-white/[0.03] group-hover:bg-[#EAE6CF] group-hover:text-[#141513] transition-colors">
+                <span className="absolute left-5 top-5 inline-flex items-center justify-center rounded-md px-2.5 py-1 text-xs text-[#FEFCE1]/70 ring-1 ring-white/10 bg-white/[0.03] group-hover:bg-[#FEFCE1] group-hover:text-[#141513] transition-colors">
                   {index}
                 </span>
 
                 <span
                   aria-hidden="true"
-                  className="absolute right-5 top-5 inline-flex items-center justify-center rounded-md ring-1 ring-white/10 bg-white/[0.03] px-2.5 py-1 text-[#EAE6CF]/70 group-hover:text-[#EAE6CF]"
+                  className="absolute right-5 top-5 inline-flex items-center justify-center rounded-md ring-1 ring-white/10 bg-white/[0.03] px-2.5 py-1 text-[#FEFCE1]/70 group-hover:text-[#FEFCE1]"
                 >
                   <ArrowUpRight className="h-4 w-4" />
                 </span>
 
                 <h3 className="mt-8 text-2xl md:text-3xl font-semibold">{s.title}</h3>
-                <p className="mt-3 md:mt-4 text-sm md:text-base leading-relaxed text-[#EAE6CF]/70">{s.desc}</p>
+                <p className="mt-3 md:mt-4 text-sm md:text-base leading-relaxed text-[#FEFCE1]/70">{s.desc}</p>
               </article>
             )
           })}

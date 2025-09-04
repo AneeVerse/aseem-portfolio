@@ -4,13 +4,13 @@ import { ArrowRight, Mail } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section id="home" className="bg-[#0B0C0B] text-[#EAE6CF] border-b border-white/5" aria-labelledby="hero-heading">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-8 py-10 md:py-14">
-        <div className="grid grid-cols-1 mt-8 md:grid-cols-2 gap-10 md:gap-16 items-start">
+    <section id="home" className="bg-[#0e0f0f] text-[#FEFCE1] border-b border-white/5" aria-labelledby="hero-heading">
+      <div className="mx-auto max-w-[1365px] px-5 md:px-8 py-10 md:py-14">
+        <div className="grid grid-cols-1 mt-8 lg:grid-cols-3 gap-10 lg:gap-16 items-start">
           {/* Left copy */}
-          <div>
+          <div className="lg:col-span-2">
             {/* Replace breadcrumb with eyebrow label to match the reference */}
-            <div className="mb-4 inline-flex items-center gap-2 text-lg text-[#EAE6CF]/80">
+            <div className="mb-4 inline-flex items-center gap-2 text-[18px] text-[#FEFCE1]/50">
               <img 
                 src="/images/512.webp" 
                 alt="Sparkle icon" 
@@ -20,33 +20,33 @@ export function HeroSection() {
             </div>
 
             {/* Increase headline size closer to the template */}
-            <h1 id="hero-heading" className="text-pretty text-4xl md:text-5xl lg:text-6xl font-normal leading-tight">
+            <h1 id="hero-heading" className="text-pretty max-w-[720px] text-[#FEFCE1]/80 text-4xl md:text-5xl lg:text-[60px] font-normal leading-17 tracking-tight">
               Bring your vision to ultimate reality
             </h1>
-            <p className="mt-3 text-lg leading-6 text-[#EAE6CF]/70 max-w-prose mt-5 mb-10">
+            <p className="mt-3 text-lg leading-7 text-[#FEFCE1]/50 max-w-[700px] mt-5 mb-10">
             Specialize in creating unique visual identities for digital products and believe that a stunning design starts with common values, open communication, and respect for your audience.
             </p>
 
             <div className="mt-6 flex flex-row items-center gap-3 sm:gap-4">
               <a
                 href="#works"
-                className="inline-flex items-center rounded-full px-5 py-3 sm:px-6 sm:py-4 text-[16px] sm:text-[18px] font-medium text-[#0B0C0B] bg-gradient-to-b from-[#ECE8C8] to-[#CFC99D] hover:brightness-95 transition whitespace-nowrap"
+                className="inline-flex items-center rounded-full px-5 py-3 lg:px-6 lg:py-2.9 text-[16px] lg:text-[18px] font-medium text-[#0e0f0f] whitespace-nowrap cursor-pointer gradient-button"
               >
                 View Portfolio
               </a>
 
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 text-[16px] sm:text-[18px] text-[#EAE6CF]/85 hover:text-[#EAE6CF] whitespace-nowrap"
+                className="inline-flex items-center gap-2 text-[16px] sm:text-[18px] text-[#FEFCE1]/100 hover:text-[#FEFCE1] whitespace-nowrap"
               >
-                <Mail className="h-5 w-5 sm:h-6 sm:w-6" />
+                <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-[#FEFCE1]/55" />
                 Hello@olyve.me
               </a>
             </div>
           </div>
 
           {/* Right portrait */}
-          <div className="relative mx-auto w-[280px] h-[350px] sm:w-[320px] sm:h-[400px] md:w-[360px] md:h-[450px] lg:w-[400px] lg:h-[500px] overflow-hidden rounded-full ring-1 ring-white/10">
+          <div className="relative mx-auto w-[280px] h-[350px] sm:w-[320px] sm:h-[400px] md:w-[360px] md:h-[450px] lg:w-[400px] lg:h-[500px] overflow-hidden rounded-full ring-1 ring-white/10 ">
             <img
               src={"/images/hero-right.jpg"}
               alt="Portrait of Olyve with projected letters"
@@ -88,7 +88,7 @@ export function HeroSection() {
           font-weight: 500;
           line-height: 1.2;
           border-radius: 10px;
-          color: #0b0c0b;
+          color: #0e0f0f;
           background: #ece8c8;
           box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
           border: 1px solid rgba(0, 0, 0, 0.1);

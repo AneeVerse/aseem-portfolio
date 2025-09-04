@@ -40,7 +40,7 @@ function Card({ children, className = "" }: { children: React.ReactNode; classNa
 
 function DateChip({ start, end }: { start: string; end: string }) {
   return (
-    <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-black/20 px-4 py-2 text-[12px] font-medium text-[#EAE6CF]/80">
+    <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-black/20 px-4 py-2 text-[12px] font-medium text-[#FEFCE1]/80">
       {start}
       <span className="opacity-60">›</span>
       {end}
@@ -72,7 +72,7 @@ function ImageBadge({
 }) {
   return (
     <div className="relative h-16 w-16 overflow-hidden rounded-xl ">
-      <div className="absolute inset-0 bg-[#0B0C0B]" />
+      <div className="absolute inset-0 bg-[#0e0f0f]" />
       <div className="relative flex h-full w-full items-center justify-center p-3">
         <img 
           src={logo} 
@@ -86,9 +86,9 @@ function ImageBadge({
 
 export function AboutSection() {
   return (
-    <section id="about" className="bg-[#0B0C0B] text-[#EAE6CF] border-b border-white/5">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-8 py-14 md:py-20">
-        <h2 className="text-3xl md:text-5xl font-normal tracking-tight text-[#EAE6CF]">About Me</h2>
+    <section id="about" className="bg-[#0e0f0f] text-[#FEFCE1] border-b border-white/5">
+      <div className="mx-auto max-w-[1365px] px-5 md:px-8 py-14 md:py-20">
+        <h2 className="text-3xl md:text-5xl font-normal tracking-tight text-[#FEFCE1]">About Me</h2>
 
         {/* Top: Portrait + Intro */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -104,16 +104,16 @@ export function AboutSection() {
           {/* Intro card (spans 2 columns) */}
           <Card className="md:col-span-2 p-10">
             <div className="flex items-start gap-3">
-              <span className="inline-flex items-center gap-2 rounded-full bg-[#0B0C0B] px-4 py-2 text-sm ring-1 ring-white/10 text-[#EAE6CF]/80">
+              <span className="inline-flex items-center gap-2 rounded-full bg-[#0e0f0f] px-4 py-2 text-sm ring-1 ring-white/10 text-[#FEFCE1]/80">
                 <Sparkles className="h-4 w-4" />
                 Hi 👋 I am Olyve Schwarz
               </span>
             </div>
-            <p className="mt-6 text-base md:text-lg leading-7 text-[#EAE6CF]/80">
+            <p className="mt-6 text-base md:text-lg leading-7 text-[#FEFCE1]/80">
               A product designer with a knack for turning problems and opportunities into user‑driven strategic
               solutions.
             </p>
-            <p className="mt-4 text-base md:text-lg leading-7 text-[#EAE6CF]/80">
+            <p className="mt-4 text-base md:text-lg leading-7 text-[#FEFCE1]/80">
               As a product designer, I specialize in creating unique visual identities for digital products. I believe that a
               stunning design starts with common values, open communication, and respect for your audience.
             </p>
@@ -139,7 +139,7 @@ export function AboutSection() {
                     <div className="flex-1">
                       <div className="text-base md:text-lg">
                         <span className="font-medium">{item.role}</span>{" "}
-                        <span className="text-[#EAE6CF]/70">{item.org}</span>
+                        <span className="text-[#FEFCE1]/70">{item.org}</span>
                       </div>
                       <div className="mt-1">
                         <DateChip start={item.start} end={item.end} />
@@ -165,7 +165,7 @@ export function AboutSection() {
                     <div className="flex-1">
                       <div className="text-base md:text-lg">
                         <span className="font-medium">{item.role}</span>{" "}
-                        <span className="text-[#EAE6CF]/70">{item.org}</span>
+                        <span className="text-[#FEFCE1]/70">{item.org}</span>
                       </div>
                       <div className="mt-1">
                         <DateChip start={item.start} end={item.end} />
@@ -192,9 +192,9 @@ export function AboutSection() {
                       alt={`${s.name} logo`}
                       className="h-6 w-6 md:h-8 md:w-8"
                     />
-                    <div className="text-xs md:text-sm text-[#EAE6CF]/70 font-medium">{s.pct}</div>
+                    <div className="text-xs md:text-sm text-[#FEFCE1]/70 font-medium">{s.pct}</div>
                   </div>
-                  <div className="text-sm md:text-base text-[#EAE6CF] text-center">{s.name}</div>
+                  <div className="text-sm md:text-base text-[#FEFCE1] text-center">{s.name}</div>
                 </div>
               ))}
             </div>
@@ -205,7 +205,7 @@ export function AboutSection() {
             <Card className="p-6 md:p-10 h-full">
               <div className="h-full flex flex-col items-center justify-center text-center">
                 <div className="text-4xl md:text-6xl lg:text-7xl font-semibold">12</div>
-                <div className="mt-2 md:mt-3 text-sm md:text-base text-[#EAE6CF]/70">
+                <div className="mt-2 md:mt-3 text-sm md:text-base text-[#FEFCE1]/70">
                   Years of
                   <br />
                   Experience
@@ -215,7 +215,7 @@ export function AboutSection() {
             <Card className="p-6 md:p-10 h-full">
               <div className="h-full flex flex-col items-center justify-center text-center">
                 <div className="text-4xl md:text-6xl lg:text-7xl font-semibold">3K</div>
-                <div className="mt-2 md:mt-3 text-sm md:text-base text-[#EAE6CF]/70">
+                <div className="mt-2 md:mt-3 text-sm md:text-base text-[#FEFCE1]/70">
                   Projects
                   <br />
                   Completed
@@ -229,15 +229,14 @@ export function AboutSection() {
         <div className="mt-12 flex items-center gap-6 flex-wrap">
           <a
             href="#resume"
-            className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-base text-[#0B0C0B] ring-1 ring-white/10"
-            style={{ background: "linear-gradient(180deg,#ECE8C8, #CFC99D)" }}
+            className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-base text-[#0e0f0f] ring-1 ring-white/10 cursor-pointer gradient-button"
           >
             View Resume
             <ArrowRight className="h-5 w-5" />
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-full px-5 py-3 text-base ring-1 ring-white/10 text-[#EAE6CF]/90"
+            className="inline-flex items-center gap-2 rounded-full px-5 py-3 text-base ring-1 ring-white/10 text-[#FEFCE1]/90 cursor-pointer"
           >
             Get in Touch
           </a>

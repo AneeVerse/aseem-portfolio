@@ -14,7 +14,7 @@ export function BrandBadge({ size = 44, className = "" }: { size?: number; class
       <div className="absolute inset-0 bg-gradient-to-b from-[#ECE8C8] to-[#CFC99D]" />
       <svg className="relative z-10 block" viewBox="0 0 44 44" width={size} height={size}>
         <rect x="2" y="2" width="40" height="40" rx={radius} fill="transparent" />
-        <circle cx="22" cy="22" r="9.5" fill="none" stroke="#0B0C0B" strokeWidth="6.5" />
+        <circle cx="22" cy="22" r="9.5" fill="none" stroke="#0e0f0f" strokeWidth="6.5" />
       </svg>
     </div>
   )

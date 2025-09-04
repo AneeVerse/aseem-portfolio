@@ -122,9 +122,9 @@ export function ArticlesSection() {
   }
 
   return (
-    <section id="articles" className="bg-[#0B0C0B] text-[#EAE6CF] border-b border-white/5">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-8 py-12 md:py-16">
-        <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-[#EAE6CF]">Articles</h2>
+    <section id="articles" className="bg-[#0e0f0f] text-[#FEFCE1] border-b border-white/5">
+      <div className="mx-auto max-w-[1365px] px-5 md:px-8 py-12 md:py-16">
+        <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-[#FEFCE1]">Articles</h2>
 
         {/* Track */}
         <div
@@ -166,19 +166,19 @@ export function ArticlesSection() {
 
                 {/* Category chip */}
                 <div className="mt-4">
-                  <span className="inline-flex items-center gap-2 rounded-lg bg-white/5 ring-1 ring-white/10 px-3 py-1 text-sm text-[#EAE6CF]">
+                  <span className="inline-flex items-center gap-2 rounded-lg bg-white/5 ring-1 ring-white/10 px-3 py-1 text-sm text-[#FEFCE1]">
                     <Tag className="h-4 w-4 opacity-80" />
                     {p.tag || "Article"}
                   </span>
                 </div>
 
                 {/* Title */}
-                <h3 className="mt-3 md:mt-4 text-2xl md:text-3xl font-semibold leading-tight text-[#EAE6CF]">
+                <h3 className="mt-3 md:mt-4 text-2xl md:text-3xl font-semibold leading-tight text-[#FEFCE1]">
                   {p.title}
                 </h3>
 
                 {/* Meta */}
-                <div className="mt-4 md:mt-6 flex items-center gap-5 text-sm text-[#EAE6CF]/70">
+                <div className="mt-4 md:mt-6 flex items-center gap-5 text-sm text-[#FEFCE1]/70">
                   <span className="inline-flex items-center gap-2">
                     <Calendar className="h-4 w-4" />
                     {p.date}
@@ -203,7 +203,7 @@ export function ArticlesSection() {
             type="button"
             aria-label="Previous articles"
             onClick={() => scrollStep(-1)}
-            className="h-10 w-10 rounded-full bg-[#141513] ring-1 ring-white/10 text-[#EAE6CF]/80 hover:text-[#EAE6CF] hover:ring-white/20 transition"
+            className="h-10 w-10 rounded-full bg-[#141513] ring-1 ring-white/10 text-[#FEFCE1]/80 hover:text-[#FEFCE1] hover:ring-white/20 transition"
           >
             <span className="sr-only">Previous</span>
             <ChevronLeft className="mx-auto h-5 w-5" />
@@ -212,7 +212,7 @@ export function ArticlesSection() {
             type="button"
             aria-label="Next articles"
             onClick={() => scrollStep(1)}
-            className="h-10 w-10 rounded-full bg-[#141513] ring-1 ring-white/10 text-[#EAE6CF]/80 hover:text-[#EAE6CF] hover:ring-white/20 transition"
+            className="h-10 w-10 rounded-full bg-[#141513] ring-1 ring-white/10 text-[#FEFCE1]/80 hover:text-[#FEFCE1] hover:ring-white/20 transition"
           >
             <span className="sr-only">Next</span>
             <ChevronRight className="mx-auto h-5 w-5" />

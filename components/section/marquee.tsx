@@ -32,7 +32,7 @@ export function MarqueeBar() {
 
   return (
     <section
-      className="group select-none bg-[#0B0C0B] text-[#EAE6CF] border-y border-white/10"
+      className="group select-none bg-[#0e0f0f] text-[#FEFCE1] border-y border-white/10"
       aria-label="Call to collaborate marquee"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
@@ -47,7 +47,7 @@ export function MarqueeBar() {
           }}
         >
           {items.map((_, i) => (
-            <span key={i} className="mx-10 inline-flex items-center gap-4 text-2xl md:text-3xl text-[#EAE6CF]/90">
+            <span key={i} className="mx-10 inline-flex items-center gap-4 text-2xl md:text-3xl text-[#FEFCE1]/90">
               <AnimatedPeace />
               {phrase}
             </span>

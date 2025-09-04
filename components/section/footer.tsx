@@ -16,42 +16,42 @@ function BehanceIcon(props: React.SVGProps<SVGSVGElement>) {
 
 export function SiteFooter() {
   return (
-    <footer className="bg-[#0B0C0B] text-[#EAE6CF] border-t border-white/5">
+    <footer className="bg-[#0e0f0f] text-[#FEFCE1] border-t border-white/5">
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="flex flex-col items-center gap-6 md:gap-8">
           <BrandBadge size={52} />
 
           <nav aria-label="Footer" className="text-sm md:text-base">
-            <ul className="flex items-center gap-6 md:gap-10 text-[#EAE6CF]/75">
+            <ul className="flex items-center gap-6 md:gap-10 text-[#FEFCE1]/75">
               <li>
-                <a href="#services" className="hover:text-[#EAE6CF]">
+                <a href="#services" className="hover:text-[#FEFCE1]">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#works" className="hover:text-[#EAE6CF]">
+                <a href="#works" className="hover:text-[#FEFCE1]">
                   Works
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:text-[#EAE6CF]">
+                <a href="#about" className="hover:text-[#FEFCE1]">
                   About
                 </a>
               </li>
               <li>
-                <a href="#testimonials" className="hover:text-[#EAE6CF]">
+                <a href="#testimonials" className="hover:text-[#FEFCE1]">
                   Testimonials
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-[#EAE6CF]">
+                <a href="#contact" className="hover:text-[#FEFCE1]">
                   “Say Hello”
                 </a>
               </li>
             </ul>
           </nav>
 
-          <div className="flex items-center gap-5 md:gap-6 text-[#EAE6CF]">
+          <div className="flex items-center gap-5 md:gap-6 text-[#FEFCE1]">
             <a href="#" aria-label="Instagram" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
               <Instagram className="h-5 w-5" />
             </a>
@@ -66,7 +66,7 @@ export function SiteFooter() {
             </a>
           </div>
 
-          <p className="mt-2 text-xs md:text-sm text-[#EAE6CF]/60 text-center">
+          <p className="mt-2 text-xs md:text-sm text-[#FEFCE1]/60 text-center">
             © {new Date().getFullYear()} Olyve Schwarz — All rights reserved.
           </p>
         </div>

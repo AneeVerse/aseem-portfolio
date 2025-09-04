@@ -7,8 +7,8 @@ import { Menu, X } from "lucide-react"
 
 /**
  * Colors used (4 total to match the design constraints):
- * - Background (near-black): #0B0C0B
- * - Foreground/off-white:   #EAE6CF
+ * - Background (near-black): #0e0f0f
+ * - Foreground/off-white:   #FEFCE1
  * - Accent gradient start:  #ECE8C8
  * - Accent gradient end:    #CFC99D
  */
@@ -22,23 +22,23 @@ export default function Navbar() {
     href: string
     children: React.ReactNode
   }) => (
-    <a href={href} className="text-[18px] text-[#EAE6CF]/85 hover:text-[#EAE6CF] transition-colors">
+    <a href={href} className="text-[18px] text-[#FEFCE1]/85 hover:text-[#FEFCE1] transition-colors">
       {children}
     </a>
   )
 
   return (
     <header className="sticky top-0 z-50 shadow-[0_1px_0_0_rgba(255,255,255,0.1)]" role="banner">
-      <nav aria-label="Primary" className="bg-[#0B0C0B] text-[#EAE6CF] px-5 md:px-8">
+      <nav aria-label="Primary" className="bg-[#0e0f0f] text-[#FEFCE1] px-5 md:px-8">
         <div className="relative mx-auto max-w-[1420px] h-20 md:h-24">
           {/* Left: Brand */}
           <div className="absolute left-0 top-1/2 -translate-y-1/2 flex items-center gap-2.5">
-            <div className="relative h-10 w-10 rounded-2xl shadow-sm overflow-hidden">
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-[#ECE8C8] to-[#CFC99D]" />
-              <svg className="relative z-10 block" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
-                <rect x="2" y="2" width="36" height="36" rx="12" fill="transparent" />
-                <circle cx="20" cy="20" r="8.5" fill="none" stroke="#0B0C0B" strokeWidth="6" />
-              </svg>
+            <div className="relative h-11 w-11 lg:h-12 lg:w-12 rounded-2xl shadow-sm overflow-hidden">
+              <img 
+                src="/images/experience/sm-logo1.png" 
+                alt="Olyve Schwarz Logo" 
+                className="h-full w-full object-contain"
+              />
             </div>
             <span className="text-lg lg:text-2xl font-medium tracking-tight">Olyve Schwarz</span>
           </div>
@@ -67,14 +67,13 @@ export default function Navbar() {
             <div className="flex items-center gap-2">
               <a
                 href="#contact"
-                className="hidden lg:inline-flex items-center rounded-full px-6 py-2.5 lg:px-7 lg:py-3 text-[16px] lg:text-[18px] font-medium text-[#0B0C0B] shadow-sm
-                           bg-gradient-to-b from-[#ECE8C8] to-[#CFC99D] hover:brightness-[.97] transition border border-[#EAE6CF]/20"
+                className="hidden lg:inline-flex items-center rounded-full px-6 py-2.5 lg:px-7 lg:py-3 text-[16px] lg:text-[18px] font-medium text-[#0e0f0f] shadow-sm border border-[#FEFCE1]/20 cursor-pointer gradient-button"
               >
                 Hire Me
               </a>
 
               <button
-                className="lg:hidden inline-flex items-center justify-center h-10 w-10 rounded-md text-[#EAE6CF] hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-[#EAE6CF]/30"
+                className="lg:hidden inline-flex items-center justify-center h-10 w-10 rounded-md text-[#FEFCE1] hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-[#FEFCE1]/30 cursor-pointer"
                 aria-label="Toggle menu"
                 aria-expanded={open}
                 onClick={() => setOpen((v) => !v)}
@@ -94,7 +93,7 @@ export default function Navbar() {
         )}
 
         {/* Mobile menu */}
-        <div className={`lg:hidden fixed top-0 left-0 h-full w-80 max-w-[85vw] bg-[#0B0C0B] z-50 transform transition-transform duration-300 ease-in-out ${
+        <div className={`lg:hidden fixed top-0 left-0 h-full w-80 max-w-[85vw] bg-[#0e0f0f] z-50 transform transition-transform duration-300 ease-in-out ${
           open ? 'translate-x-0' : '-translate-x-full'
         }`}>
           <div className="flex flex-col h-full">
@@ -102,17 +101,17 @@ export default function Navbar() {
             <div className="flex items-center justify-between p-6 border-b border-white/5">
               <div className="flex items-center gap-2.5">
                 <div className="relative h-10 w-10 rounded-2xl shadow-sm overflow-hidden">
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-[#ECE8C8] to-[#CFC99D]" />
-                  <svg className="relative z-10 block" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
-                    <rect x="2" y="2" width="36" height="36" rx="12" fill="transparent" />
-                    <circle cx="20" cy="20" r="8.5" fill="none" stroke="#0B0C0B" strokeWidth="6" />
-                  </svg>
+                  <img 
+                    src="/images/experience/sm-logo1.png" 
+                    alt="Olyve Schwarz Logo" 
+                    className="h-full w-full object-contain"
+                  />
                 </div>
-                <span className="text-lg font-medium tracking-tight text-[#EAE6CF]">Olyve Schwarz</span>
+                <span className="text-lg font-medium tracking-tight text-[#FEFCE1]">Olyve Schwarz</span>
               </div>
               <button
                 onClick={() => setOpen(false)}
-                className="inline-flex items-center justify-center h-10 w-10 rounded-md text-[#EAE6CF] hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-[#EAE6CF]/30"
+                className="inline-flex items-center justify-center h-10 w-10 rounded-md text-[#FEFCE1] hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-[#FEFCE1]/30 cursor-pointer"
                 aria-label="Close menu"
               >
                 <X size={22} />
@@ -125,7 +124,7 @@ export default function Navbar() {
                 <li>
                   <a 
                     href="#services" 
-                    className="block text-[18px] text-[#EAE6CF]/85 hover:text-[#EAE6CF] transition-colors py-2"
+                    className="block text-[18px] text-[#FEFCE1]/85 hover:text-[#FEFCE1] transition-colors py-2"
                     onClick={() => setOpen(false)}
                   >
                     Services
@@ -134,7 +133,7 @@ export default function Navbar() {
                 <li>
                   <a 
                     href="#works" 
-                    className="block text-[18px] text-[#EAE6CF]/85 hover:text-[#EAE6CF] transition-colors py-2"
+                    className="block text-[18px] text-[#FEFCE1]/85 hover:text-[#FEFCE1] transition-colors py-2"
                     onClick={() => setOpen(false)}
                   >
                     Works
@@ -143,7 +142,7 @@ export default function Navbar() {
                 <li>
                   <a 
                     href="#about" 
-                    className="block text-[18px] text-[#EAE6CF]/85 hover:text-[#EAE6CF] transition-colors py-2"
+                    className="block text-[18px] text-[#FEFCE1]/85 hover:text-[#FEFCE1] transition-colors py-2"
                     onClick={() => setOpen(false)}
                   >
                     About
@@ -152,7 +151,7 @@ export default function Navbar() {
                 <li>
                   <a 
                     href="#testimonials" 
-                    className="block text-[18px] text-[#EAE6CF]/85 hover:text-[#EAE6CF] transition-colors py-2"
+                    className="block text-[18px] text-[#FEFCE1]/85 hover:text-[#FEFCE1] transition-colors py-2"
                     onClick={() => setOpen(false)}
                   >
                     Testimonials
@@ -161,7 +160,7 @@ export default function Navbar() {
                 <li>
                   <a 
                     href="#contact" 
-                    className="block text-[18px] text-[#EAE6CF]/85 hover:text-[#EAE6CF] transition-colors py-2"
+                    className="block text-[18px] text-[#FEFCE1]/85 hover:text-[#FEFCE1] transition-colors py-2"
                     onClick={() => setOpen(false)}
                   >
                     Say Hello
@@ -174,8 +173,7 @@ export default function Navbar() {
             <div className="p-6 border-t border-white/5">
               <a
                 href="#contact"
-                className="block w-full text-center rounded-full px-7 py-3 text-[18px] font-medium text-[#0B0C0B]
-                           bg-gradient-to-b from-[#ECE8C8] to-[#CFC99D] hover:brightness-[.97] transition border border-[#EAE6CF]/20"
+                className="block w-full text-center rounded-full px-7 py-3 text-[18px] font-medium text-[#0e0f0f] border border-[#FEFCE1]/20 cursor-pointer gradient-button"
                 onClick={() => setOpen(false)}
               >
                 Hire Me

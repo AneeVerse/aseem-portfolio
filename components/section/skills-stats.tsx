@@ -2,7 +2,7 @@ const skills = ["Figma", "Photoshop", "Webflow", "Framer", "After Effects", "Ill
 
 export function SkillsStatsSection() {
   return (
-    <section className="bg-[#0B0C0B] text-[#EAE6CF]">
+    <section className="bg-[#0e0f0f] text-[#FEFCE1]">
       <div className="mx-auto max-w-7xl px-5 md:px-8 pb-6">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           {/* Skills */}
@@ -12,7 +12,7 @@ export function SkillsStatsSection() {
               {skills.map((s) => (
                 <li
                   key={s}
-                  className="rounded-md bg-[#0B0C0B] px-3 py-2 text-center text-xs ring-1 ring-white/10 text-[#EAE6CF]/85"
+                  className="rounded-md bg-[#0e0f0f] px-3 py-2 text-center text-xs ring-1 ring-white/10 text-[#FEFCE1]/85"
                 >
                   {s}
                 </li>
@@ -24,11 +24,11 @@ export function SkillsStatsSection() {
           <div className="grid grid-cols-2 gap-4">
             <article className="rounded-xl bg-[#141513] ring-1 ring-white/8 p-5">
               <div className="text-2xl font-semibold">12</div>
-              <div className="mt-1 text-xs text-[#EAE6CF]/60">Years Experience</div>
+              <div className="mt-1 text-xs text-[#FEFCE1]/60">Years Experience</div>
             </article>
             <article className="rounded-xl bg-[#141513] ring-1 ring-white/8 p-5">
               <div className="text-2xl font-semibold">3K</div>
-              <div className="mt-1 text-xs text-[#EAE6CF]/60">Completed Hours</div>
+              <div className="mt-1 text-xs text-[#FEFCE1]/60">Completed Hours</div>
             </article>
           </div>
         </div>
@@ -41,7 +41,7 @@ export function SkillsStatsSection() {
           >
             Hire Me
           </a>
-          <span className="text-xs text-[#EAE6CF]/60">Or DM on Twitter</span>
+          <span className="text-xs text-[#FEFCE1]/60">Or DM on Twitter</span>
         </div>
       </div>
     </section>
