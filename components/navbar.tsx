@@ -22,7 +22,7 @@ export default function Navbar() {
     href: string
     children: React.ReactNode
   }) => (
-    <a href={href} className="text-[18px] text-[#FEFCE1]/85 hover:text-[#FEFCE1] transition-colors">
+    <a href={href} className="text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors">
       {children}
     </a>
   )
@@ -124,7 +124,7 @@ export default function Navbar() {
                 <li>
                   <a 
                     href="#services" 
-                    className="block text-[18px] text-[#FEFCE1]/85 hover:text-[#FEFCE1] transition-colors py-2"
+                    className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
                     onClick={() => setOpen(false)}
                   >
                     Services
@@ -133,7 +133,7 @@ export default function Navbar() {
                 <li>
                   <a 
                     href="#works" 
-                    className="block text-[18px] text-[#FEFCE1]/85 hover:text-[#FEFCE1] transition-colors py-2"
+                    className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
                     onClick={() => setOpen(false)}
                   >
                     Works
@@ -142,7 +142,7 @@ export default function Navbar() {
                 <li>
                   <a 
                     href="#about" 
-                    className="block text-[18px] text-[#FEFCE1]/85 hover:text-[#FEFCE1] transition-colors py-2"
+                    className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
                     onClick={() => setOpen(false)}
                   >
                     About
@@ -151,7 +151,7 @@ export default function Navbar() {
                 <li>
                   <a 
                     href="#testimonials" 
-                    className="block text-[18px] text-[#FEFCE1]/85 hover:text-[#FEFCE1] transition-colors py-2"
+                    className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
                     onClick={() => setOpen(false)}
                   >
                     Testimonials
@@ -160,7 +160,7 @@ export default function Navbar() {
                 <li>
                   <a 
                     href="#contact" 
-                    className="block text-[18px] text-[#FEFCE1]/85 hover:text-[#FEFCE1] transition-colors py-2"
+                    className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
                     onClick={() => setOpen(false)}
                   >
                     Say Hello
