@@ -5,39 +5,25 @@ import { Quote, ChevronLeft, ChevronRight } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Andrea De Santis",
-    role: "CEO, Agresar Soft Inc.",
+    name: "Avinash Salunke",
+    role: "Insects Reptiles amphibians Wildlife management Expertise",
     quote:
-      "Extremely professional, unique and enjoyable. The effort taken to ensure sed quia non numquam eius modi tempora incidunt ut labore voluptatem rerum ensured the optimum outcome.",
-    avatar: "/images/testimonals/testm-user1.jpg",
+      "I have known Dr. Aseem Gokarna since childhood, both as a dedicated student and a passionate practitioner of plant gardening. Her deep-rooted knowledge and commitment to urban greenery have been evident throughout her journey. As a Hortitect, she has worked towards making cities both livable and lovable through strategic urban planning...",
+    avatar: "/images/testimonals/1.jpg",
   },
   {
-    name: "Thomas Luze",
-    role: "Senior Product Developer @ ThisOne",
+    name: "Ashok Suyal",
+    role: "Senior Advisor | Startup Mentor | ESG & HR Strategy",
     quote:
-      "Extremely professional, unique and enjoyable. The effort taken to ensure sed quia non numquam eius modi tempora incidunt ut labore voluptatem rerum ensured the optimum outcome.",
-    avatar: "/images/testimonals/testm-user2.jpg",
+      "For Dr. Aseem being Passionate is not enough when it comes to caring for environment. She's an Eco Warrior and works towards conserving and spreading knowledge that asks for commitment that's addictive in nature. As urban populations grow, it's imperative that ownership is instilled in habitants...",
+    avatar: "/images/testimonals/2.jpg",
   },
   {
-    name: "Sarah Johnson",
-    role: "Creative Director @ DesignCo",
+    name: "Col Rajesh Dubey (Retd)",
+    role: "Admin infrastructure & Corporate Mgmt service Professional",
     quote:
-      "Outstanding work that exceeded our expectations. The attention to detail and creative approach made our project stand out in the market.",
-    avatar: "/images/testimonals/testm-user3.jpg",
-  },
-  {
-    name: "Michael Chen",
-    role: "Founder @ TechStart",
-    quote:
-      "Professional, innovative, and delivered on time. The design solutions provided were exactly what we needed for our brand identity.",
-    avatar: "/images/testimonals/testm-user1.jpg",
-  },
-  {
-    name: "Emma Rodriguez",
-    role: "Marketing Manager @ BrandHub",
-    quote:
-      "Exceptional creativity and understanding of our vision. The final deliverables were beyond our expectations and helped elevate our brand.",
-    avatar: "/images/testimonals/testm-user2.jpg",
+      "Dr Aseem was our first business partner to design green cover of our green field 700 acre plant in its first phase - highly professional and customer centric. Catered for all our needs. It is heartening to see her growing in experience and service. We cherish fond business relationships even today...",
+    avatar: "/images/testimonals/3.jpg",
   },
 ]
 
@@ -49,45 +35,68 @@ export function TestimonialsSection() {
   const isDraggingRef = React.useRef(false)
   const startXRef = React.useRef(0)
   const startScrollRef = React.useRef(0)
+  const hasDraggedRef = React.useRef(false)
 
   // Drag to scroll with Pointer Events (supports mouse + touch)
   const onPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
     const el = trackRef.current
     if (!el) return
+    
+    // Don't start drag if clicking on a link
+    if ((e.target as HTMLElement).closest('a')) {
+      return
+    }
+    
     isDraggingRef.current = true
+    hasDraggedRef.current = false
     startXRef.current = e.clientX
     startScrollRef.current = el.scrollLeft
     el.setPointerCapture(e.pointerId)
     el.classList.add("cursor-grabbing")
-    // Prevent text selection during drag
-    e.preventDefault()
   }
 
   const onPointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
     const el = trackRef.current
     if (!el || !isDraggingRef.current) return
     const dx = e.clientX - startXRef.current
-    // Maximum sensitivity for very easy dragging
-    el.scrollLeft = startScrollRef.current - (dx * 12)
+    
+    // If moved more than 5 pixels, consider it a drag
+    if (Math.abs(dx) > 5) {
+      hasDraggedRef.current = true
+      // Maximum sensitivity for very easy dragging
+      el.scrollLeft = startScrollRef.current - (dx * 12)
+      e.preventDefault()
+    }
   }
 
   const endDrag = (e: React.PointerEvent<HTMLDivElement>) => {
     const el = trackRef.current
     if (!el) return
     isDraggingRef.current = false
+    
     // Optional: snap to nearest card after drag
-    const cards = Array.from(el.querySelectorAll<HTMLElement>("[data-testimonial-card]"))
-    if (cards.length) {
-      const cardWidth = cards[0].offsetWidth
-      const gap = Number.parseInt(getComputedStyle(el).columnGap || getComputedStyle(el).gap || "24", 10) || 24
-      const step = cardWidth + gap
-      const target = Math.round(el.scrollLeft / step) * step
-      el.scrollTo({ left: clamp(target, 0, el.scrollWidth), behavior: "smooth" })
+    if (hasDraggedRef.current) {
+      const cards = Array.from(el.querySelectorAll<HTMLElement>("[data-testimonial-card]"))
+      if (cards.length) {
+        const cardWidth = cards[0].offsetWidth
+        const gap = Number.parseInt(getComputedStyle(el).columnGap || getComputedStyle(el).gap || "24", 10) || 24
+        const step = cardWidth + gap
+        const target = Math.round(el.scrollLeft / step) * step
+        el.scrollTo({ left: clamp(target, 0, el.scrollWidth), behavior: "smooth" })
+      }
     }
+    
     el.classList.remove("cursor-grabbing")
     try {
       el.releasePointerCapture((e as any).pointerId)
     } catch {}
+  }
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    // Prevent navigation if we just finished dragging
+    if (hasDraggedRef.current) {
+      e.preventDefault()
+    }
   }
 
   const scrollStep = (dir: -1 | 1) => {
@@ -126,14 +135,24 @@ export function TestimonialsSection() {
           <style>{`.hide-scrollbar::-webkit-scrollbar{display:none}`}</style>
 
           {testimonials.map((t) => (
-            <figure
+            <a
               key={t.name}
-              data-testimonial-card
-              className="
-                min-w-[320px] sm:min-w-[380px] md:min-w-[480px] lg:min-w-[620px]
-                snap-start relative overflow-hidden rounded-2xl bg-[#141513] ring-1 ring-white/8 p-8 md:p-12
-              "
+              href="https://www.linkedin.com/in/dr-aseem-gokarn-harwansh-14b11133/details/recommendations/?detailScreenTabIndex=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+              onClick={handleLinkClick}
             >
+              <figure
+                data-testimonial-card
+                className="
+                  min-w-[320px] sm:min-w-[380px] md:min-w-[480px] lg:min-w-[620px]
+                  min-h-[320px] md:min-h-[360px]
+                  snap-start relative overflow-hidden rounded-2xl bg-[#141513] ring-1 ring-white/8 p-8 md:p-12
+                  hover:bg-[#1a1b19] hover:ring-white/12 transition-all duration-300 cursor-pointer
+                  flex flex-col justify-between
+                "
+              >
               {/* Top row: name/role left, avatar right */}
               <div className="flex items-start justify-between gap-4">
                 <figcaption>
@@ -148,14 +167,18 @@ export function TestimonialsSection() {
                 />
               </div>
 
-              {/* Decorative opening quote */}
-              <Quote className="mt-6 h-6 w-6 md:h-7 md:w-7 text-[#FEFCE1]/35" aria-hidden="true" />
+              {/* Quote section */}
+              <div className="flex-1 flex flex-col justify-center">
+                {/* Decorative opening quote */}
+                <Quote className="mt-6 h-6 w-6 md:h-7 md:w-7 text-[#FEFCE1]/35" aria-hidden="true" />
 
-              {/* Quote text */}
-              <blockquote className="mt-4 md:mt-6 text-base md:text-lg leading-7 md:leading-8 text-[#FEFCE1]/50">
-                "{t.quote}"
-              </blockquote>
-            </figure>
+                {/* Quote text */}
+                <blockquote className="mt-4 md:mt-6 text-base md:text-lg leading-7 md:leading-8 text-[#FEFCE1]/50">
+                  "{t.quote}"
+                </blockquote>
+              </div>
+              </figure>
+            </a>
           ))}
         </div>
 
