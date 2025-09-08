@@ -5,27 +5,27 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'aseem',
-  description: 'Created by roger',
+  title: 'Dr. Aseem Gokarn Harwansh',
+  description: 'Dr. Aseem Gokarn Harwansh',
   icons: {
     icon: [
       {
-        url: '/images/aan1.png',
+        url: '/images/Fav-icon.png',
         type: 'image/png',
       },
       {
-        url: '/images/aan1.png',
+        url: '/images/Fav-icon.png',
         type: 'image/png',
         sizes: '32x32',
       },
       {
-        url: '/images/aan1.png',
+        url: '/images/Fav-icon.png',
         type: 'image/png', 
         sizes: '16x16',
       },
     ],
-    shortcut: '/images/aan1.png',
-    apple: '/images/aan1.png',
+    shortcut: '/images/Fav-icon.png',
+    apple: '/images/Fav-icon.png',
   },
 }
 
