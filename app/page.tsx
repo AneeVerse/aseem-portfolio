@@ -16,10 +16,10 @@ export default function Page() {
     <>
       <Navbar />
       <HeroSection />
-      <ServicesSection />
+      <AboutSection />
       <WorksSection />
       <BooksSection />
-      <AboutSection />
+     
       <TestimonialsSection />
       <ArticlesSection />
       <MarqueeBar />

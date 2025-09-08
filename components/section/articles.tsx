@@ -1,66 +1,30 @@
 "use client"
 
 import React from "react"
-import { Calendar, Clock3, Eye, ChevronLeft, ChevronRight, Tag } from "lucide-react"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 type Post = {
-  title: string
   img: string
-  date: string
-  read: string
-  views: string
-  tag?: string
 }
 
 const posts: Post[] = [
-  {
-    title: "The magic behind memorable design systems",
-    img: "/images/articles/post-img1.jpg",
-    date: "June 16",
-    read: "6 min read",
-    views: "1.2k",
-    tag: "Creative",
-  },
-  {
-    title: "Essential visual toolkit for small business",
-    img: "/images/articles/post-img2.jpg",
-    date: "July 03",
-    read: "5 min read",
-    views: "980",
-    tag: "Visual",
-  },
-  {
-    title: "The ultimate guide to brand packaging",
-    img: "/images/articles/post-img3.jpg",
-    date: "August 21",
-    read: "7 min read",
-    views: "2.1k",
-    tag: "Marketing",
-  },
-  {
-    title: "Building scalable design workflows",
-    img: "/images/articles/post-img1.jpg",
-    date: "September 05",
-    read: "8 min read",
-    views: "1.5k",
-    tag: "Process",
-  },
-  {
-    title: "Color psychology in modern branding",
-    img: "/images/articles/post-img2.jpg",
-    date: "September 18",
-    read: "4 min read",
-    views: "890",
-    tag: "Branding",
-  },
-  {
-    title: "Typography trends for 2024",
-    img: "/images/articles/post-img3.jpg",
-    date: "October 02",
-    read: "6 min read",
-    views: "1.3k",
-    tag: "Typography",
-  },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-01.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-02.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-04.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-06.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-08.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-09.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-10.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-11.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-12.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-13.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-14.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-16.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-17.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-18.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-19.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-27.jpg" },
+  { img: "/images/articles/Revised Newsletters/ACE Scanner_2025_08_29-28.jpg" },
 ]
 
 // Helper: clamp
@@ -123,7 +87,7 @@ export function ArticlesSection() {
 
   return (
     <section id="articles" className="bg-[#0e0f0f] text-[#FEFCE1] border-b border-white/5">
-      <div className="mx-auto max-w-[1365px] px-5 md:px-8 py-12 md:py-16">
+      <div className="mx-auto max-w-[1365px] px-5 md:px-8 py-8 md:py-12">
         <h2 className="text-3xl md:text-5xl font-normal tracking-tight text-[#FEFCE1]/85">Articles</h2>
 
         {/* Track */}
@@ -135,8 +99,8 @@ export function ArticlesSection() {
           onPointerCancel={endDrag}
           onPointerLeave={endDrag}
           className="
-            mt-8 md:mt-10
-            flex gap-6 md:gap-8 overflow-x-auto snap-x snap-mandatory
+            mt-6 md:mt-8
+            flex gap-4 md:gap-6 overflow-x-auto snap-x snap-mandatory
             scroll-smooth select-none cursor-grab
             pb-4 [-ms-overflow-style:none] [scrollbar-width:none]
           "
@@ -146,55 +110,30 @@ export function ArticlesSection() {
           {/* hide scrollbar (WebKit) */}
           <style>{`.hide-scrollbar::-webkit-scrollbar{display:none}`}</style>
 
-          {posts.map((p) => (
+          {posts.map((p, index) => (
             <article
-              key={p.title}
+              key={`newsletter-${index}`}
               data-card
               className="
-                min-w-[300px] sm:min-w-[360px] lg:min-w-[400px]
-                snap-start rounded-2xl bg-[#141513]/95 
-                overflow-hidden shadow-[0_0_0_1px_rgba(255,255,255,0.04)]
-                group cursor-pointer hover:ring-white/15 transition-all"
+                min-w-[280px] sm:min-w-[320px] lg:min-w-[360px]
+                w-[280px] sm:w-[320px] lg:w-[360px]
+                h-[280px] sm:h-[320px] lg:h-[360px]
+                snap-start rounded-xl bg-[#141513]/50 
+                p-4 md:p-6 group cursor-pointer 
+                hover:bg-[#141513]/70 transition-all duration-300
+                border border-white/5"
             >
-              <div className="p-4 md:p-6 lg:py-3 lg:px-4">
-                <div className="relative">
-                  <img
-                    src={p.img || "/placeholder.svg?height=240&width=420&query=article%20image"}
-                    alt=""
-                    className="h-56 md:h-64 w-full lg:h-80 lg:w-full object-cover rounded-t-xl lg:rounded-t-2xl lg:rounded-b-xl"
-                  />
-                </div>
-
-                {/* Category chip */}
-                <div className="mt-4">
-                  <span className="inline-flex items-center rounded-lg bg-[#141513] border border-white/20 text-[#FEFCE1] px-3 py-1.5 text-sm font-medium group-hover:bg-[#ECE8C8] group-hover:text-[#0e0f0f] group-hover:border-[#ECE8C8] transition-all">
-                    {p.tag || "Article"}
-                  </span>
-                </div>
-
-                {/* Title */}
-                <h3 className="mt-4 text-base md:text-xl font-normal leading-tight text-[#FEFCE1] ">
-                  {p.title}
-                </h3>
-
-                {/* Meta */}
-                <div className="mt-4 flex items-center gap-4 text-sm text-[#FEFCE1]/60 lg:mt-10">
-                  <span className="inline-flex items-center gap-1.5">
-                    <Calendar className="h-4 w-4" />
-                    {p.date}
-                  </span>
-                  <span className="inline-flex items-center gap-1.5">
-                    <Clock3 className="h-4 w-4" />
-                    {p.read}
-                  </span>
-                </div>
-              </div>
+              <img
+                src={p.img || "/placeholder.svg?height=240&width=420&query=article%20image"}
+                alt=""
+                className="w-full h-full object-cover rounded-lg"
+              />
             </article>
           ))}
         </div>
 
         {/* Arrows */}
-        <div className="mt-6 md:mt-8 flex items-center justify-center gap-3">
+        <div className="mt-4 md:mt-6 flex items-center justify-center gap-3">
           <button
             type="button"
             aria-label="Previous articles"

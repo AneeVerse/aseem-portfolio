@@ -91,45 +91,6 @@ export default function ComingSoonPage() {
           </div>
         </div>
 
-        {/* Newsletter Signup */}
-        <div className="bg-[#141513] rounded-2xl p-8 ring-1 ring-white/5">
-          <h3 className="text-xl font-light mb-4">Get Notified</h3>
-          <p className="text-[#FEFCE1]/70 mb-6">
-            Be the first to know when the book launches. We'll send you exclusive updates and early access.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-4 py-3 bg-[#0e0f0f] border border-white/10 rounded-lg text-[#FEFCE1] placeholder-[#FEFCE1]/40 focus:border-white/30 focus:outline-none transition-colors"
-            />
-            <button className="gradient-button text-[#0e0f0f] px-6 py-3 rounded-lg font-medium hover:scale-105 transition-transform">
-              Notify Me
-            </button>
-          </div>
-        </div>
-
-        {/* Book Preview */}
-        <div className="text-center space-y-4">
-          <h3 className="text-xl font-light">What to Expect</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-            <div className="bg-[#141513] rounded-lg p-4 ring-1 ring-white/5">
-              <div className="text-2xl mb-2">🌿</div>
-              <div className="font-medium mb-1">Urban Ecology</div>
-              <div className="text-[#FEFCE1]/60">Deep insights into city nature</div>
-            </div>
-            <div className="bg-[#141513] rounded-lg p-4 ring-1 ring-white/5">
-              <div className="text-2xl mb-2">🏙️</div>
-              <div className="font-medium mb-1">Design Wisdom</div>
-              <div className="text-[#FEFCE1]/60">Professional landscape secrets</div>
-            </div>
-            <div className="bg-[#141513] rounded-lg p-4 ring-1 ring-white/5">
-              <div className="text-2xl mb-2">📖</div>
-              <div className="font-medium mb-1">Practical Guides</div>
-              <div className="text-[#FEFCE1]/60">Actionable advice for all</div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   )

@@ -161,12 +161,12 @@ export function WorksSection() {
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-12">
           <h2 className="text-4xl md:text-5xl font-light">Works</h2>
 
-          <div className="flex flex-wrap gap-2 lg:gap-3 justify-end lg:max-w-4xl lg:ml-auto">
+          <div className="flex flex-wrap gap-2 lg:gap-3 justify-center lg:justify-end lg:max-w-4xl lg:ml-auto">
             {filters.map((filter) => (
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`rounded-full px-4 py-2 lg:px-6 lg:py-2.5 text-sm lg:text-base font-medium text-center leading-tight cursor-pointer transition-all min-h-[44px] flex items-center justify-center ${
+                className={`rounded-full px-4 py-2 lg:px-6 lg:py-2.5 text-sm lg:text-base font-medium text-center leading-tight cursor-pointer transition-all min-h-[44px] flex items-center justify-center w-full sm:w-auto ${
                   activeFilter === filter
                     ? "gradient-button text-[#0e0f0f]"
                     : "bg-transparent text-[#FEFCE1]/70 hover:text-[#FEFCE1] border border-white/10 hover:border-white/20"
@@ -178,10 +178,10 @@ export function WorksSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex overflow-x-auto gap-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 pb-4 md:pb-0 scrollbar-hide">
           {filteredProjects.map((project) => (
-            <article key={project.title} className="group cursor-pointer animate-in fade-in duration-300 h-full" onClick={() => handleProjectClick(project.id)}>
-              <div className="relative overflow-hidden rounded-xl bg-[#141513] ring-1 ring-white/5 hover:ring-white/10 transition-all h-full flex flex-col">
+            <article key={project.title} className="group cursor-pointer animate-in fade-in duration-300 h-full flex-shrink-0 w-80 md:w-auto" onClick={() => handleProjectClick(project.id)}>
+              <div className="relative overflow-hidden rounded-xl bg-[#141513] ring-1 ring-white/5 hover:ring-white/10 transition-all h-full flex flex-col min-h-[400px] md:min-h-0">
                 <div className="relative aspect-[4/3] overflow-hidden p-3">
                   <div className="w-full h-full overflow-hidden rounded-lg">
                     <img

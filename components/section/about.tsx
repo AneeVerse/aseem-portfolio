@@ -44,7 +44,7 @@ export function AboutSection() {
         <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-2 items-center min-h-[70vh] lg:mr-20">
           
           {/* Left Column - Image */}
-          <div className="relative">
+          <div className="relative hidden lg:block">
             <div className="relative w-120 h-150 mx-auto lg:max-w-none mb-20">
               <img
                 src="/images/hero-right.png"
@@ -58,14 +58,14 @@ export function AboutSection() {
           <div className="space-y-8 lg:space-y-12 relative z-10">
             
             {/* Sunburst Icon - Absolutely positioned */}
-            <div className="absolute top-10 -left-155 right-0 z-20">
+            <div className="absolute top-4 -left-8 lg:top-10 lg:-left-155 right-0 z-20 ml-4 ">
               <SunburstIcon />
             </div>
             
             {/* Header - Overflows onto image */}
-            <div className="pt-16 lg:-ml-65 lg:-mt-5">
-              <h2 className="text-4xl md:text-6xl lg:text-7xl xl:text-[110px] font-bold text-[#FEFCE1] uppercase leading-none whitespace-nowrap" style={{letterSpacing: '0.4em'}}>
-                ABOUT US
+            <div className="pt-12 pl-16 lg:pt-16 lg:-ml-65 lg:-mt-5 lg:pl-0 mb-25 ml-10 lg:mb-12 ">
+              <h2 className="text-3xl md:text-5xl lg:text-7xl xl:text-[110px] font-bold text-[#FEFCE1] uppercase leading-none" style={{letterSpacing: '0.4em'}}>
+                <span className="lg:whitespace-nowrap">ABOUT US</span>
               </h2>
             </div>
 

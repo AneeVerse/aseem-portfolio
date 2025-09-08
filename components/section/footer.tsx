@@ -17,7 +17,7 @@ export function SiteFooter() {
           </div>
 
           <nav aria-label="Footer" className="text-sm md:text-base">
-            <ul className="flex items-center gap-6 md:gap-10 text-[#FEFCE1]/75">
+            <ul className="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-10 text-[#FEFCE1]/75">
               <li>
                 <a href="#about" className="hover:text-[#FEFCE1]">
                   About
@@ -51,7 +51,7 @@ export function SiteFooter() {
             </ul>
           </nav>
 
-          <div className="flex items-center gap-5 md:gap-6 text-[#FEFCE1]">
+          <div className="flex items-center justify-center gap-4 md:gap-6 text-[#FEFCE1]">
             <a href="#" aria-label="Instagram" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
               <Instagram className="h-5 w-5" />
             </a>
@@ -66,19 +66,19 @@ export function SiteFooter() {
             </a>
           </div>
 
-          <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-3 items-center gap-4 text-xs md:text-sm text-[#FEFCE1]/60">
-            {/* Left side - Copyright */}
+          <div className="mt-8 w-full space-y-4 md:space-y-0 md:grid md:grid-cols-3 md:items-center md:gap-4 text-xs md:text-sm text-[#FEFCE1]/60">
+            {/* Copyright */}
             <div className="text-center md:text-left">
               <span>© 2025 Aseem Gokarn Harwansh. All rights reserved.</span>
             </div>
             
-            {/* Middle - Privacy & Terms */}
-            <div className="flex items-center justify-center gap-4 md:gap-6">
-              <a href="#" className="hover:text-[#FEFCE1]/80 transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-[#FEFCE1]/80 transition-colors">Terms of Service</a>
+            {/* Privacy & Terms */}
+            <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6">
+              <a href="#" className="hover:text-[#FEFCE1]/80 transition-colors whitespace-nowrap">Privacy Policy</a>
+              <a href="#" className="hover:text-[#FEFCE1]/80 transition-colors whitespace-nowrap">Terms of Service</a>
             </div>
             
-            {/* Right side - Aneeverse */}
+            {/* Aneeverse */}
             <div className="text-center md:text-right">
               <a 
                 href="https://aneeverse.com" 
@@ -86,11 +86,11 @@ export function SiteFooter() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 hover:text-[#FEFCE1]/80 transition-colors"
               >
-                <span>Designed & Managed by Aneeverse</span>
+                <span className="whitespace-nowrap">Designed & Managed by Aneeverse</span>
                 <img 
                   src="/images/aneeverse-logo.svg" 
                   alt="Aneeverse Logo" 
-                  className="h-5 w-5"
+                  className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0"
                 />
               </a>
             </div>

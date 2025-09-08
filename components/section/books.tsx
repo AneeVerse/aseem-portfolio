@@ -52,11 +52,11 @@ export function BooksSection() {
             >
               {/* Book Image */}
               <div className="w-full lg:w-1/2 max-w-sm">
-                <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-[#141513] ring-1 ring-white/5">
+                <div className="relative aspect-[3/4] overflow-hidden rounded-xl">
                   <img
                     src={book.image}
                     alt={`${book.title} book cover`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                   />
                 </div>
               </div>
