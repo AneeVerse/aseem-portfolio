@@ -13,10 +13,10 @@ export function HeroSection() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0"
       >
-        <source src="/video/BG.mp4" type="video/mp4" />
+        <source src="/video/bg1.mp4" type="video/mp4" />
       </video>
-      {/* Overlay to maintain text readability */}
-      <div className="absolute inset-0 bg-black/50 z-10"></div>
+      {/* Overlay with left-to-right gradient */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent z-10"></div>
       <div className="relative z-20 mx-auto max-w-[1365px] px-5 md:px-8 py-10 md:py-14">
         <div className="grid grid-cols-1 mt-8 lg:grid-cols-3 gap-10 lg:gap-16 items-start">
           {/* Left copy */}
@@ -33,7 +33,7 @@ export function HeroSection() {
 
             {/* Increase headline size closer to the template */}
             <h1 id="hero-heading" className="text-pretty max-w-[720px] text-[#FEFCE1]/80 text-4xl md:text-5xl lg:text-[60px] font-normal leading-17 tracking-tight">
-              Every Thing You Imagine Is Real
+              Every Thing <br/> You Imagine Is Real
             </h1>
             <p className="mt-3 text-lg leading-7 text-[#FEFCE1]/50 max-w-[700px] mt-5 mb-10">
             Specializing in nature-based solutions and tech-enabled public space design with 25+ years of expertise. I bridge the gap between architecture and horticulture to create liveable cities that harmonize with nature while serving communities.
@@ -41,7 +41,7 @@ export function HeroSection() {
 
             <div className="mt-6 flex flex-row items-center gap-3 sm:gap-4">
               <a
-                href="#contact"
+                href="#works"
                 className="inline-flex items-center rounded-full px-5 py-3 lg:px-6 lg:py-2.9 text-[16px] lg:text-[18px] font-medium text-[#0e0f0f] whitespace-nowrap cursor-pointer gradient-button"
               >
                 Explore Projects

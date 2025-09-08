@@ -1,0 +1,37 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <radialGradient id="bgGradient" cx="0.5" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#2d6a3e"/>
+      <stop offset="100%" stop-color="#1a4d36"/>
+    </radialGradient>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a8f5a"/>
+      <stop offset="50%" stop-color="#3a7c4a"/>
+      <stop offset="100%" stop-color="#2d6a3e"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="url(#bgGradient)"/>
+  
+  <!-- Stylized tree with modern touch -->
+  <g transform="translate(16,16)">
+    <!-- Tree trunk -->
+    <rect x="-1" y="6" width="2" height="8" fill="#8B4513" rx="1"/>
+    
+    <!-- Tree foliage - organic shapes -->
+    <circle cx="-3" cy="2" r="4" fill="url(#leafGradient)" opacity="0.9"/>
+    <circle cx="3" cy="1" r="3.5" fill="url(#leafGradient)" opacity="0.8"/>
+    <circle cx="0" cy="-2" r="4.5" fill="url(#leafGradient)"/>
+    <circle cx="-1" cy="4" r="3" fill="url(#leafGradient)" opacity="0.7"/>
+    
+    <!-- Modern geometric accent -->
+    <rect x="6" y="-8" width="8" height="1" fill="#a0c4a8" opacity="0.6" rx="0.5"/>
+    <rect x="7" y="-6" width="6" height="1" fill="#a0c4a8" opacity="0.4" rx="0.5"/>
+    <rect x="8" y="-4" width="4" height="1" fill="#a0c4a8" opacity="0.3" rx="0.5"/>
+  </g>
+  
+  <!-- Ground/landscape line -->
+  <path d="M4 26 Q8 24 12 25 Q20 24 28 26 L28 28 Q24 27 20 27 Q12 27 8 28 Q6 27 4 28 Z" fill="#4a7c59" opacity="0.6"/>
+</svg>

@@ -22,7 +22,7 @@ export default function Page() {
      
       <TestimonialsSection />
       <ArticlesSection />
-      <MarqueeBar />
+     
       <ContactSection />
       <SiteFooter />
     </>

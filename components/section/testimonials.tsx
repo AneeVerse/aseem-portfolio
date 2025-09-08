@@ -8,14 +8,14 @@ const testimonials = [
     name: "Avinash Salunke",
     role: "Wildlife Management & Environmental Expertise",
     quote:
-      "I have known Dr. Aseem Gokarna since childhood, both as a dedicated student and a passionate practitioner of plant gardening. Her deep-rooted knowledge and commitment to urban greenery have been evident throughout her journey. As a Hortitect, she has worked towards making cities both livable and lovable through strategic urban planning and innovative design solutions...",
+      "I have known Dr. Aseem Gokarna since childhood, both as a dedicated student and a passionate practitioner of plant gardening. Her deep-rooted knowledge and commitment to urban greenery have been evident throughout her journey. As a Hortitect, she has worked towards making cities both livable and lovable...",
     avatar: "/images/testimonals/1.jpg",
   },
   {
     name: "Ashok Suyal",
     role: "Senior Advisor | Startup Mentor | ESG Strategy",
     quote:
-      "For Dr. Aseem being Passionate is not enough when it comes to caring for environment. She's an Eco Warrior and works towards conserving and spreading knowledge that asks for commitment that's addictive in nature. As urban populations grow, it's imperative that ownership is instilled in habitants by exemplary action leadership...",
+      "For Dr. Aseem being Passionate is not enough when it comes to caring for environment. She's an Eco Warrior and works towards conserving and spreading knowledge that asks for commitment that's addictive in nature. As urban populations grow, it's imperative that ownership is instilled...",
     avatar: "/images/testimonals/2.jpg",
   },
   {
@@ -92,13 +92,6 @@ export function TestimonialsSection() {
     } catch {}
   }
 
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    // Prevent navigation if we just finished dragging
-    if (hasDraggedRef.current) {
-      e.preventDefault()
-    }
-  }
-
   const scrollStep = (dir: -1 | 1) => {
     const el = trackRef.current
     if (!el) return
@@ -135,21 +128,14 @@ export function TestimonialsSection() {
           <style>{`.hide-scrollbar::-webkit-scrollbar{display:none}`}</style>
 
           {testimonials.map((t) => (
-            <a
-              key={t.name}
-              href="https://www.linkedin.com/in/dr-aseem-gokarn-harwansh-14b11133/details/recommendations/?detailScreenTabIndex=0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block"
-              onClick={handleLinkClick}
-            >
+            <div key={t.name} className="block">
               <figure
                 data-testimonial-card
                 className="
                   min-w-[320px] sm:min-w-[380px] md:min-w-[480px] lg:min-w-[620px]
                   h-[380px] md:h-[420px]
                   snap-start relative overflow-hidden rounded-2xl bg-[#141513] ring-1 ring-white/8 p-8 md:p-12
-                  hover:bg-[#1a1b19] hover:ring-white/12 transition-all duration-300 cursor-pointer
+                  hover:bg-[#1a1b19] hover:ring-white/12 transition-all duration-300
                   flex flex-col justify-between
                 "
               >
@@ -168,17 +154,44 @@ export function TestimonialsSection() {
               </div>
 
               {/* Quote section */}
-              <div className="flex-1 flex flex-col justify-center">
+              <div className="flex-1 flex flex-col">
                 {/* Decorative opening quote */}
                 <Quote className="mt-6 h-6 w-6 md:h-7 md:w-7 text-[#FEFCE1]/35" aria-hidden="true" />
 
                 {/* Quote text */}
-                <blockquote className="mt-4 md:mt-6 text-base md:text-lg leading-7 md:leading-8 text-[#FEFCE1]/50">
+                <blockquote className="mt-4 md:mt-6 text-base md:text-lg leading-7 md:leading-8 text-[#FEFCE1]/50 flex-1">
                   "{t.quote}"
                 </blockquote>
+
+                {/* Read More Button */}
+                <div className="mt-6 flex justify-end">
+                <a
+                  href="https://www.linkedin.com/in/dr-aseem-gokarn-harwansh-14b11133/details/recommendations/?detailScreenTabIndex=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    inline-flex items-center gap-2 px-4 py-2 text-sm font-medium 
+                    text-[#FEFCE1]/80 hover:text-[#FEFCE1] 
+                    bg-[#1a1b19] hover:bg-[#252622] 
+                    border border-white/10 hover:border-white/20 
+                    rounded-lg transition-all duration-200
+                  "
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Read More
+                  <svg 
+                    className="w-4 h-4" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+                </div>
               </div>
               </figure>
-            </a>
+            </div>
           ))}
         </div>
 

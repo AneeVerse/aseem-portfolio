@@ -1,0 +1,21 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="8" cy="8" r="8" fill="#1a4d36"/>
+  
+  <!-- Simplified tree for small size -->
+  <g transform="translate(8,8)">
+    <!-- Tree trunk -->
+    <rect x="-0.5" y="3" width="1" height="4" fill="#8B4513"/>
+    
+    <!-- Tree canopy - simplified -->
+    <circle cx="-1" cy="1" r="2" fill="#4a8f5a"/>
+    <circle cx="1" cy="0.5" r="1.8" fill="#3a7c4a"/>
+    <circle cx="0" cy="-1" r="2.2" fill="#2d6a3e"/>
+    
+    <!-- Simple architectural line -->
+    <rect x="3" y="-4" width="4" height="0.5" fill="#a0c4a8" opacity="0.6"/>
+  </g>
+  
+  <!-- Ground line -->
+  <path d="M2 13 Q5 12 8 13 Q11 12 14 13 L14 14 L2 14 Z" fill="#4a7c59" opacity="0.6"/>
+</svg>

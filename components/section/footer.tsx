@@ -53,7 +53,7 @@ export function SiteFooter() {
                     }
                   }}
                 >
-                  Work
+                  Explore Projects
                 </a>
               </li>
               <li>
@@ -131,7 +131,16 @@ export function SiteFooter() {
             </ul>
           </nav>
 
-          <div className="flex items-center justify-center gap-4 md:gap-6 text-[#FEFCE1]">
+          
+
+          <div className="mt-8 w-full space-y-4 md:space-y-0 md:grid md:grid-cols-3 md:items-center md:gap-4 text-xs md:text-sm text-[#FEFCE1]/60">
+            {/* Copyright */}
+            <div className="text-center md:text-left">
+              <span>© 2025 Aseem Gokarn Harwansh. All rights reserved.</span>
+            </div>
+            
+            {/* Privacy & Terms */}
+            <div className="flex items-center justify-center gap-4 md:gap-6 text-[#FEFCE1]">
             <a href="tel:+919820175988" aria-label="Phone" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
               <Phone className="h-5 w-5" />
             </a>
@@ -145,18 +154,6 @@ export function SiteFooter() {
               <Linkedin className="h-5 w-5" />
             </a>
           </div>
-
-          <div className="mt-8 w-full space-y-4 md:space-y-0 md:grid md:grid-cols-3 md:items-center md:gap-4 text-xs md:text-sm text-[#FEFCE1]/60">
-            {/* Copyright */}
-            <div className="text-center md:text-left">
-              <span>© 2025 Aseem Gokarn Harwansh. All rights reserved.</span>
-            </div>
-            
-            {/* Privacy & Terms */}
-            <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6">
-              <a href="#" className="hover:text-[#FEFCE1]/80 transition-colors whitespace-nowrap">Privacy Policy</a>
-              <a href="#" className="hover:text-[#FEFCE1]/80 transition-colors whitespace-nowrap">Terms of Service</a>
-            </div>
             
             {/* Aneeverse */}
             <div className="text-center md:text-right">
