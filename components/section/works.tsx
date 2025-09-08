@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react"
 
 const filters = ["All", "Corporate & Industrial Landscapes", "Urban Parks & Public Spaces", "Infrastructure & Urban Renewal", "Waterfront & Lake Restoration"] as const
 
-const projects = [
+export const projects = [
   // Corporate & Industrial Landscapes
   {
     title: "Mahindra Tower Corporate Headquarters, Chakan",
