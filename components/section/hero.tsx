@@ -33,7 +33,7 @@ export function HeroSection() {
 
             {/* Increase headline size closer to the template */}
             <h1 id="hero-heading" className="text-pretty max-w-[720px] text-[#FEFCE1]/80 text-4xl md:text-5xl lg:text-[60px] font-normal leading-17 tracking-tight">
-              Bring your vision to ultimate reality
+              Every Thing You Imagine Is Real
             </h1>
             <p className="mt-3 text-lg leading-7 text-[#FEFCE1]/50 max-w-[700px] mt-5 mb-10">
             Specializing in nature-based solutions and tech-enabled public space design with 25+ years of expertise. I bridge the gap between architecture and horticulture to create liveable cities that harmonize with nature while serving communities.
@@ -44,7 +44,7 @@ export function HeroSection() {
                 href="#contact"
                 className="inline-flex items-center rounded-full px-5 py-3 lg:px-6 lg:py-2.9 text-[16px] lg:text-[18px] font-medium text-[#0e0f0f] whitespace-nowrap cursor-pointer gradient-button"
               >
-                Say Hello
+                Explore Projects
               </a>
 
               <a

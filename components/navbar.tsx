@@ -73,7 +73,8 @@ export default function Navbar() {
                 <LinkItem href="#about">About</LinkItem>
               </li>
               <li>
-                <LinkItem href="#works">Work</LinkItem>
+                <LinkItem href="#works">Explore Projects
+              </LinkItem>
               </li>
               <li>
                 <LinkItem href="#books">Books</LinkItem>
@@ -201,7 +202,7 @@ export default function Navbar() {
                       }
                     }}
                   >
-                    Work
+                    Explore Projects
                   </a>
                 </li>
                 <li>
