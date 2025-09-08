@@ -28,11 +28,15 @@ export default function Navbar() {
       onClick={(e) => {
         e.preventDefault()
         const target = document.querySelector(href)
-        if (target) {
+        if (target && window.location.pathname === '/') {
+          // If we're on home page and target exists, smooth scroll
           target.scrollIntoView({ 
             behavior: 'smooth',
             block: 'start'
           })
+        } else {
+          // If we're on another page or target doesn't exist, navigate to home page with hash
+          window.location.href = `/${href}`
         }
       }}
     >
@@ -47,14 +51,14 @@ export default function Navbar() {
           {/* Left: Brand */}
           <div className="absolute left-0 top-1/2 -translate-y-1/2 flex items-center gap-2.5">
             <div 
-              className="relative h-20 w-20 lg:h-35 lg:w-35 rounded-2xl shadow-sm overflow-hidden cursor-pointer"
+              className="relative h-30 w-30 lg:h-35 lg:w-35 rounded-2xl shadow-sm overflow-hidden cursor-pointer"
               onClick={() => {
-                const target = document.querySelector('#home')
-                if (target) {
-                  target.scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'start'
-                  })
+                if (window.location.pathname === '/') {
+                  // If on home page, scroll to top
+                  window.scrollTo({ top: 0, behavior: 'smooth' })
+                } else {
+                  // If on another page, navigate to home
+                  window.location.href = '/'
                 }
               }}
             >
@@ -80,7 +84,7 @@ export default function Navbar() {
                 <LinkItem href="#books">Books</LinkItem>
               </li>
               <li>
-                <LinkItem href="#acknowledgements">Acknowledgements</LinkItem>
+                <LinkItem href="#testimonials">Acknowledgements</LinkItem>
               </li>
               <li>
                 <LinkItem href="#articles">Articles</LinkItem>
@@ -96,11 +100,13 @@ export default function Navbar() {
                 onClick={(e) => {
                   e.preventDefault()
                   const target = document.querySelector('#contact')
-                  if (target) {
+                  if (target && window.location.pathname === '/') {
                     target.scrollIntoView({ 
                       behavior: 'smooth',
                       block: 'start'
                     })
+                  } else {
+                    window.location.href = '/#contact'
                   }
                 }}
               >
@@ -135,19 +141,19 @@ export default function Navbar() {
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-white/5">
               <div className="flex items-center gap-2.5">
-                <div 
-                  className="relative h-12 w-12 rounded-2xl shadow-sm overflow-hidden cursor-pointer"
-                  onClick={() => {
-                    setOpen(false)
-                    const target = document.querySelector('#home')
-                    if (target) {
-                      target.scrollIntoView({ 
-                        behavior: 'smooth',
-                        block: 'start'
-                      })
-                    }
-                  }}
-                >
+                  <div 
+                    className="relative h-12 w-12 rounded-2xl shadow-sm overflow-hidden cursor-pointer"
+                    onClick={() => {
+                      setOpen(false)
+                      if (window.location.pathname === '/') {
+                        // If on home page, scroll to top
+                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                      } else {
+                        // If on another page, navigate to home
+                        window.location.href = '/'
+                      }
+                    }}
+                  >
                   <img 
                     src="/images/logo-01.png" 
                     alt="AGH Design Logo" 
@@ -175,11 +181,13 @@ export default function Navbar() {
                       e.preventDefault()
                       setOpen(false)
                       const target = document.querySelector('#about')
-                      if (target) {
+                      if (target && window.location.pathname === '/') {
                         target.scrollIntoView({ 
                           behavior: 'smooth',
                           block: 'start'
                         })
+                      } else {
+                        window.location.href = '/#about'
                       }
                     }}
                   >
@@ -194,11 +202,13 @@ export default function Navbar() {
                       e.preventDefault()
                       setOpen(false)
                       const target = document.querySelector('#works')
-                      if (target) {
+                      if (target && window.location.pathname === '/') {
                         target.scrollIntoView({ 
                           behavior: 'smooth',
                           block: 'start'
                         })
+                      } else {
+                        window.location.href = '/#works'
                       }
                     }}
                   >
@@ -213,11 +223,13 @@ export default function Navbar() {
                       e.preventDefault()
                       setOpen(false)
                       const target = document.querySelector('#books')
-                      if (target) {
+                      if (target && window.location.pathname === '/') {
                         target.scrollIntoView({ 
                           behavior: 'smooth',
                           block: 'start'
                         })
+                      } else {
+                        window.location.href = '/#books'
                       }
                     }}
                   >
@@ -226,17 +238,19 @@ export default function Navbar() {
                 </li>
                 <li>
                   <a 
-                    href="#acknowledgements" 
+                    href="#testimonials" 
                     className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
                     onClick={(e) => {
                       e.preventDefault()
                       setOpen(false)
-                      const target = document.querySelector('#acknowledgements')
-                      if (target) {
+                      const target = document.querySelector('#testimonials')
+                      if (target && window.location.pathname === '/') {
                         target.scrollIntoView({ 
                           behavior: 'smooth',
                           block: 'start'
                         })
+                      } else {
+                        window.location.href = '/#testimonials'
                       }
                     }}
                   >
@@ -251,11 +265,13 @@ export default function Navbar() {
                       e.preventDefault()
                       setOpen(false)
                       const target = document.querySelector('#articles')
-                      if (target) {
+                      if (target && window.location.pathname === '/') {
                         target.scrollIntoView({ 
                           behavior: 'smooth',
                           block: 'start'
                         })
+                      } else {
+                        window.location.href = '/#articles'
                       }
                     }}
                   >
@@ -270,11 +286,13 @@ export default function Navbar() {
                       e.preventDefault()
                       setOpen(false)
                       const target = document.querySelector('#contact')
-                      if (target) {
+                      if (target && window.location.pathname === '/') {
                         target.scrollIntoView({ 
                           behavior: 'smooth',
                           block: 'start'
                         })
+                      } else {
+                        window.location.href = '/#contact'
                       }
                     }}
                   >
@@ -286,23 +304,25 @@ export default function Navbar() {
 
             {/* Footer CTA */}
             <div className="p-6 border-t border-white/5">
-              <a
-                href="#contact"
-                className="block w-full text-center rounded-full px-7 py-3 text-[18px] font-medium text-[#0e0f0f] border border-[#FEFCE1]/20 cursor-pointer gradient-button"
-                onClick={(e) => {
-                  e.preventDefault()
-                  setOpen(false)
-                  const target = document.querySelector('#contact')
-                  if (target) {
-                    target.scrollIntoView({ 
-                      behavior: 'smooth',
-                      block: 'start'
-                    })
-                  }
-                }}
-              >
-                Say Hello
-              </a>
+                <a
+                  href="#contact"
+                  className="block w-full text-center rounded-full px-7 py-3 text-[18px] font-medium text-[#0e0f0f] border border-[#FEFCE1]/20 cursor-pointer gradient-button"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    setOpen(false)
+                    const target = document.querySelector('#contact')
+                    if (target && window.location.pathname === '/') {
+                      target.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                      })
+                    } else {
+                      window.location.href = '/#contact'
+                    }
+                  }}
+                >
+                  Say Hello
+                </a>
             </div>
           </div>
         </div>

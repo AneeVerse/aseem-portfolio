@@ -53,8 +53,8 @@ export function ArticlesSection() {
     const el = trackRef.current
     if (!el || !isDraggingRef.current) return
     const dx = e.clientX - startXRef.current
-    // Maximum sensitivity for very easy dragging
-    el.scrollLeft = startScrollRef.current - (dx * 5)
+    // Smooth dragging sensitivity
+    el.scrollLeft = startScrollRef.current - (dx * 1.5)
   }
 
   const endDrag = (e: React.PointerEvent<HTMLDivElement>) => {
@@ -103,6 +103,7 @@ export function ArticlesSection() {
             flex gap-4 md:gap-6 overflow-x-auto snap-x snap-mandatory
             scroll-smooth select-none cursor-grab
             pb-4 [-ms-overflow-style:none] [scrollbar-width:none]
+            [user-select:none] [-webkit-user-select:none] [-moz-user-select:none]
           "
           // hide scrollbar (WebKit)
           style={{ WebkitOverflowScrolling: "touch" as any }}
@@ -119,15 +120,20 @@ export function ArticlesSection() {
                 w-[280px] sm:w-[320px] lg:w-[360px]
                 h-[280px] sm:h-[320px] lg:h-[360px]
                 snap-start rounded-xl bg-[#141513]/50 
-                p-4 md:p-6 group cursor-pointer 
-                hover:bg-[#141513]/70 transition-all duration-300
-                border border-white/5"
+                p-4 md:p-6 group
+                hover:bg-[#141513]/70 transition-all duration-500
+                border border-white/20 hover:border-white/60
+                hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]
+                pointer-events-none"
             >
-              <img
-                src={p.img || "/placeholder.svg?height=240&width=420&query=article%20image"}
-                alt=""
-                className="w-full h-full object-cover rounded-lg"
-              />
+              <div className="w-full h-full overflow-hidden rounded-lg">
+                <img
+                  src={p.img || "/placeholder.svg?height=240&width=420&query=article%20image"}
+                  alt=""
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  draggable={false}
+                />
+              </div>
             </article>
           ))}
         </div>

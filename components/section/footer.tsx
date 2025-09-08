@@ -1,3 +1,5 @@
+"use client"
+
 import type React from "react"
 import { BrandBadge } from "@/components/brand-badge"
 import { Instagram, Mail, Phone, Linkedin } from "lucide-react"
@@ -8,10 +10,10 @@ export function SiteFooter() {
     <footer className="bg-[#0e0f0f] text-[#FEFCE1] border-t border-white/16">
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24">
         <div className="flex flex-col items-center gap-6 md:gap-8">
-          <div className="relative h-13 w-13 rounded-2xl shadow-sm overflow-hidden">
+          <div className="relative h-30 w-30 lg:h-35 lg:w-35 rounded-2xl shadow-sm overflow-hidden">
             <img 
-              src="/images/experience/sm-logo1.png" 
-              alt="Olyve Schwarz Logo" 
+              src="/images/logo-01.png" 
+              alt="AGH Design Logo" 
               className="h-full w-full object-contain"
             />
           </div>
@@ -19,32 +21,110 @@ export function SiteFooter() {
           <nav aria-label="Footer" className="text-sm md:text-base">
             <ul className="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-10 text-[#FEFCE1]/75">
               <li>
-                <a href="#about" className="hover:text-[#FEFCE1]">
+                <a 
+                  href="#about" 
+                  className="hover:text-[#FEFCE1] transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    const target = document.querySelector('#about')
+                    if (target) {
+                      target.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                      })
+                    }
+                  }}
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#works" className="hover:text-[#FEFCE1]">
+                <a 
+                  href="#works" 
+                  className="hover:text-[#FEFCE1] transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    const target = document.querySelector('#works')
+                    if (target) {
+                      target.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                      })
+                    }
+                  }}
+                >
                   Work
                 </a>
               </li>
               <li>
-                <a href="#books" className="hover:text-[#FEFCE1]">
+                <a 
+                  href="#books" 
+                  className="hover:text-[#FEFCE1] transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    const target = document.querySelector('#books')
+                    if (target) {
+                      target.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                      })
+                    }
+                  }}
+                >
                   Books
                 </a>
               </li>
               <li>
-                <a href="#acknowledgements" className="hover:text-[#FEFCE1]">
+                <a 
+                  href="#testimonials" 
+                  className="hover:text-[#FEFCE1] transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    const target = document.querySelector('#testimonials')
+                    if (target) {
+                      target.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                      })
+                    }
+                  }}
+                >
                   Acknowledgements
                 </a>
               </li>
               <li>
-                <a href="#articles" className="hover:text-[#FEFCE1]">
+                <a 
+                  href="#articles" 
+                  className="hover:text-[#FEFCE1] transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    const target = document.querySelector('#articles')
+                    if (target) {
+                      target.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                      })
+                    }
+                  }}
+                >
                   Articles
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-[#FEFCE1]">
+                <a 
+                  href="#contact" 
+                  className="hover:text-[#FEFCE1] transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    const target = document.querySelector('#contact')
+                    if (target) {
+                      target.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                      })
+                    }
+                  }}
+                >
                   Say Hello
                 </a>
               </li>
