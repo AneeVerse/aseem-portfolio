@@ -132,17 +132,17 @@ export function SiteFooter() {
           </nav>
 
           <div className="flex items-center justify-center gap-4 md:gap-6 text-[#FEFCE1]">
-            <a href="#" aria-label="Instagram" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
-              <Instagram className="h-5 w-5" />
+            <a href="tel:+919820175988" aria-label="Phone" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
+              <Phone className="h-5 w-5" />
             </a>
-            <a href="mailto:Hello@olyve.me" aria-label="Email" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
+            <a href="mailto:studio@aghdesign.co" aria-label="Email" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
               <Mail className="h-5 w-5" />
             </a>
-            <a href="#" aria-label="LinkedIn" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
-              <Linkedin className="h-5 w-5" />
+            <a href="https://www.instagram.com/aseemgokarnharwansh/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
+              <Instagram className="h-5 w-5" />
             </a>
-            <a href="tel:+1234567890" aria-label="Phone" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
-              <Phone className="h-5 w-5" />
+            <a href="https://www.linkedin.com/in/dr-aseem-gokarn-harwansh-14b11133/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
+              <Linkedin className="h-5 w-5" />
             </a>
           </div>
 

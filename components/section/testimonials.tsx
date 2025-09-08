@@ -6,21 +6,21 @@ import { Quote, ChevronLeft, ChevronRight } from "lucide-react"
 const testimonials = [
   {
     name: "Avinash Salunke",
-    role: "Insects Reptiles amphibians Wildlife management Expertise",
+    role: "Wildlife Management & Environmental Expertise",
     quote:
-      "I have known Dr. Aseem Gokarna since childhood, both as a dedicated student and a passionate practitioner of plant gardening. Her deep-rooted knowledge and commitment to urban greenery have been evident throughout her journey. As a Hortitect, she has worked towards making cities both livable and lovable through strategic urban planning...",
+      "I have known Dr. Aseem Gokarna since childhood, both as a dedicated student and a passionate practitioner of plant gardening. Her deep-rooted knowledge and commitment to urban greenery have been evident throughout her journey. As a Hortitect, she has worked towards making cities both livable and lovable through strategic urban planning and innovative design solutions...",
     avatar: "/images/testimonals/1.jpg",
   },
   {
     name: "Ashok Suyal",
-    role: "Senior Advisor | Startup Mentor | ESG & HR Strategy",
+    role: "Senior Advisor | Startup Mentor | ESG Strategy",
     quote:
-      "For Dr. Aseem being Passionate is not enough when it comes to caring for environment. She's an Eco Warrior and works towards conserving and spreading knowledge that asks for commitment that's addictive in nature. As urban populations grow, it's imperative that ownership is instilled in habitants...",
+      "For Dr. Aseem being Passionate is not enough when it comes to caring for environment. She's an Eco Warrior and works towards conserving and spreading knowledge that asks for commitment that's addictive in nature. As urban populations grow, it's imperative that ownership is instilled in habitants by exemplary action leadership...",
     avatar: "/images/testimonals/2.jpg",
   },
   {
     name: "Col Rajesh Dubey (Retd)",
-    role: "Admin infrastructure & Corporate Mgmt service Professional",
+    role: "Infrastructure & Corporate Management Professional",
     quote:
       "Dr Aseem was our first business partner to design green cover of our green field 700 acre plant in its first phase - highly professional and customer centric. Catered for all our needs. It is heartening to see her growing in experience and service. We cherish fond business relationships even today...",
     avatar: "/images/testimonals/3.jpg",
@@ -147,7 +147,7 @@ export function TestimonialsSection() {
                 data-testimonial-card
                 className="
                   min-w-[320px] sm:min-w-[380px] md:min-w-[480px] lg:min-w-[620px]
-                  min-h-[320px] md:min-h-[360px]
+                  h-[380px] md:h-[420px]
                   snap-start relative overflow-hidden rounded-2xl bg-[#141513] ring-1 ring-white/8 p-8 md:p-12
                   hover:bg-[#1a1b19] hover:ring-white/12 transition-all duration-300 cursor-pointer
                   flex flex-col justify-between

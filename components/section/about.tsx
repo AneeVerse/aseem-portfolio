@@ -1,5 +1,5 @@
 import type React from "react"
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import { Mail, Phone, Instagram, Linkedin } from "lucide-react"
 
 // Sunburst/Radial Icon Component
 function SunburstIcon() {
@@ -45,7 +45,7 @@ export function AboutSection() {
           
           {/* Left Column - Image */}
           <div className="relative hidden lg:block">
-            <div className="relative w-120 h-150 mx-auto lg:max-w-none mb-20">
+            <div className="relative w-120 h-168 mx-auto lg:max-w-none mb-20">
               <img
                 src="/images/about.png"
                 alt="Creative professional at work"
@@ -84,31 +84,35 @@ export function AboutSection() {
               </p>
             </div>
 
-            {/* Social Media Icons */}
+            {/* Contact & Social Media Icons */}
             <div className="flex items-center gap-6 pt-4">
               <a 
-                href="#" 
+                href="tel:+919820175988" 
                 className="p-3 rounded-full bg-[#141513] hover:bg-[#1a1b19] transition-colors duration-300 group"
-                aria-label="Facebook"
+                aria-label="Phone"
               >
-                <Facebook className="h-5 w-5 text-[#FEFCE1]/70 group-hover:text-[#FEFCE1] transition-colors" />
+                <Phone className="h-5 w-5 text-[#FEFCE1]/70 group-hover:text-[#FEFCE1] transition-colors" />
               </a>
               <a 
-                href="#" 
+                href="mailto:studio@aghdesign.co" 
                 className="p-3 rounded-full bg-[#141513] hover:bg-[#1a1b19] transition-colors duration-300 group"
-                aria-label="Twitter"
+                aria-label="Email"
               >
-                <Twitter className="h-5 w-5 text-[#FEFCE1]/70 group-hover:text-[#FEFCE1] transition-colors" />
+                <Mail className="h-5 w-5 text-[#FEFCE1]/70 group-hover:text-[#FEFCE1] transition-colors" />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/aseemgokarnharwansh/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 rounded-full bg-[#141513] hover:bg-[#1a1b19] transition-colors duration-300 group"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5 text-[#FEFCE1]/70 group-hover:text-[#FEFCE1] transition-colors" />
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/dr-aseem-gokarn-harwansh-14b11133/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 rounded-full bg-[#141513] hover:bg-[#1a1b19] transition-colors duration-300 group"
                 aria-label="LinkedIn"
               >

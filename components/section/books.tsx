@@ -8,16 +8,16 @@ const books = [
     id: "secrets-urban-backyard",
     title: "Secrets of Your Urban Backyard",
     subtitle: "Secrets of Your Urban Backyard by Dr. Aseem is a soulful journey that invites readers to reconnect with the green spaces surrounding them, no matter how small or overlooked. Whether in a bustling city or nestled in a quieter urban corner, Dr. Aseem brings to life the trees, plants, and wildlife that coexist in our backyards and local parks",
-    image: "/images/book/book1.png",
+    image: "/images/book/aa1.png",
     buttonText: "Get Your Copy",
     link: "https://www.amazon.com/Secrets-your-Urban-Backyard-Citiscapes-ebook/dp/B0FPM33RZ6/ref=sr_1_2",
     available: true
   },
   {
-    id: "nature-wisdom",
-    title: "Nature's Wisdom: Urban Green Chronicles",
-    subtitle: "Discover the hidden stories of urban landscapes through the eyes of an expert landscape architect. This upcoming book explores the intersection of nature and human-made environments, revealing how green spaces transform our cities and our lives. Join Dr. Aseem on another journey through the botanical wonders that surround us daily.",
-    image: "/images/book/book2.png",
+    id: "urban-micro-gardens",
+    title: "Urban Micro Gardens A Book On Plant Care",
+    subtitle: "One of the simplest solutions to the problem of growing plants in the cities where space is limited is the hanging basket. Over the years this form of growing plants has become popular due to its ease in handling and its aesthetic value.",
+    image: "/images/book/aa2.png",
     buttonText: "Get Your Copy",
     link: "/coming-soon",
     available: false

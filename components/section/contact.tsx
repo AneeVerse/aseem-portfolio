@@ -28,7 +28,7 @@ export function ContactSection() {
                 </span>
                 <div>
                   <div className="text-sm uppercase tracking-wide text-[#FEFCE1]/55">Phone</div>
-                  <div className="text-base md:text-lg mt-1">+01 234 567 8902</div>
+                  <div className="text-base md:text-lg mt-1">+91 98201 75988</div>
                 </div>
               </li>
 
@@ -38,7 +38,7 @@ export function ContactSection() {
                 </span>
                 <div>
                   <div className="text-sm uppercase tracking-wide text-[#FEFCE1]/55">Email</div>
-                  <div className="text-base md:text-lg mt-1">sayhello@olyveschwarz.me</div>
+                  <div className="text-base md:text-lg mt-1">studio@aghdesign.co</div>
                 </div>
               </li>
 
@@ -48,7 +48,7 @@ export function ContactSection() {
                 </span>
                 <div>
                   <div className="text-sm uppercase tracking-wide text-[#FEFCE1]/55">Address</div>
-                  <div className="text-base md:text-lg mt-1">Borough 47, Aveton Gifford, Devon, UK, EX4 1QU</div>
+                  <div className="text-base md:text-lg mt-1">Agh design, 307 The Great Eastern summit CBD belapur Navi Mumbai</div>
                 </div>
               </li>
             </ul>
@@ -64,14 +64,14 @@ export function ContactSection() {
           >
             <Input
               id="name"
-              placeholder="John Doe"
+              placeholder="Enter your full name"
               className="h-12 rounded-lg bg-[#0e0f0f] border-0 text-[#FEFCE1] placeholder:text-[#FEFCE1]/40 focus-visible:ring-0"
             />
 
             <Input
               id="email"
               type="email"
-              placeholder="hello@example.com"
+              placeholder="Enter your email address"
               className="h-12 rounded-lg bg-[#0e0f0f] border-0 text-[#FEFCE1] placeholder:text-[#FEFCE1]/40 focus-visible:ring-0"
             />
 
