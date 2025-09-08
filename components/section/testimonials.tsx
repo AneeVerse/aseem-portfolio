@@ -134,7 +134,7 @@ export function TestimonialsSection() {
                 className="
                   min-w-[320px] sm:min-w-[380px] md:min-w-[480px] lg:min-w-[620px]
                   h-[380px] md:h-[420px]
-                  snap-start relative overflow-hidden rounded-2xl bg-[#141513] ring-1 ring-white/8 p-8 md:p-12
+                  snap-start relative overflow-hidden rounded-2xl bg-[#141513] ring-1 ring-white/8 p-6 md:p-12
                   hover:bg-[#1a1b19] hover:ring-white/12 transition-all duration-300
                   flex flex-col justify-between
                 "
@@ -142,29 +142,29 @@ export function TestimonialsSection() {
               {/* Top row: name/role left, avatar right */}
               <div className="flex items-start justify-between gap-4">
                 <figcaption>
-                  <div className="text-lg md:text-xl lg:text-2xl font-normal text-[#FEFCE1]">{t.name}</div>
-                  <div className="text-sm md:text-base text-[#FEFCE1]/70">{t.role}</div>
+                  <div className="text-base md:text-xl lg:text-2xl font-normal text-[#FEFCE1]">{t.name}</div>
+                  <div className="text-xs md:text-base text-[#FEFCE1]/70">{t.role}</div>
                 </figcaption>
 
                 <img
                   src={t.avatar || "/placeholder.svg?height=64&width=64&query=avatar%20placeholder"}
                   alt={`Avatar of ${t.name}`}
-                  className="h-12 w-12 md:h-14 md:w-14 rounded-full ring-1 ring-white/10 object-cover"
+                  className="h-10 w-10 md:h-14 md:w-14 rounded-full ring-1 ring-white/10 object-cover"
                 />
               </div>
 
               {/* Quote section */}
               <div className="flex-1 flex flex-col">
                 {/* Decorative opening quote */}
-                <Quote className="mt-6 h-6 w-6 md:h-7 md:w-7 text-[#FEFCE1]/35" aria-hidden="true" />
+                <Quote className="mt-4 md:mt-6 h-5 w-5 md:h-7 md:w-7 text-[#FEFCE1]/35" aria-hidden="true" />
 
                 {/* Quote text */}
-                <blockquote className="mt-4 md:mt-6 text-base md:text-lg leading-7 md:leading-8 text-[#FEFCE1]/50 flex-1">
+                <blockquote className="mt-3 md:mt-6 text-sm md:text-lg leading-6 md:leading-8 text-[#FEFCE1]/50 flex-1">
                   "{t.quote}"
                 </blockquote>
 
                 {/* Read More Button */}
-                <div className="mt-6 flex justify-end">
+                <div className="mt-4 md:mt-6 flex justify-end">
                 <a
                   href="https://www.linkedin.com/in/dr-aseem-gokarn-harwansh-14b11133/details/recommendations/?detailScreenTabIndex=0"
                   target="_blank"
@@ -195,8 +195,8 @@ export function TestimonialsSection() {
           ))}
         </div>
 
-        {/* Arrows */}
-        <div className="mt-6 md:mt-8 flex items-center justify-center gap-3">
+        {/* Arrows - Hidden on mobile */}
+        <div className="mt-6 md:mt-8 hidden md:flex items-center justify-center gap-3">
           <button
             type="button"
             aria-label="Previous testimonials"

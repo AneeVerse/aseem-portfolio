@@ -139,10 +139,10 @@ export default function Navbar() {
         }`}>
           <div className="flex flex-col h-full">
             {/* Header */}
-            <div className="flex items-center justify-between p-6 border-b border-white/5">
+            <div className="flex items-center justify-between p-4 py-4 border-b border-white/5">
               <div className="flex items-center gap-2.5">
                   <div 
-                    className="relative h-12 w-12 rounded-2xl shadow-sm overflow-hidden cursor-pointer"
+                    className="relative h-30 w-30 rounded-2xl shadow-sm overflow-hidden cursor-pointer"
                     onClick={() => {
                       setOpen(false)
                       if (window.location.pathname === '/') {
@@ -166,7 +166,7 @@ export default function Navbar() {
                 className="inline-flex items-center justify-center h-10 w-10 rounded-md text-[#FEFCE1] hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-[#FEFCE1]/30 cursor-pointer"
                 aria-label="Close menu"
               >
-                <X size={22} />
+              
               </button>
             </div>
 
