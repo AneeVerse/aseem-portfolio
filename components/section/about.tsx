@@ -41,11 +41,11 @@ export function AboutSection() {
       <div className="mx-auto max-w-[1365px] px-5 md:px-8 py-14 md:py-20">
         
         {/* Main Content Container */}
-        <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-2 items-center min-h-[70vh]">
+        <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-2 items-center min-h-[70vh] lg:mr-20">
           
           {/* Left Column - Image */}
           <div className="relative">
-            <div className="relative w-120 h-140 mx-auto lg:max-w-none mb-20">
+            <div className="relative w-120 h-150 mx-auto lg:max-w-none mb-20">
               <img
                 src="/images/hero-right.png"
                 alt="Creative professional at work"
