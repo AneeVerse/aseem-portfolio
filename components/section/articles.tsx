@@ -139,7 +139,7 @@ export function ArticlesSection() {
         </div>
 
         {/* Arrows */}
-        <div className="mt-4 md:mt-6 flex items-center justify-center gap-3">
+        <div className="mt-4 md:mt-6 flex items-center hidden md:flex justify-center gap-3">
           <button
             type="button"
             aria-label="Previous articles"
