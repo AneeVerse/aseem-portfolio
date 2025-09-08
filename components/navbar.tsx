@@ -47,7 +47,7 @@ export default function Navbar() {
           {/* Left: Brand */}
           <div className="absolute left-0 top-1/2 -translate-y-1/2 flex items-center gap-2.5">
             <div 
-              className="relative h-11 w-11 lg:h-12 lg:w-12 rounded-2xl shadow-sm overflow-hidden cursor-pointer"
+              className="relative h-20 w-20 lg:h-35 lg:w-35 rounded-2xl shadow-sm overflow-hidden cursor-pointer"
               onClick={() => {
                 const target = document.querySelector('#home')
                 if (target) {
@@ -59,45 +59,32 @@ export default function Navbar() {
               }}
             >
               <img 
-                src="/images/experience/sm-logo1.png" 
-                alt="Olyve Schwarz Logo" 
+                src="/images/logo-01.png" 
+                alt="AGH Design Logo" 
                 className="h-full w-full object-contain"
               />
             </div>
-            <span 
-              className="text-lg lg:text-2xl font-medium tracking-tight cursor-pointer"
-              onClick={() => {
-                const target = document.querySelector('#home')
-                if (target) {
-                  target.scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'start'
-                  })
-                }
-              }}
-            >
-              Olyve Schwarz
-            </span>
           </div>
 
           <div className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-4 lg:gap-8">
             {/* Nav links */}
             <ul className="hidden lg:flex items-center gap-4 lg:gap-11 2xl:gap-10">
               <li>
-                <LinkItem href="#services">Services</LinkItem>
-              </li>
-              <li>
-                <LinkItem href="#works">Works</LinkItem>
-              </li>
-              <li>
                 <LinkItem href="#about">About</LinkItem>
               </li>
               <li>
-                <LinkItem href="#testimonials">Testimonials</LinkItem>
+                <LinkItem href="#works">Work</LinkItem>
               </li>
               <li>
-                <LinkItem href="#contact">{"Say Hello"}</LinkItem>
+                <LinkItem href="#books">Books</LinkItem>
               </li>
+              <li>
+                <LinkItem href="#acknowledgements">Acknowledgements</LinkItem>
+              </li>
+              <li>
+                <LinkItem href="#articles">Articles</LinkItem>
+              </li>
+             
             </ul>
 
             {/* CTA and Mobile trigger */}
@@ -116,7 +103,7 @@ export default function Navbar() {
                   }
                 }}
               >
-                Hire Me
+                Say Hello
               </a>
 
               <button
@@ -148,7 +135,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between p-6 border-b border-white/5">
               <div className="flex items-center gap-2.5">
                 <div 
-                  className="relative h-10 w-10 rounded-2xl shadow-sm overflow-hidden cursor-pointer"
+                  className="relative h-12 w-12 rounded-2xl shadow-sm overflow-hidden cursor-pointer"
                   onClick={() => {
                     setOpen(false)
                     const target = document.querySelector('#home')
@@ -161,26 +148,11 @@ export default function Navbar() {
                   }}
                 >
                   <img 
-                    src="/images/experience/sm-logo1.png" 
-                    alt="Olyve Schwarz Logo" 
+                    src="/images/logo-01.png" 
+                    alt="AGH Design Logo" 
                     className="h-full w-full object-contain"
                   />
                 </div>
-                <span 
-                  className="text-lg font-medium tracking-tight text-[#FEFCE1] cursor-pointer"
-                  onClick={() => {
-                    setOpen(false)
-                    const target = document.querySelector('#home')
-                    if (target) {
-                      target.scrollIntoView({ 
-                        behavior: 'smooth',
-                        block: 'start'
-                      })
-                    }
-                  }}
-                >
-                  Olyve Schwarz
-                </span>
               </div>
               <button
                 onClick={() => setOpen(false)}
@@ -194,44 +166,6 @@ export default function Navbar() {
             {/* Navigation Links */}
             <nav className="flex-1 px-6 py-6">
               <ul className="flex flex-col gap-6">
-                <li>
-                  <a 
-                    href="#services" 
-                    className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
-                    onClick={(e) => {
-                      e.preventDefault()
-                      setOpen(false)
-                      const target = document.querySelector('#services')
-                      if (target) {
-                        target.scrollIntoView({ 
-                          behavior: 'smooth',
-                          block: 'start'
-                        })
-                      }
-                    }}
-                  >
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    href="#works" 
-                    className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
-                    onClick={(e) => {
-                      e.preventDefault()
-                      setOpen(false)
-                      const target = document.querySelector('#works')
-                      if (target) {
-                        target.scrollIntoView({ 
-                          behavior: 'smooth',
-                          block: 'start'
-                        })
-                      }
-                    }}
-                  >
-                    Works
-                  </a>
-                </li>
                 <li>
                   <a 
                     href="#about" 
@@ -253,12 +187,12 @@ export default function Navbar() {
                 </li>
                 <li>
                   <a 
-                    href="#testimonials" 
+                    href="#works" 
                     className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
                     onClick={(e) => {
                       e.preventDefault()
                       setOpen(false)
-                      const target = document.querySelector('#testimonials')
+                      const target = document.querySelector('#works')
                       if (target) {
                         target.scrollIntoView({ 
                           behavior: 'smooth',
@@ -267,7 +201,64 @@ export default function Navbar() {
                       }
                     }}
                   >
-                    Testimonials
+                    Work
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#books" 
+                    className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
+                    onClick={(e) => {
+                      e.preventDefault()
+                      setOpen(false)
+                      const target = document.querySelector('#books')
+                      if (target) {
+                        target.scrollIntoView({ 
+                          behavior: 'smooth',
+                          block: 'start'
+                        })
+                      }
+                    }}
+                  >
+                    Books
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#acknowledgements" 
+                    className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
+                    onClick={(e) => {
+                      e.preventDefault()
+                      setOpen(false)
+                      const target = document.querySelector('#acknowledgements')
+                      if (target) {
+                        target.scrollIntoView({ 
+                          behavior: 'smooth',
+                          block: 'start'
+                        })
+                      }
+                    }}
+                  >
+                    Acknowledgements
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#articles" 
+                    className="block text-[18px] text-[#FEFCE1]/70 hover:text-[#FEFCE1] transition-colors py-2"
+                    onClick={(e) => {
+                      e.preventDefault()
+                      setOpen(false)
+                      const target = document.querySelector('#articles')
+                      if (target) {
+                        target.scrollIntoView({ 
+                          behavior: 'smooth',
+                          block: 'start'
+                        })
+                      }
+                    }}
+                  >
+                    Articles
                   </a>
                 </li>
                 <li>
@@ -309,7 +300,7 @@ export default function Navbar() {
                   }
                 }}
               >
-                Hire Me
+                Say Hello
               </a>
             </div>
           </div>

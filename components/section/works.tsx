@@ -73,11 +73,11 @@ export function WorksSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project) => (
             <article key={project.title} className="group cursor-pointer animate-in fade-in duration-300">
-              <div className="relative overflow-hidden rounded-2xl bg-[#141513] ring-1 ring-white/5 hover:ring-white/10 transition-all">
-                <div className="relative aspect-[4/3] overflow-hidden p-4">
+              <div className="relative overflow-hidden rounded-xl bg-[#141513] ring-1 ring-white/5 hover:ring-white/10 transition-all">
+                <div className="relative aspect-[4/3] overflow-hidden p-3">
                   <div className="w-full h-full overflow-hidden rounded-lg">
                     <img
                       src={project.img || "/placeholder.svg"}
@@ -87,13 +87,13 @@ export function WorksSection() {
                   </div>
                 </div>
 
-                <div className="p-6">
+                <div className="p-4">
                   <div className="flex items-start justify-between">
                     <div>
-                      <h3 className="text-2xl font-light text-[#FEFCE1] mb-2">{project.title}</h3>
-                      <p className="text-[#FEFCE1]/60 text-sm">{project.description}</p>
+                      <h3 className="text-xl font-light text-[#FEFCE1] mb-1">{project.title}</h3>
+                      <p className="text-[#FEFCE1]/60 text-xs">{project.description}</p>
                     </div>
-                    <ArrowUpRight className="w-5 h-5 text-[#FEFCE1]/40 group-hover:text-[#FEFCE1] transition-colors flex-shrink-0 ml-4" />
+                    <ArrowUpRight className="w-4 h-4 text-[#FEFCE1]/40 group-hover:text-[#FEFCE1] transition-colors flex-shrink-0 ml-3" />
                   </div>
                 </div>
               </div>

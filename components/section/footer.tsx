@@ -1,18 +1,7 @@
 import type React from "react"
 import { BrandBadge } from "@/components/brand-badge"
-import { Instagram, Twitter, Linkedin } from "lucide-react"
+import { Instagram, Mail, Phone, Linkedin } from "lucide-react"
 
-// Simple Behance glyph since lucide-react doesn't include one by default
-function BehanceIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" {...props}>
-      <path
-        fill="currentColor"
-        d="M4.2 8.1h3.9c1.8 0 3 .9 3 2.4 0 1-.6 1.8-1.6 2.1 1.3.3 2 1.2 2 2.4 0 1.7-1.3 2.8-3.5 2.8H4.2V8.1Zm3.7 3.9c.9 0 1.4-.4 1.4-1.1S8.8 9.9 7.9 9.9H6.4V12h1.5Zm.2 4.1c1 0 1.6-.4 1.6-1.2s-.6-1.2-1.6-1.2H6.4v2.4h1.7Zm9.3-5.8c1.9 0 3.3 1.4 3.3 3.6 0 .2 0 .5-.1.7h-4.8c.2 1.1.9 1.7 2 1.7.8 0 1.4-.3 1.9-.9l.8.9c-.6.8-1.6 1.3-2.8 1.3-2 0-3.4-1.4-3.4-3.6 0-2.2 1.4-3.7 3.1-3.7Zm0 1.3c-.9 0-1.6.6-1.8 1.8h3.5c-.1-1.1-.7-1.8-1.7-1.8ZM14.6 8h3.7v1h-3.7V8Z"
-      />
-    </svg>
-  )
-}
 
 export function SiteFooter() {
   return (
@@ -30,28 +19,33 @@ export function SiteFooter() {
           <nav aria-label="Footer" className="text-sm md:text-base">
             <ul className="flex items-center gap-6 md:gap-10 text-[#FEFCE1]/75">
               <li>
-                <a href="#services" className="hover:text-[#FEFCE1]">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#works" className="hover:text-[#FEFCE1]">
-                  Works
-                </a>
-              </li>
-              <li>
                 <a href="#about" className="hover:text-[#FEFCE1]">
                   About
                 </a>
               </li>
               <li>
-                <a href="#testimonials" className="hover:text-[#FEFCE1]">
-                  Testimonials
+                <a href="#works" className="hover:text-[#FEFCE1]">
+                  Work
+                </a>
+              </li>
+              <li>
+                <a href="#books" className="hover:text-[#FEFCE1]">
+                  Books
+                </a>
+              </li>
+              <li>
+                <a href="#acknowledgements" className="hover:text-[#FEFCE1]">
+                  Acknowledgements
+                </a>
+              </li>
+              <li>
+                <a href="#articles" className="hover:text-[#FEFCE1]">
+                  Articles
                 </a>
               </li>
               <li>
                 <a href="#contact" className="hover:text-[#FEFCE1]">
-                  “Say Hello”
+                  Say Hello
                 </a>
               </li>
             </ul>
@@ -61,20 +55,46 @@ export function SiteFooter() {
             <a href="#" aria-label="Instagram" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
               <Instagram className="h-5 w-5" />
             </a>
-            <a href="#" aria-label="X (Twitter)" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
-              <Twitter className="h-5 w-5" />
+            <a href="mailto:Hello@olyve.me" aria-label="Email" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
+              <Mail className="h-5 w-5" />
             </a>
             <a href="#" aria-label="LinkedIn" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
               <Linkedin className="h-5 w-5" />
             </a>
-            <a href="#" aria-label="Behance" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
-              <BehanceIcon className="h-5 w-5" />
+            <a href="tel:+1234567890" aria-label="Phone" className="rounded-md p-2 bg-white/5 hover:bg-white/10 transition">
+              <Phone className="h-5 w-5" />
             </a>
           </div>
 
-          <p className="mt-2 text-xs md:text-sm lg:text-base text-[#FEFCE1]/60 text-center">
-            © {new Date().getFullYear()} © 2024. Olyve WordPress Theme by Tansh
-          </p>
+          <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-3 items-center gap-4 text-xs md:text-sm text-[#FEFCE1]/60">
+            {/* Left side - Copyright */}
+            <div className="text-center md:text-left">
+              <span>© 2025 Aseem Gokarn Harwansh. All rights reserved.</span>
+            </div>
+            
+            {/* Middle - Privacy & Terms */}
+            <div className="flex items-center justify-center gap-4 md:gap-6">
+              <a href="#" className="hover:text-[#FEFCE1]/80 transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-[#FEFCE1]/80 transition-colors">Terms of Service</a>
+            </div>
+            
+            {/* Right side - Aneeverse */}
+            <div className="text-center md:text-right">
+              <a 
+                href="https://aneeverse.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 hover:text-[#FEFCE1]/80 transition-colors"
+              >
+                <span>Designed & Managed by Aneeverse</span>
+                <img 
+                  src="/images/aneeverse-logo.svg" 
+                  alt="Aneeverse Logo" 
+                  className="h-5 w-5"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
