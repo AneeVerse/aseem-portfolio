@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar"
 import { HeroSection } from "@/components/section/hero"
 import { ServicesSection } from "@/components/section/services"
 import { WorksSection } from "@/components/section/works"
+import { BooksSection } from "@/components/section/books"
 import { AboutSection } from "@/components/section/about"
 import { SkillsStatsSection } from "@/components/section/skills-stats"
 import { TestimonialsSection } from "@/components/section/testimonials"
@@ -17,6 +18,7 @@ export default function Page() {
       <HeroSection />
       <ServicesSection />
       <WorksSection />
+      <BooksSection />
       <AboutSection />
       <TestimonialsSection />
       <ArticlesSection />
