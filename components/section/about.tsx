@@ -72,7 +72,7 @@ export function AboutSection() {
             {/* Content Text - Stays on right side */}
             <div className="space-y-6 -mt-10 text-justify">
               <p className="text-sm md:text-base leading-relaxed text-[#FEFCE1]/80 text-justify">
-                <span className="text-[27px] md:text-[44px] font-medium text-justify">Dr. Aseem Gokarn Harwansh</span> is a Doctorate in Urban Landscaping and a self-styled "Hortitect" who has spent more than 25 years creating tech-enabled, nature-based public spaces that fuse architecture with horticulture. As founder and Principal Consultant of the award-winning AGH Design studio, she delivers sustainable landscape and environmental solutions across 14 cities and eight states of India, from Jammu & Kashmir to Tamil Nadu.
+                <span className="text-[27px] md:text-[44px] font-medium text-justify">Dr. Aseem Gokarn Harwansh</span> is a Doctorate in Urban Landscaping and a self-styled "Hortitect" who has spent more than 25 years creating tech-enabled, nature-based public spaces that fuse architecture with horticulture. As founder and Principal Consultant of the award-winning AGH Design studio, she delivers sustainable landscape and environmental solutions across 26 cities and 8 states of India, from Jammu & Kashmir to Tamil Nadu.
               </p>
               
               <p className="text-sm md:text-base leading-relaxed text-[#FEFCE1]/80 text-justify">
