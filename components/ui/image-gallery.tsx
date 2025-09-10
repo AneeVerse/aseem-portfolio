@@ -34,18 +34,31 @@ export function ImageGallery({ images, projectTitle }: ImageGalleryProps) {
     <>
       {/* Gallery Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {images.map((image, index) => (
+        {images.map((image, index) => {
+          const isVideo = /\.mp4$/i.test(image)
+          return (
           <div
             key={index}
             className="relative group cursor-pointer overflow-hidden rounded-xl bg-[#141513] ring-1 ring-white/5 hover:ring-white/10 transition-all"
             onClick={() => openLightbox(index)}
           >
             <div className="aspect-[4/3] overflow-hidden">
-              <img
-                src={image}
-                alt={`${projectTitle} image ${index + 1}`}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              />
+              {isVideo ? (
+                <video
+                  src={image}
+                  className="w-full h-full object-cover"
+                  muted
+                  loop
+                  playsInline
+                  autoPlay
+                />
+              ) : (
+                <img
+                  src={image}
+                  alt={`${projectTitle} image ${index + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              )}
             </div>
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -67,7 +80,8 @@ export function ImageGallery({ images, projectTitle }: ImageGalleryProps) {
               </div>
             </div>
           </div>
-        ))}
+          )
+        })}
       </div>
 
       {/* Lightbox */}
@@ -96,13 +110,23 @@ export function ImageGallery({ images, projectTitle }: ImageGalleryProps) {
               </Button>
             )}
 
-            {/* Main Image */}
+            {/* Main Media */}
             <div className="relative max-w-full max-h-full flex items-center justify-center">
-              <img
-                src={images[currentIndex]}
-                alt={`${projectTitle} image ${currentIndex + 1}`}
-                className="max-w-full max-h-full object-contain rounded-lg"
-              />
+              {/\.mp4$/i.test(images[currentIndex]) ? (
+                <video
+                  src={images[currentIndex]}
+                  className="max-w-full max-h-full object-contain rounded-lg"
+                  controls
+                  autoPlay
+                  playsInline
+                />
+              ) : (
+                <img
+                  src={images[currentIndex]}
+                  alt={`${projectTitle} image ${currentIndex + 1}`}
+                  className="max-w-full max-h-full object-contain rounded-lg"
+                />
+              )}
             </div>
 
             {/* Next Button */}

@@ -155,26 +155,57 @@ const legacyProjects = [
 // Detailed project information that matches with existing projects
 const projectDetails: { [key: string]: any } = {
   "mumbadevi-temple-revamp": {
-    plotArea: "Temple Precinct Area",
+    plotArea: "7530 sq.mt",
     location: "Mumbai",
     client: "Brihanmumbai Mahanagar Palika (BMC)",
-    fullTitle: "PROPOSED INTEGRATED COMMUNITY DEVELOPMENT & BEAUTIFICATION OF MUMBADEVI TEMPLE PRECINCT",
+    fullTitle: "INTEGRATED COMMUNITY DEVELOPMENT & BEAUTIFICATION OF MUMBADEVI TEMPLE PRECINCT",
     description: `Mumbadevi has a tremendous cultural connotation, and is therefore an extremely important center for state, as well as national tourism.
 
 • Lacks a sense of grandeur for the Temple, affecting the image of the CITY.
-• Initiate temple precinct development, first of its kind in the city, in order to protect heritage, encourage economic generation, rehabilitation, and adaptive reuse and safeguard its intangible heritage. (Mumbai has derived its name from the Mumbai devi)
+• Initiate temple precinct development, first of its kind in the city, in order to protect heritage, encourage economic generation, rehabilitation, and adaptive reuse and safeguard its intangible heritage. (Mumbai has derived its name from the Mumbai devi )
 • To develop a heritage walk zone around the temple complex & Zaveri Bazar area in future
 • Development of the adjoining streets by designing uniform shop facades wherever possible to encourage tourism development by preserving the character of the space.
-• Development of road network so that pedestrians can be given more importance
+• Development of the road network so that pedestrians can be given more importance
 • Introduction of electric vehicles for senior citizens & people with special needs
-• Identifying the spaces for future development by not losing character of precinct.
+• Identifying the spaces for future development by not losing character of precinct. 
 • Allocating proper spaces for religious activities (hawan etc)
+• Proper parking (Parking Tower Proposed) and preparation of land use.
 • Integration of garden area as a planned amenity space
-• Reorganization of various MCGM offices (PCO, SWD etc) or chowkies in the area
+• Reorganization of various MCGM offices (PCO, SWD etc )or chowkies in the area
 • Realigning the shops for decluttering of space without hampering their visibility
 • Creation of adequate security arrangements
 • Creating adequate toilet & other amenities for pilgrims`,
     projectStatus: "Ongoing",
+    keyHighlights: [],
+    impactOutcomes: []
+  },
+  "mahim-koliwada": {
+    plotArea: "-",
+    location: "Mahim, Mumbai",
+    client: "Brihanmumbai Mahanagar Palika (BMC)",
+    fullTitle: "PROPOSED INTERGRATED DEVELOPMENT & BEAUTIFICATION OF MAHIM KOLIWADA, MUMBAI",
+    description: `Mahim Koliwada is a locality located in the Mahim neighbourhood of Mumbai, India. "Koliwada" refers to an area predominantly inhabited by the Koli community, which is a fishing community in Mumbai. It is situated on the western side of Mumbai, on the eastern bank of the Mithi River.
+
+Accessibility to the fishing grounds has been affected due to the development of several infrastructural projects like Worli Sea Link and others, which may have affected the migratory routes of fishes, depleting their populations. As cities grow, the cost of living tends to rise. Fishermen and their families are facing increasing expenses for housing, education, healthcare, and other necessities. Since their incomes from fishing do not keep pace with the rising costs, it has resulted in financial hardships and a decline in their overall standard of living.
+
+In an attempt to improve the quality of life, revive the Koli Community History, and Cultural Heritage of Mumbai, The Brihanmumbai Corporation and the State Government of Maharashtra has proposed the “INTEGRATED COMMUNITY DEVELOPMENT AND BEAUTIFICATION  OF MAHIM KOLIWADA” the  city’s first “Tourism Village” and perhaps the First “Tourism Village in a Metro City” in India, that will support the principles of sustainable development and will manage environmental risks effectively and seek to realise the opportunities arising from the positive management of its ecological, economic and social responsibilities.
+
+Restored Public spaces are often the "engine" that drive tourism in many communities. This project thus beckons everyone to discover the hidden gem, Mahim Koliwada, where cultural wonders await curious travellers. Step into the world of the Koli community, Mumbai's proud original inhabitants, as they graciously open their doors to visitors seeking an authentic experience.`,
+    keyHighlights: [],
+    impactOutcomes: []
+  },
+  "worli-koliwada": {
+    plotArea: "70 acres",
+    location: "Worli Koliwada, Mumbai",
+    client: "Brihanmumbai Mahanagar Palika (BMC)",
+    fullTitle: "INTERGRATED DEVELOPKMENT & BEAUTIFICATION OF WORLI KOLIWADA, MUMBAI",
+    description: `Worli Koliwada's strategic location, cultural heritage, and connection to the sea make it a cherished part of Mumbai's identity. Efforts to preserve and beautify the Koliwada aim to celebrate its legacy while ensuring sustainable development and community well-being.
+
+Over the years, the city has grown, and the livelihoods of these fishermen has been greatly affected due to degradation of coastal habitats which serve as important breeding grounds and nurseries of fish resulting in decline of fish populations and reduced catch for the fishermen. 
+
+To address these challenges, it is important to implement sustainable coastal management practices that balance urban development with the preservation of coastal ecosystems and the livelihoods of fishermen. Apart from including measures such as enforcing fishing regulations, promoting responsible fishing practices, implementing pollution control measures, creating protected marine areas, providing alternative livelihood options for fishermen, such as eco-tourism has yet to be explored. In an attempt to do so, the Brihanmumbai Mahanagar Pallika and State Government has proposed the INTEGRATED COMMUNITY DEVELOPMENT AND BEAUTIFICATIOJN AND BEAUTIFICATION of Worli Koliwada. Such a collaboration between government authorities, local communities, and other stakeholders will ensuring the sustainability of both urban growth and the fishing industry.
+
+The Brihanmumbai Mahanagar Pallika and State Government is committed to providing a wide array of recreation and leisure opportunities to enhance overall health and community well-being. To achieve this goal, the Government authorities have proposed The Integrated Development of Worli Koliwada, which will mark the upliftment of 60 acres encompassed by this Koli Village, to provide all appropriate facilities and ambience to promote good health and to improve the overall quality of life of the Koli Community. It will be one of the first attempts and major project to create tourism village in the heart of a busiest Metro City like Mumbai.`,
     keyHighlights: [],
     impactOutcomes: []
   },
@@ -184,9 +215,9 @@ const projectDetails: { [key: string]: any } = {
     client: "Brihanmumbai Mahanagar Palika (BMC)",
     fullTitle: "POWAI WATERFRONT DEVELOPMENT",
     description: `The Powai lake promenade was practically full of rank vegetation.
-Vehicular access impossible due to uneven land profile and presence of wild trees. Removal of stone boulders and leveling of the land was highly impractical.
+Vehicular access impossible due to uneven land profile and presence of wild trees.  Removal of stone boulders and leveling of the land was highly impractical.
 The concept of using these existing site elements to develop the park design profile was hence put forward.
-The Ganesh Ghats were maintained and a nature park was developed as a passive recreational space with the lawns, Walkways and Amphitheatre to enjoy the musical fountain`,
+The Ganesh Ghats were maintained and a nature park was developed as a passive recreational space with the lawns, Walkways and Amphitheatre to enjoy  the musical fountain`,
     keyHighlights: [
       "Maintained existing Ganesh Ghats",
       "Nature park development as passive recreational space",
@@ -212,6 +243,19 @@ Watching Sunrise and Sunset on the waterfront is a popular leisure activity.`,
       "Popular sunrise and sunset viewing spot",
       "Morning and evening walker destination"
     ],
+    impactOutcomes: []
+  },
+  "godavari-riverfront": {
+    plotArea: "-",
+    location: "Panchavati, Nashik",
+    client: "Nasik Smart City Development Corporation",
+    fullTitle: "GODAVARI RIVERFRONT DEVELOPMENT AT PANCHAVATI, NASHIK",
+    description: `The Godavari riverfront development is  intended to  develop the Panchavati precinct of the Goda river by  cleaning and beautifying the area and provide facilities  and restore the old glory of the riverfront.
+The Godavari riverfront development and beautification is  aimed to provide elements and spaces for recreational  activities along with value addition.
+The beautification is proposed considering the  submergence of the existing riverbank in floods, HFL while  adhering to the rules and regulations mentioned by NEERI  for waterfront development.
+Provision of  amphitheater, open  air restaurant, water  bodies , play area, sculptures, green areas etc. shall   provide the natural recreational zones while use of natural  basalt flooring as paving material shall be a step towards  rejuvenating the old natural bank
+Also include the reworking of the pedestrian and vehicular  driveways for hassle-free and smooth traffic movement`,
+    keyHighlights: [],
     impactOutcomes: []
   },
   "amrut-urban-forests": {
@@ -274,8 +318,8 @@ Watching Sunrise and Sunset on the waterfront is a popular leisure activity.`,
   },
   "ihitc-jaipur": {
     plotArea: "Large institutional campus",
-    location: "Jaipur, Rajasthan",
-    client: "Indo-Netherlands Collaboration",
+    location: "JAIPUR, RAJASTHAN",
+    client: "IHITC",
     fullTitle: "INTERNATIONAL HORTICULTURE INNOVATION, TRAINING CENTRE (IHITC) IN JAIPUR, RAJASTHAN",
     description: `The proposed master plan is a formal and axial composition which clearly demarcates academic, residential and recreational areas.
 • The main driveway and the footpath along the axes have been segregated by a continuous green strip at two heights to act as a visual buffer.
@@ -348,9 +392,9 @@ The Children Traffic Training Park consists of a mini–City Chowk showing diffe
   },
   "magnum-opus-juhu": {
     plotArea: "Residential Complex",
-    location: "Juhu, Mumbai",
-    client: "Private Developer",
-    fullTitle: "MAGNUM OPUS., JUHU",
+    location: "JAIPUR, RAJASTHAN",
+    client: "MAGNUM OPUS, JUHU",
+    fullTitle: "MAGNUM OPUS, JUHU",
     description: `Residential Complex with personalized back yard garden on Ground floor facing the Mangroves.
 • Seasonal Blooms, Topiary Plants, seasonal variations were key factors of the landscape.`,
     keyHighlights: [
@@ -363,8 +407,8 @@ The Children Traffic Training Park consists of a mini–City Chowk showing diffe
   },
   "juhi-chawla-residence": {
     plotArea: "Private Residence",
-    location: "Mumbai",
-    client: "Actress Juhi Chawla Mehta",
+    location: "JAIPUR, RAJASTHAN",
+    client: "JUHI CHAWLA",
     fullTitle: "VEER BHAVAN- ACTRESS JUHI CHAWLA's RESIDENCE",
     description: `Celebrity Residence of Actress Juhi Chawla Mehta was designed with seasonal blooms and shade loving plants.
 • The garden periphery had tall trees and creating a color variation with greens was the key focus in the landscape.
@@ -380,8 +424,8 @@ The Children Traffic Training Park consists of a mini–City Chowk showing diffe
   },
   "hiranandani-estate-powai": {
     plotArea: "300+ acres",
-    location: "Powai, Mumbai",
-    client: "Hiranandani Group",
+    location: "JAIPUR, RAJASTHAN",
+    client: "HIRANANDANI",
     fullTitle: "HIRANANDANI ESTATE, POWAI",
     description: `The Hiranandani Estates at Thane were landscaped with wide expanses of lawns interconnected by pathways fringed with different Palm species.`,
     keyHighlights: [
@@ -394,26 +438,16 @@ The Children Traffic Training Park consists of a mini–City Chowk showing diffe
   },
   "palm-beach-residency": {
     plotArea: "Residential Township",
-    location: "Mumbai",
-    client: "Private Developer",
-    fullTitle: "PALM BEACH RESIDENCY",
-    description: `Residential township landscaping project designed to provide modern amenities and green spaces for residents.
-
-• Focus on creating sustainable living environment
-• Integration of recreational facilities within the township
-• Landscaping designed to enhance community living
-• Green corridors and open spaces for residents`,
-    keyHighlights: [
-      "Residential township landscaping",
-      "Community-focused design",
-      "Green space integration",
-      "Modern amenity planning"
-    ],
+    location: "NERUL",
+    client: "WADHWA DEVELOPERS",
+    fullTitle: '"PALM BEACH RESIDENCY", NERUL – WADHWA DEVELOPERS',
+    description: `Podium landscape with swimming pool, play areas and aptly provided tree screens with seasonal flushes to break the monotony, in Navi Mumbai`,
+    keyHighlights: [],
     impactOutcomes: []
   },
   "the-address-wadhwa": {
-    plotArea: "5+ acre podium",
-    location: "Ghatkopar (E), Mumbai",
+    plotArea: "5 acre",
+    location: "GHATKOPAR (E)",
     client: "WADHWA DEVELOPERS",
     fullTitle: '"THE ADDRESS", GHATKOPAR (E) – WADHWA DEVELOPERS',
     description: `A podium of more than 5 acre, this landscape had swimming pools, pergolas, senior citizen areas, yoga & Meditation areas, flower beds, and children play areas
@@ -431,79 +465,461 @@ The Children Traffic Training Park consists of a mini–City Chowk showing diffe
 
 // Function to get all images for a project
 const getProjectImages = (project: any): string[] => {
-  const imageExtensions = ['.jpg', '.JPG', '.jpeg', '.png', '.webp']
   let images: string[] = []
-  
-  // Define image counts for each project based on the folder structure we saw
-  const imageCounts: { [key: string]: number } = {
-    "mahindra-tower-chakan": 12,
-    "the-address-wadhwa": 10,
-    "magnum-opus-juhu": 4,
-    "palm-beach-residency": 7,
-    "juhi-chawla-residence": 6,
-    "amrut-urban-forests": 16,
-    "children-traffic-park-thane": 8,
-    "hiranandani-estate-powai": 5,
-    "oxy-park": 16,
-    "gandhi-udyan": 7,
-    "panvel-theme-parks": 6,
-    "kherwadi-under-bridge": 12,
-    "mumbadevi-temple-revamp": 50, // Including both main folder and final photos
-    "powai-lake-restoration": 5,
-    "nerul-lake-jewel": 5,
-    "ihitc-jaipur": 3,
+
+  // Prefer new work1 structure when categoryFolder is present
+  const basePath = project.categoryFolder
+    ? `/images/work1/${encodeURIComponent(project.categoryFolder)}/${encodeURIComponent(project.folder)}`
+    : `/images/work/${encodeURIComponent(project.tag)}/${encodeURIComponent(project.folder)}`
+
+  // Hand-curated lists based on actual files in work1
+  switch (project.id) {
+    case "amrut-urban-forests": {
+      // Include the two provided drone videos in gallery
+      images.push(
+        "/images/work1/3.%20Amrut%20van-%20Pocket%20Forest/1.mp4",
+        "/images/work1/3.%20Amrut%20van-%20Pocket%20Forest/2.mp4"
+      )
+      break
+    }
+    case "mahim-koliwada": {
+      const files = ["Front page.JPG", "Back Page.JPG"]
+      files.forEach(f => images.push(`${basePath}/${f}`))
+      break
+    }
+    case "worli-koliwada": {
+      const files = ["Front Page.JPG", "Back Page.JPG"]
+      files.forEach(f => images.push(`${basePath}/${f}`))
+      break
+    }
+    case "shivneri-fort-precinct": {
+      const files = ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "WhatsApp Image 2025-09-09 at 6.34.09 PM.jpeg"]
+      files.forEach(f => images.push(`${basePath}/${f}`))
+      break
+    }
+    case "mumbadevi-temple-revamp": {
+      for (let i = 1; i <= 11; i++) {
+        images.push(`/images/work1/1.%20Heritage%20and%20Cultural/1.%20Mumbadevi/${i}.jpg`)
+      }
+      const enscape = [
+        "Enscape_2025-01-20-12-36-33.jpg",
+        "Enscape_2025-01-20-12-51-36.jpg",
+        "Enscape_2025-01-20-13-07-08.jpg",
+        "Enscape_2025-01-20-13-54-26.jpg",
+        "Enscape_2025-01-20-16-09-16.jpg",
+        "Enscape_2025-01-20-16-13-39.jpg",
+      ]
+      enscape.forEach(f => images.push(`/images/work1/1.%20Heritage%20and%20Cultural/1.%20Mumbadevi/${f}`))
+      break
+    }
+    case "powai-lake-restoration": {
+      const powai = [
+        // Numbered images
+        "1.JPG",
+        "2.JPG",
+        "3.JPG",
+        "4.JPG",
+        "5.JPG",
+        "7.jpeg",
+        // DSLR/phone shots
+        "IMG_20180802_162749.jpg",
+        "IMG_20180802_162820.jpg",
+        "IMG_20180802_162845.jpg",
+        "IMG_20180802_162850.jpg",
+        "IMG_20210217_004035.jpg",
+        "IMG_20210217_093948.jpg",
+        "IMG_2165.jpg",
+        "IMG_2166.jpg",
+        "IMG_2167.jpg",
+        "IMG_2278.PNG",
+      ]
+      powai.forEach(f => images.push(`${basePath}/${f}`))
+      break
+    }
+    case "godavari-riverfront": {
+      // Top-level images
+      const godavariTopLevel = [
+        "04576ffb-c392-4bb7-9e4d-f8b21f36cfe3.jpg",
+        "3864f023-5f20-463d-9da5-d963b50c98f6.jpg",
+        "DJI_20250731152159_0189_D (1).JPG",
+        "DJI_20250731152159_0189_D.JPG",
+        "DJI_20250731152229_0190_D (1).JPG",
+        "DJI_20250731152229_0190_D.JPG",
+        "DJI_20250731152232_0191_D.JPG",
+        "DJI_20250731152244_0192_D (1).JPG",
+        "DJI_20250731152244_0192_D.JPG",
+        "DJI_20250731152259_0193_D (1).JPG",
+        "DJI_20250731152259_0193_D.JPG",
+        "DJI_20250731152311_0194_D.JPG",
+        "DJI_20250731152332_0195_D.JPG",
+        "DJI_20250731152348_0196_D.JPG",
+        "DJI_20250731152352_0197_D.JPG",
+        "DJI_20250731152414_0198_D.JPG",
+        "DJI_20250731152424_0200_D (1).JPG",
+        "DJI_20250731152424_0200_D.JPG",
+        "DJI_20250731152550_0203_D.JPG",
+        "DJI_20250731152602_0204_D.JPG",
+        "DJI_20250731152735_0207_D (1).JPG",
+        "DJI_20250731152735_0207_D (2).JPG",
+        "DJI_20250731152735_0207_D.JPG",
+        "DJI_20250731152744_0208_D.JPG",
+        "DJI_20250731152803_0211_D.JPG",
+        "DJI0783.jpg",
+        "DJI0823.jpg",
+        "DJI0861.jpg",
+        "DJI0922.jpg",
+        "DSC08870-HDR-2.jpg",
+        "DSC08880.jpg",
+        "DSC08960.jpg",
+        "DSC09391-HDR.jpg",
+        "DSC09537 (1).jpg",
+        "DSC09537.jpg",
+        "DSVC08935.jpg",
+        "IMG_20180615_162947.jpg",
+        "IMG20231017150358.jpg",
+        "IMG20231017150439.jpg",
+        "WhatsApp Image 2025-08-01 at 9.58.53 AM.jpeg",
+      ]
+      godavariTopLevel.forEach(f => images.push(`${basePath}/${f}`))
+
+      // Construction pictures (nested directory)
+      const constructionPics = [
+        "328634.jpeg",
+        "IMG_20201103_130111.jpg",
+        "IMG_20201103_130205.jpg",
+        "IMG_20201103_132106.jpg",
+        "IMG_20210225_141118.jpg",
+        "IMG_20210317_154419.jpg",
+        "IMG_20210317_154600.jpg",
+        "IMG_20210317_162419.jpg",
+        "IMG_20210610_113436.jpg",
+        "IMG_20210610_113443.jpg",
+        "IMG_20210831_163828.jpg",
+        "IMG_20210831_163915.jpg",
+        "IMG_20210831_164035.jpg",
+        "IMG_20211005_132835.jpg",
+        "IMG_20211005_133606.jpg",
+        "IMG_20211005_133908.jpg",
+        "IMG_20220204_115928.jpg",
+        "IMG_20220204_120003.jpg",
+        "IMG_20220204_133643.jpg",
+        "IMG_20220204_133708.jpg",
+        "IMG_20220204_134300.jpg",
+        "IMG-20210107-WA0116.jpg",
+      ]
+      constructionPics.forEach(f => images.push(`${basePath}/Construction%20pics/${f}`))
+      break
+    }
+    case "oxy-park": {
+      for (let i = 1; i <= 16; i++) {
+        images.push(`${basePath}/${i}.JPG`)
+      }
+      break
+    }
+    case "mahindra-tower-chakan": {
+      // This project lives under an additional subfolder "1. Mahindra"
+      const mahindraBase = `/images/work1/5.%20Industrial%20Landscapes/1.%20Mahindra/${encodeURIComponent(project.folder)}`
+      for (let i = 1; i <= 12; i++) {
+        images.push(`${mahindraBase}/${i}.jpg`)
+      }
+      break
+    }
+    case "ihitc-jaipur": {
+      for (let i = 1; i <= 3; i++) {
+        images.push(`${basePath}/${i}.jpg`)
+      }
+      break
+    }
+    case "the-address-wadhwa": {
+      const files = [
+        // Numbered images
+      
+        "2.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        // Facebook images
+        "FB_IMG_1501662600355.jpg",
+        "FB_IMG_1501662619998.jpg",
+        "FB_IMG_1501662625044.jpg",
+        "FB_IMG_1501662630508.jpg",
+        "FB_IMG_1501662635160.jpg",
+        "FB_IMG_1501662643948.jpg",
+        "FB_IMG_1501662798858.jpg",
+        "FB_IMG_1501662811629.jpg",
+        "FB_IMG_1501662918995.jpg",
+        "FB_IMG_1501662938053.jpg",
+      ]
+      files.forEach(f => images.push(`${basePath}/${f}`))
+      break
+    }
+    case "juhi-chawla-residence": {
+      for (let i = 1; i <= 6; i++) {
+        images.push(`${basePath}/${i}.jpg`)
+      }
+      break
+    }
+    case "magnum-opus-juhu": {
+      for (let i = 1; i <= 4; i++) {
+        images.push(`${basePath}/${i}.jpg`)
+      }
+      break
+    }
+    case "hiranandani-estate-powai": {
+      for (let i = 1; i <= 5; i++) {
+        images.push(`${basePath}/${i}.jpg`)
+      }
+      break
+    }
+    case "palm-beach-residency": {
+      for (let i = 1; i <= 7; i++) {
+        images.push(`${basePath}/${i}.jpg`)
+      }
+      break
+    }
+    case "corporate-mahindra-park": {
+      const files = ["IMG_20170906_152701.jpg","IMG_20170906_152747.jpg","IMG_20170906_152824 (1).jpg"]
+      files.forEach(f => images.push(`${basePath}/${f}`))
+      break
+    }
+    case "children-traffic-park-thane": {
+      const files = [
+        "DSC_9127.JPG","DSC_9144.JPG","DSC_9154.JPG","DSC_9159.JPG","DSC_9160.JPG","DSC_9163.JPG","DSC_9166.JPG","DSC_9173.JPG",
+        "DSC_9214.JPG","DSC_9221.JPG","DSC_9230.JPG","DSC_9231.JPG","DSC_9264.JPG","DSC_9265.JPG","DSC_9272.JPG","DSC_9276.JPG",
+        "DSC_9285.JPG","DSC_9290.JPG","DSC_9302.JPG","DSC_9325.JPG","DSC_9368.JPG","DSC_9419.JPG","DSC_9443.JPG","DSC_9470.JPG",
+        "IMG-20200124-WA0105 (1).jpg","IMG-20200224-WA0157 (2).jpg","IMG-20200313-WA0191.jpg","IMG-20200313-WA0192 (1).jpg","IMG-20200313-WA0198 (1).jpg",
+      ]
+      files.forEach(f => images.push(`${basePath}/${f}`))
+      break
+    }
+    case "nerul-lake-jewel": {
+      const files = ["IMG_20170730_083102.jpg","IMG_20170730_083147.jpg","IMG_20170730_083744.jpg","IMG-20170312-WA0113.jpg"]
+      files.forEach(f => images.push(`${basePath}/${f}`))
+      break
+    }
+    case "gandhi-udyan": {
+      // Top-level
+      images.push(`${basePath}/1.JPG`, `${basePath}/2.JPG`)
+
+      // site images 10th June 2022
+      const june10 = [
+        "WhatsApp Image 2022-08-11 at 3.44.22 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.44.23 PM (1).jpeg",
+        "WhatsApp Image 2022-08-11 at 3.44.23 PM.jpeg",
+      ]
+      june10.forEach(f => images.push(`${basePath}/site%20images%2010th%20June%202022/${f}`))
+
+      // site images 1st July 2022 (all)
+      const july1 = [
+        "WhatsApp Image 2022-08-11 at 2.55.26 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.29 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.31 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 2.55.32 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.34 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.35 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 2.55.37 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.40 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.42 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 2.55.44 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.46 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.47 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 2.55.48 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.49 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.50 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 2.55.51 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.54 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.55 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 2.55.57 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.58 PM.jpeg",
+      ]
+      july1.forEach(f => images.push(`${basePath}/site%20images%201st%20July%202022/${f}`))
+
+      // site images 1st June 2021 (all)
+      const june1 = [
+        "WhatsApp Image 2022-08-11 at 3.13.42 PM.jpeg","WhatsApp Image 2022-08-11 at 3.13.43 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.48 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.13.48 PM (2).jpeg","WhatsApp Image 2022-08-11 at 3.13.48 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.49 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.13.49 PM.jpeg","WhatsApp Image 2022-08-11 at 3.13.50 PM (1).jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.50 PM.jpeg","WhatsApp Image 2022-08-11 at 3.13.51 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.13.51 PM (2).jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.51 PM.jpeg","WhatsApp Image 2022-08-11 at 3.13.52 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.13.52 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.53 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.13.53 PM (2).jpeg","WhatsApp Image 2022-08-11 at 3.13.53 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.54 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.13.54 PM.jpeg","WhatsApp Image 2022-08-11 at 3.13.55 PM (1).jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.55 PM (2).jpeg","WhatsApp Image 2022-08-11 at 3.13.55 PM.jpeg","WhatsApp Image 2022-08-11 at 3.13.56 PM.jpeg",
+      ]
+      june1.forEach(f => images.push(`${basePath}/site%20images%201st%20June%202021/${f}`))
+
+      // Site images 28th Dec 2021
+      const dec28 = [
+        "WhatsApp Image 2022-08-11 at 3.49.27 PM.jpeg","WhatsApp Image 2022-08-11 at 3.49.28 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.49.29 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.49.29 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.49.30 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.49.30 PM.jpeg",
+      ]
+      dec28.forEach(f => images.push(`${basePath}/Site%20images%2028th%20Dec%202021/${f}`))
+
+      // site images 7th April 2022 (all)
+      const apr7 = [
+        "WhatsApp Image 2022-08-11 at 3.19.52 PM.jpeg","WhatsApp Image 2022-08-11 at 3.19.59 PM.jpeg","WhatsApp Image 2022-08-11 at 3.20.25 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.20.26 PM.jpeg","WhatsApp Image 2022-08-11 at 3.20.27 PM.jpeg","WhatsApp Image 2022-08-11 at 3.20.28 PM (1).jpeg",
+        "WhatsApp Image 2022-08-11 at 3.20.28 PM.jpeg","WhatsApp Image 2022-08-11 at 3.20.29 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.20.29 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.20.30 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.20.30 PM (2).jpeg","WhatsApp Image 2022-08-11 at 3.20.30 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.20.31 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.20.31 PM (2).jpeg","WhatsApp Image 2022-08-11 at 3.20.31 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.20.32 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.20.32 PM (2).jpeg","WhatsApp Image 2022-08-11 at 3.20.32 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.20.33 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.20.33 PM (2).jpeg","WhatsApp Image 2022-08-11 at 3.20.33 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.20.34 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.20.34 PM.jpeg",
+      ]
+      apr7.forEach(f => images.push(`${basePath}/site%20images%207th%20April%202022/${f}`))
+      break
+    }
+
+    case "panchtatva-udyan-panvel": {
+      const files = [
+        "20250520_154052.jpg","20250520_154053.jpg","20250520_154109.jpg","20250520_154157.jpg","20250520_154240.jpg","20250520_154253.jpg",
+        "20250520_154302.jpg","20250520_154314.jpg","20250520_154339.jpg","20250520_154403.jpg","20250520_154418.jpg","20250520_154431.jpg",
+        "20250520_154506.jpg","20250520_154518.jpg","20250520_154656.jpg","20250520_154706.jpg","20250520_154711.jpg","20250520_154758.jpg",
+        "20250520_154825.jpg","20250520_154833.jpg","20250520_154936.jpg","20250520_155138.jpg","20250520_155228.jpg","20250520_155239.jpg",
+        "IMG-20241222-WA0022.jpg","IMG-20241222-WA0108.jpg","IMG-20250126-WA0003.jpg",
+        "WhatsApp Image 2025-05-20 at 15.54.02 (1).jpeg","WhatsApp Image 2025-05-20 at 15.54.02 (2).jpeg","WhatsApp Image 2025-05-20 at 15.54.02.jpeg",
+        "WhatsApp Image 2025-05-20 at 15.54.03.jpeg","WhatsApp Image 2025-05-20 at 15.54.04 (1).jpeg","WhatsApp Image 2025-05-20 at 15.54.04.jpeg",
+        "WhatsApp Image 2025-05-20 at 15.54.05 (1).jpeg","WhatsApp Image 2025-05-20 at 15.54.05.jpeg","WhatsApp Image 2025-05-20 at 15.54.06 (1).jpeg",
+        "WhatsApp Image 2025-05-20 at 15.54.07 (1).jpeg",
+      ]
+      files.forEach(f => images.push(`${basePath}/${f}`))
+      break
+    }
+
+    case "dinosaur-park-panvel": {
+      const files = [
+        "20250524_120553.jpg","20250524_120608.jpg","20250524_120612.jpg","20250524_120615.jpg","20250524_120621.jpg","20250524_120646.jpg",
+        "20250524_120657.jpg","20250524_120718.jpg","20250524_120726.jpg","20250524_120739.jpg","20250524_120901.jpg","20250524_120912.jpg",
+        "20250524_120958.jpg","20250524_121003.jpg","20250524_121149.jpg","20250524_121152.jpg","20250524_121228.jpg","20250524_121235.jpg",
+        "20250524_121250.jpg","20250524_121254.jpg","20250524_121504.jpg","20250524_121516.jpg","20250524_121528.jpg","20250524_121602.jpg",
+        "20250524_121618.jpg","20250524_121800.jpg","20250524_121809.jpg","20250524_121837.jpg","20250524_121846.jpg",
+        "IMG-20231204-WA0003.jpg","WhatsApp Image 2025-09-09 at 6.34.10 PM (1).jpeg","WhatsApp Image 2025-09-09 at 6.34.10 PM.jpeg","WhatsApp Image 2025-09-09 at 6.34.11 PM.jpeg",
+      ]
+      files.forEach(f => images.push(`${basePath}/${f}`))
+      break
+    }
+
+    case "rainbow-garden-panvel": {
+      const files = [
+        "20250519_174927.jpg","20250519_174930.jpg","20250519_174950.jpg","20250519_175007.jpg","20250519_175011.jpg","20250519_175032.jpg",
+        "20250519_175048.jpg","20250519_175053.jpg","20250519_175152.jpg","20250524_122754.jpg","20250524_122756.jpg","20250524_122803.jpg",
+        "20250524_122815.jpg","20250524_122817.jpg","20250524_122832.jpg","20250524_122836.jpg","20250524_122840.jpg","20250524_122904.jpg",
+        "20250524_122909.jpg","20250524_122912.jpg","20250524_122915.jpg","20250524_122923.jpg","20250524_122934.jpg","20250524_122948.jpg",
+        "20250524_122957.jpg","20250524_123002.jpg","20250524_123005.jpg","20250524_123010.jpg","20250524_123014.jpg","20250524_123037.jpg",
+        "20250524_123111.jpg","20250524_123145.jpg","20250524_123213.jpg","20250524_123231.jpg","20250524_123251.jpg","20250524_123305.jpg",
+        "20250524_123347.jpg","20250524_123350.jpg","20250524_123416.jpg","20250524_123440.jpg","20250524_123459.jpg","20250524_123503.jpg",
+        "20250524_123520.jpg","20250524_123524.jpg",
+      ]
+      files.forEach(f => images.push(`${basePath}/${f}`))
+      break
+    }
+
+    case "sensory-garden-panvel": {
+      const files = [
+        "20250524_113628.jpg","20250524_113636.jpg","20250524_113644.jpg","20250524_113737.jpg","20250524_113749.jpg","20250524_113753.jpg",
+        "20250524_113828.jpg","20250524_113850.jpg","20250524_113908.jpg","20250524_113927.jpg","20250524_113933.jpg","20250524_114048.jpg",
+        "20250524_114111.jpg","20250524_114120.jpg","20250524_114138.jpg","20250524_114149.jpg","20250524_114248.jpg","20250524_114257.jpg",
+        "20250524_114303.jpg","20250524_114346.jpg","20250524_114418.jpg","20250524_114606.jpg","20250524_114611.jpg","20250524_114619.jpg",
+        "20250524_114626.jpg","20250524_114650.jpg","20250524_114654.jpg","20250524_114718.jpg","20250524_114737.jpg","20250524_114803.jpg",
+        "20250524_114813.jpg","20250524_114817.jpg","20250524_114835.jpg","20250524_115022.jpg","20250524_115027.jpg",
+        "4143ac99-4119-49d6-8447-af34ac547971.jpg","c70c147a-27a3-438b-961b-4a4946c174cb.jpg","WhatsApp Image 2025-06-24 at 13.06.19.jpeg",
+      ]
+      files.forEach(f => images.push(`${basePath}/${f}`))
+      break
+    }
+
+    case "farm-land-park-panvel": {
+      const files = [
+        "WhatsApp Image 2025-07-04 at 1.24.41 PM.jpeg","WhatsApp Image 2025-07-04 at 1.24.42 PM (2).jpeg","WhatsApp Image 2025-07-04 at 1.24.42 PM (3).jpeg",
+        "WhatsApp Image 2025-07-04 at 1.24.43 PM (1).jpeg","WhatsApp Image 2025-07-04 at 1.24.43 PM.jpeg","WhatsApp Image 2025-07-04 at 1.24.45 PM (2).jpeg",
+        "WhatsApp Image 2025-07-04 at 1.24.45 PM (3).jpeg","WhatsApp Image 2025-07-04 at 1.24.45 PM.jpeg","WhatsApp Image 2025-07-04 at 1.24.46 PM (1).jpeg",
+        "WhatsApp Image 2025-07-04 at 1.24.46 PM (2).jpeg","WhatsApp Image 2025-07-04 at 1.24.46 PM (3).jpeg","WhatsApp Image 2025-07-04 at 1.24.46 PM (4).jpeg",
+        "WhatsApp Image 2025-07-04 at 1.24.46 PM.jpeg","WhatsApp Image 2025-07-04 at 1.24.47 PM (1).jpeg","WhatsApp Image 2025-07-04 at 1.24.47 PM (2).jpeg","WhatsApp Image 2025-07-04 at 1.24.47 PM.jpeg",
+      ]
+      files.forEach(f => images.push(`${basePath}/${f}`))
+      break
+    }
+
+    case "topiary-park-pune": {
+      const files = [
+        "566051.jpeg","566071.jpeg","566073.jpeg","566079.jpeg","IMG_20220205_114732.jpg","IMG-20211124-WA0064.jpg",
+        "IMG-20211124-WA0065.jpg","IMG-20211124-WA0067.jpg","IMG-20211124-WA0068.jpg",
+      ]
+      files.forEach(f => images.push(`${basePath}/${f}`))
+      break
+    }
+    case "panvel-theme-parks": {
+      // Replace gallery to show Astronomy Park images only
+      const astronomyBase = "/images/work1/9.%20Public%20Park/4.%20Astronomy%20Park%20-%20Panvel%20Municipal%20Corporation"
+      const files = [
+        "20250524_124653.jpg",
+        "20250524_124709.jpg",
+        "20250524_124852.jpg",
+        "20250524_124729.jpg",
+        "20250524_124826.jpg",
+        "20250524_124913.jpg",
+        "20250524_124959.jpg",
+        "20250524_124832.jpg",
+        "20250524_124741.jpg",
+        "20250524_124722.jpg",
+        "20250524_124837.jpg",
+        "20250524_125105.jpg",
+        "20250524_125156.jpg",
+        "20250524_124903.jpg",
+        "20250524_124946.jpg",
+        "20250524_125144.jpg",
+        "20250524_125405.jpg",
+        "20250524_124842.jpg",
+        "20250524_124936.jpg",
+        "20250524_124919.jpg",
+        "20250524_125545.jpg",
+        "20250524_125329.jpg",
+        "20250524_125118.jpg",
+        "20250524_124904.jpg",
+        "20250524_125359.jpg",
+        "20250524_125339.jpg",
+        "20250524_125108.jpg",
+        "20250524_125052.jpg",
+        "20250524_125028.jpg",
+        "19_Photo%20-%2019_Photo%20-%2019.jpg",
+        "20250524_125211.jpg",
+        "20250524_125518.jpg",
+        "20250524_125348.jpg",
+        "20250524_124925.jpg",
+        "20250524_125547.jpg",
+        "20250524_124805.jpg",
+      ]
+      files.forEach(f => images.push(`${astronomyBase}/${f}`))
+      break
+    }
+
+    case "photos-important-events": {
+      // Include all curated files from the provided folder
+      const base = "/images/work1/10.%20Photos%20with%20important%20people%20or%20events"
+      const files = [
+        "IMG_20180213_161411%20(1).jpg",
+        "IMG_20180213_161712%20(1).jpg",
+        "IMG-20240828-WA0004%20(1).jpg",
+        "IMG_7748%20(1).JPG",
+        "IMG_7747%20(1).JPG",
+        "IMG_20180209_154301%20(1).jpg",
+        "IMG-20210813-WA0118.jpg",
+        "IMG-20170322-WA0097%20(1).jpg",
+        "IMG_20210813_134627%20(1).jpg",
+        "IMG_20180207_111423%20(1).jpg",
+        "IMG-20210813-WA0149.jpg",
+        "IMG_7746%20(1).JPG",
+        "IMG_1980.JPG",
+        "IMG_7802%20(1).jpg",
+        "IMG_9659%20(1).JPG",
+        "IMG_20180209_153214.jpg",
+        "IMG-20170322-WA0108.jpg",
+      ]
+      files.forEach(f => images.push(`${base}/${f}`))
+      break
+    }
+    default: {
+      // Fallback: try numbered jpgs 1..8 as a reasonable default
+      for (let i = 1; i <= 8; i++) {
+        images.push(`${basePath}/${i}.jpg`)
+      }
+    }
   }
 
-  const count = imageCounts[project.id] || 1
-  const basePath = `/images/work/${encodeURIComponent(project.tag)}/${encodeURIComponent(project.folder)}`
-  
-  // Special handling for specific projects
-  if (project.id === "oxy-park") {
-    // OXY Park uses .JPG extension
-    for (let i = 1; i <= count; i++) {
-      images.push(`${basePath}/${i}.JPG`)
-    }
-  } else if (project.id === "mumbadevi-temple-revamp") {
-    // Mumbadevi has images in main folder and final photos folder
-    // Add final photos first (numbered 1-11)
-    for (let i = 1; i <= 11; i++) {
-      images.push(`${basePath}/final photos/${i}.jpg`)
-    }
-    // Add some Enscape renders
-    const enscapeImages = [
-      "Enscape_2025-01-20-12-36-18.jpg",
-      "Enscape_2025-01-20-12-36-33.jpg",
-      "Enscape_2025-01-20-12-46-13.jpg",
-      "Enscape_2025-01-20-12-51-36.jpg",
-      "Enscape_2025-01-20-12-52-50.jpg"
-    ]
-    enscapeImages.forEach(img => {
-      images.push(`${basePath}/${img}`)
-    })
-  } else if (project.id === "kherwadi-under-bridge") {
-    // Kherwadi has numbered images and KSP images
-    const numberedImages = [8, 9, 10, 11, 12]
-    numberedImages.forEach(num => {
-      images.push(`${basePath}/${num}.jpg`)
-    })
-    const kspImages = ["KSP_2755.JPG", "KSP_2757.JPG", "KSP_2770.JPG", "KSP_2774.JPG", "KSP_2776.JPG"]
-    kspImages.forEach(img => {
-      images.push(`${basePath}/${img}`)
-    })
-  } else if (project.id === "amrut-urban-forests") {
-    // AMRUT has specific numbered images
-    const imageNumbers = [1, 2, 3, 4, 5, 6, 8, 10, 12, 13, 14, 15, 16, 17, 18]
-    imageNumbers.forEach(num => {
-      images.push(`${basePath}/${num}.jpg`)
-    })
-    images.push(`${basePath}/Picture1.jpg`)
-  } else {
-    // Standard numbered images starting from 1
-    for (let i = 1; i <= count; i++) {
-      images.push(`${basePath}/${i}.jpg`)
-    }
+  // Ensure at least one image (fallback to card image if available)
+  if (images.length === 0 && project.img) {
+    images.push(project.img)
   }
-  
+
   return images
 }
 

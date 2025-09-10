@@ -5,11 +5,11 @@ import { Quote, ChevronLeft, ChevronRight } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Avinash Salunke",
-    role: "Wildlife Management & Environmental Expertise",
+    name: "Col Rajesh Dubey (Retd)",
+    role: "Infrastructure & Corporate Management Professional",
     quote:
-      "I have known Dr. Aseem Gokarna since childhood, both as a dedicated student and a passionate practitioner of plant gardening. Her deep-rooted knowledge and commitment to urban greenery have been evident throughout her journey...",
-    avatar: "/images/testimonals/1.jpg",
+      "Dr Aseem was our first business partner to design green cover of our green field 700 acre plant in its first phase - highly professional and customer centric. Catered for all our needs. It is heartening to see her growing in experience...",
+    avatar: "/images/testimonals/3.jpg",
   },
   {
     name: "Ashok Suyal",
@@ -19,11 +19,11 @@ const testimonials = [
     avatar: "/images/testimonals/2.jpg",
   },
   {
-    name: "Col Rajesh Dubey (Retd)",
-    role: "Infrastructure & Corporate Management Professional",
+    name: "Avinash Salunke",
+    role: "Wildlife Management & Environmental Expertise",
     quote:
-      "Dr Aseem was our first business partner to design green cover of our green field 700 acre plant in its first phase - highly professional and customer centric. Catered for all our needs. It is heartening to see her growing in experience...",
-    avatar: "/images/testimonals/3.jpg",
+      "I have known Dr. Aseem Gokarna since childhood, both as a dedicated student and a passionate practitioner of plant gardening. Her deep-rooted knowledge and commitment to urban greenery have been evident throughout her journey...",
+    avatar: "/images/testimonals/1.jpg",
   },
 ]
 
