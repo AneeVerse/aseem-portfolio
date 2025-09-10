@@ -36,7 +36,7 @@ export function HeroSection() {
               Every Thing <br/> You Imagine Is Real
             </h1>
             <p className="mt-3 text-lg leading-7 text-[#FEFCE1]/50 max-w-[700px] mt-5 mb-10">
-            Specializing in nature based solutions and tech enabled public space design with 25+ years of expertise. I bridge the gap between architecture and horticulture to create liveable cities that harmonize with nature while serving communities.
+            Specializing in nature based solutions and tech enabled public space design with 25+ years of expertise, I bridge the gap between architecture and horticulture to create liveable cities that harmonize with nature while serving communities.
             </p>
 
             <div className="mt-6 flex flex-row items-center gap-3 sm:gap-4">
