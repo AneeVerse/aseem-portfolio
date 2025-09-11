@@ -71,7 +71,7 @@ export const projects = [
     title: "Godavari Riverfront Redevelopment",
     description: "Comprehensive riverfront eco-restoration",
     tag: "Riverbank Restorations and Lake Promenade Eco-restoration",
-    img: "/images/work1/2.%20Riverbank%20Restorations%20and%20Lake%20Promenade%20Eco-restoration/2.%20Godavari%20River/DJI_20250731152332_0195_D.JPG",
+    img: "/images/work1/2.%20Riverbank%20Restorations%20and%20Lake%20Promenade%20Eco-restoration/2.%20Godavari%20River/DJI0783.jpg",
     id: "godavari-riverfront",
     folder: "2. Godavari River",
     categoryFolder: "2. Riverbank Restorations and Lake Promenade Eco-restoration",

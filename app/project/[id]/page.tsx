@@ -56,7 +56,7 @@ const legacyProjects = [
     id: "juhi-chawla-residence",
     folder: "Juhi Chawla_s Residence"
   },
-  
+
   // Urban Parks & Public Spaces
   {
     title: "AMRUT Urban Forests",
@@ -106,7 +106,7 @@ const legacyProjects = [
     id: "panvel-theme-parks",
     folder: "THEME PARKS FOR PANVEL MUNICIPAL CORPORATION"
   },
-  
+
   // Infrastructure & Urban Renewal
   {
     title: "Kherwadi Under-Bridge Beautification",
@@ -124,7 +124,7 @@ const legacyProjects = [
     id: "mumbadevi-temple-revamp",
     folder: "Mumbadevi"
   },
-  
+
   // Waterfront & Lake Restoration
   {
     title: "Powai Lake Restoration",
@@ -541,28 +541,21 @@ const getProjectImages = (project: any): string[] => {
       const godavariTopLevel = [
         "04576ffb-c392-4bb7-9e4d-f8b21f36cfe3.jpg",
         "3864f023-5f20-463d-9da5-d963b50c98f6.jpg",
-        "DJI_20250731152159_0189_D (1).JPG",
         "DJI_20250731152159_0189_D.JPG",
-        "DJI_20250731152229_0190_D (1).JPG",
-        "DJI_20250731152229_0190_D.JPG",
+
         "DJI_20250731152232_0191_D.JPG",
-        "DJI_20250731152244_0192_D (1).JPG",
-        "DJI_20250731152244_0192_D.JPG",
-        "DJI_20250731152259_0193_D (1).JPG",
-        "DJI_20250731152259_0193_D.JPG",
-        "DJI_20250731152311_0194_D.JPG",
+
+
+
         "DJI_20250731152332_0195_D.JPG",
-        "DJI_20250731152348_0196_D.JPG",
+
         "DJI_20250731152352_0197_D.JPG",
-        "DJI_20250731152414_0198_D.JPG",
-        "DJI_20250731152424_0200_D (1).JPG",
-        "DJI_20250731152424_0200_D.JPG",
-        "DJI_20250731152550_0203_D.JPG",
-        "DJI_20250731152602_0204_D.JPG",
-        "DJI_20250731152735_0207_D (1).JPG",
-        "DJI_20250731152735_0207_D (2).JPG",
-        "DJI_20250731152735_0207_D.JPG",
-        "DJI_20250731152744_0208_D.JPG",
+
+
+
+
+
+
         "DJI_20250731152803_0211_D.JPG",
         "DJI0783.jpg",
         "DJI0823.jpg",
@@ -572,7 +565,6 @@ const getProjectImages = (project: any): string[] => {
         "DSC08880.jpg",
         "DSC08960.jpg",
         "DSC09391-HDR.jpg",
-        "DSC09537 (1).jpg",
         "DSC09537.jpg",
         "DSVC08935.jpg",
         "IMG_20180615_162947.jpg",
@@ -633,7 +625,7 @@ const getProjectImages = (project: any): string[] => {
     case "the-address-wadhwa": {
       const files = [
         // Numbered images
-      
+
         "2.jpg",
         "4.jpg",
         "5.jpg",
@@ -680,22 +672,22 @@ const getProjectImages = (project: any): string[] => {
       break
     }
     case "corporate-mahindra-park": {
-      const files = ["IMG_20170906_152701.jpg","IMG_20170906_152747.jpg","IMG_20170906_152824 (1).jpg"]
+      const files = ["IMG_20170906_152701.jpg", "IMG_20170906_152747.jpg", "IMG_20170906_152824 (1).jpg"]
       files.forEach(f => images.push(`${basePath}/${f}`))
       break
     }
     case "children-traffic-park-thane": {
       const files = [
-        "DSC_9127.JPG","DSC_9144.JPG","DSC_9154.JPG","DSC_9159.JPG","DSC_9160.JPG","DSC_9163.JPG","DSC_9166.JPG","DSC_9173.JPG",
-        "DSC_9214.JPG","DSC_9221.JPG","DSC_9230.JPG","DSC_9231.JPG","DSC_9264.JPG","DSC_9265.JPG","DSC_9272.JPG","DSC_9276.JPG",
-        "DSC_9285.JPG","DSC_9290.JPG","DSC_9302.JPG","DSC_9325.JPG","DSC_9368.JPG","DSC_9419.JPG","DSC_9443.JPG","DSC_9470.JPG",
-        "IMG-20200124-WA0105 (1).jpg","IMG-20200224-WA0157 (2).jpg","IMG-20200313-WA0191.jpg","IMG-20200313-WA0192 (1).jpg","IMG-20200313-WA0198 (1).jpg",
+        "DSC_9127.JPG", "DSC_9144.JPG", "DSC_9154.JPG", "DSC_9159.JPG", "DSC_9160.JPG", "DSC_9163.JPG", "DSC_9166.JPG", "DSC_9173.JPG",
+        "DSC_9214.JPG", "DSC_9221.JPG", "DSC_9230.JPG", "DSC_9231.JPG", "DSC_9264.JPG", "DSC_9265.JPG", "DSC_9272.JPG", "DSC_9276.JPG",
+        "DSC_9285.JPG", "DSC_9290.JPG", "DSC_9302.JPG", "DSC_9325.JPG", "DSC_9368.JPG", "DSC_9419.JPG", "DSC_9443.JPG", "DSC_9470.JPG",
+        "IMG-20200124-WA0105 (1).jpg", "IMG-20200224-WA0157 (2).jpg", "IMG-20200313-WA0191.jpg", "IMG-20200313-WA0192 (1).jpg", "IMG-20200313-WA0198 (1).jpg",
       ]
       files.forEach(f => images.push(`${basePath}/${f}`))
       break
     }
     case "nerul-lake-jewel": {
-      const files = ["IMG_20170730_083102.jpg","IMG_20170730_083147.jpg","IMG_20170730_083744.jpg","IMG-20170312-WA0113.jpg"]
+      const files = ["IMG_20170730_083102.jpg", "IMG_20170730_083147.jpg", "IMG_20170730_083744.jpg", "IMG-20170312-WA0113.jpg"]
       files.forEach(f => images.push(`${basePath}/${f}`))
       break
     }
@@ -713,47 +705,47 @@ const getProjectImages = (project: any): string[] => {
 
       // site images 1st July 2022 (all)
       const july1 = [
-        "WhatsApp Image 2022-08-11 at 2.55.26 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.29 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.31 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 2.55.32 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.34 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.35 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 2.55.37 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.40 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.42 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 2.55.44 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.46 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.47 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 2.55.48 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.49 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.50 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 2.55.51 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.54 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.55 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 2.55.57 PM.jpeg","WhatsApp Image 2022-08-11 at 2.55.58 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 2.55.26 PM.jpeg", "WhatsApp Image 2022-08-11 at 2.55.29 PM.jpeg", "WhatsApp Image 2022-08-11 at 2.55.31 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 2.55.32 PM.jpeg", "WhatsApp Image 2022-08-11 at 2.55.34 PM.jpeg", "WhatsApp Image 2022-08-11 at 2.55.35 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 2.55.37 PM.jpeg", "WhatsApp Image 2022-08-11 at 2.55.40 PM.jpeg", "WhatsApp Image 2022-08-11 at 2.55.42 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 2.55.44 PM.jpeg", "WhatsApp Image 2022-08-11 at 2.55.46 PM.jpeg", "WhatsApp Image 2022-08-11 at 2.55.47 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 2.55.48 PM.jpeg", "WhatsApp Image 2022-08-11 at 2.55.49 PM.jpeg", "WhatsApp Image 2022-08-11 at 2.55.50 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 2.55.51 PM.jpeg", "WhatsApp Image 2022-08-11 at 2.55.54 PM.jpeg", "WhatsApp Image 2022-08-11 at 2.55.55 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 2.55.57 PM.jpeg", "WhatsApp Image 2022-08-11 at 2.55.58 PM.jpeg",
       ]
       july1.forEach(f => images.push(`${basePath}/site%20images%201st%20July%202022/${f}`))
 
       // site images 1st June 2021 (all)
       const june1 = [
-        "WhatsApp Image 2022-08-11 at 3.13.42 PM.jpeg","WhatsApp Image 2022-08-11 at 3.13.43 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 3.13.48 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.13.48 PM (2).jpeg","WhatsApp Image 2022-08-11 at 3.13.48 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 3.13.49 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.13.49 PM.jpeg","WhatsApp Image 2022-08-11 at 3.13.50 PM (1).jpeg",
-        "WhatsApp Image 2022-08-11 at 3.13.50 PM.jpeg","WhatsApp Image 2022-08-11 at 3.13.51 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.13.51 PM (2).jpeg",
-        "WhatsApp Image 2022-08-11 at 3.13.51 PM.jpeg","WhatsApp Image 2022-08-11 at 3.13.52 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.13.52 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 3.13.53 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.13.53 PM (2).jpeg","WhatsApp Image 2022-08-11 at 3.13.53 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 3.13.54 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.13.54 PM.jpeg","WhatsApp Image 2022-08-11 at 3.13.55 PM (1).jpeg",
-        "WhatsApp Image 2022-08-11 at 3.13.55 PM (2).jpeg","WhatsApp Image 2022-08-11 at 3.13.55 PM.jpeg","WhatsApp Image 2022-08-11 at 3.13.56 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.42 PM.jpeg", "WhatsApp Image 2022-08-11 at 3.13.43 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.48 PM (1).jpeg", "WhatsApp Image 2022-08-11 at 3.13.48 PM (2).jpeg", "WhatsApp Image 2022-08-11 at 3.13.48 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.49 PM (1).jpeg", "WhatsApp Image 2022-08-11 at 3.13.49 PM.jpeg", "WhatsApp Image 2022-08-11 at 3.13.50 PM (1).jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.50 PM.jpeg", "WhatsApp Image 2022-08-11 at 3.13.51 PM (1).jpeg", "WhatsApp Image 2022-08-11 at 3.13.51 PM (2).jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.51 PM.jpeg", "WhatsApp Image 2022-08-11 at 3.13.52 PM (1).jpeg", "WhatsApp Image 2022-08-11 at 3.13.52 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.53 PM (1).jpeg", "WhatsApp Image 2022-08-11 at 3.13.53 PM (2).jpeg", "WhatsApp Image 2022-08-11 at 3.13.53 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.54 PM (1).jpeg", "WhatsApp Image 2022-08-11 at 3.13.54 PM.jpeg", "WhatsApp Image 2022-08-11 at 3.13.55 PM (1).jpeg",
+        "WhatsApp Image 2022-08-11 at 3.13.55 PM (2).jpeg", "WhatsApp Image 2022-08-11 at 3.13.55 PM.jpeg", "WhatsApp Image 2022-08-11 at 3.13.56 PM.jpeg",
       ]
       june1.forEach(f => images.push(`${basePath}/site%20images%201st%20June%202021/${f}`))
 
       // Site images 28th Dec 2021
       const dec28 = [
-        "WhatsApp Image 2022-08-11 at 3.49.27 PM.jpeg","WhatsApp Image 2022-08-11 at 3.49.28 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 3.49.29 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.49.29 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 3.49.30 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.49.30 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.49.27 PM.jpeg", "WhatsApp Image 2022-08-11 at 3.49.28 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.49.29 PM (1).jpeg", "WhatsApp Image 2022-08-11 at 3.49.29 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.49.30 PM (1).jpeg", "WhatsApp Image 2022-08-11 at 3.49.30 PM.jpeg",
       ]
       dec28.forEach(f => images.push(`${basePath}/Site%20images%2028th%20Dec%202021/${f}`))
 
       // site images 7th April 2022 (all)
       const apr7 = [
-        "WhatsApp Image 2022-08-11 at 3.19.52 PM.jpeg","WhatsApp Image 2022-08-11 at 3.19.59 PM.jpeg","WhatsApp Image 2022-08-11 at 3.20.25 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 3.20.26 PM.jpeg","WhatsApp Image 2022-08-11 at 3.20.27 PM.jpeg","WhatsApp Image 2022-08-11 at 3.20.28 PM (1).jpeg",
-        "WhatsApp Image 2022-08-11 at 3.20.28 PM.jpeg","WhatsApp Image 2022-08-11 at 3.20.29 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.20.29 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 3.20.30 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.20.30 PM (2).jpeg","WhatsApp Image 2022-08-11 at 3.20.30 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 3.20.31 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.20.31 PM (2).jpeg","WhatsApp Image 2022-08-11 at 3.20.31 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 3.20.32 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.20.32 PM (2).jpeg","WhatsApp Image 2022-08-11 at 3.20.32 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 3.20.33 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.20.33 PM (2).jpeg","WhatsApp Image 2022-08-11 at 3.20.33 PM.jpeg",
-        "WhatsApp Image 2022-08-11 at 3.20.34 PM (1).jpeg","WhatsApp Image 2022-08-11 at 3.20.34 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.19.52 PM.jpeg", "WhatsApp Image 2022-08-11 at 3.19.59 PM.jpeg", "WhatsApp Image 2022-08-11 at 3.20.25 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.20.26 PM.jpeg", "WhatsApp Image 2022-08-11 at 3.20.27 PM.jpeg", "WhatsApp Image 2022-08-11 at 3.20.28 PM (1).jpeg",
+        "WhatsApp Image 2022-08-11 at 3.20.28 PM.jpeg", "WhatsApp Image 2022-08-11 at 3.20.29 PM (1).jpeg", "WhatsApp Image 2022-08-11 at 3.20.29 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.20.30 PM (1).jpeg", "WhatsApp Image 2022-08-11 at 3.20.30 PM (2).jpeg", "WhatsApp Image 2022-08-11 at 3.20.30 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.20.31 PM (1).jpeg", "WhatsApp Image 2022-08-11 at 3.20.31 PM (2).jpeg", "WhatsApp Image 2022-08-11 at 3.20.31 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.20.32 PM (1).jpeg", "WhatsApp Image 2022-08-11 at 3.20.32 PM (2).jpeg", "WhatsApp Image 2022-08-11 at 3.20.32 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.20.33 PM (1).jpeg", "WhatsApp Image 2022-08-11 at 3.20.33 PM (2).jpeg", "WhatsApp Image 2022-08-11 at 3.20.33 PM.jpeg",
+        "WhatsApp Image 2022-08-11 at 3.20.34 PM (1).jpeg", "WhatsApp Image 2022-08-11 at 3.20.34 PM.jpeg",
       ]
       apr7.forEach(f => images.push(`${basePath}/site%20images%207th%20April%202022/${f}`))
       break
@@ -761,14 +753,14 @@ const getProjectImages = (project: any): string[] => {
 
     case "panchtatva-udyan-panvel": {
       const files = [
-        "20250520_154052.jpg","20250520_154053.jpg","20250520_154109.jpg","20250520_154157.jpg","20250520_154240.jpg","20250520_154253.jpg",
-        "20250520_154302.jpg","20250520_154314.jpg","20250520_154339.jpg","20250520_154403.jpg","20250520_154418.jpg","20250520_154431.jpg",
-        "20250520_154506.jpg","20250520_154518.jpg","20250520_154656.jpg","20250520_154706.jpg","20250520_154711.jpg","20250520_154758.jpg",
-        "20250520_154825.jpg","20250520_154833.jpg","20250520_154936.jpg","20250520_155138.jpg","20250520_155228.jpg","20250520_155239.jpg",
-        "IMG-20241222-WA0022.jpg","IMG-20241222-WA0108.jpg","IMG-20250126-WA0003.jpg",
-        "WhatsApp Image 2025-05-20 at 15.54.02 (1).jpeg","WhatsApp Image 2025-05-20 at 15.54.02 (2).jpeg","WhatsApp Image 2025-05-20 at 15.54.02.jpeg",
-        "WhatsApp Image 2025-05-20 at 15.54.03.jpeg","WhatsApp Image 2025-05-20 at 15.54.04 (1).jpeg","WhatsApp Image 2025-05-20 at 15.54.04.jpeg",
-        "WhatsApp Image 2025-05-20 at 15.54.05 (1).jpeg","WhatsApp Image 2025-05-20 at 15.54.05.jpeg","WhatsApp Image 2025-05-20 at 15.54.06 (1).jpeg",
+        "20250520_154052.jpg", "20250520_154053.jpg", "20250520_154109.jpg", "20250520_154157.jpg", "20250520_154240.jpg", "20250520_154253.jpg",
+        "20250520_154302.jpg", "20250520_154314.jpg", "20250520_154339.jpg", "20250520_154403.jpg", "20250520_154418.jpg", "20250520_154431.jpg",
+        "20250520_154506.jpg", "20250520_154518.jpg", "20250520_154656.jpg", "20250520_154706.jpg", "20250520_154711.jpg", "20250520_154758.jpg",
+        "20250520_154825.jpg", "20250520_154833.jpg", "20250520_154936.jpg", "20250520_155138.jpg", "20250520_155228.jpg", "20250520_155239.jpg",
+        "IMG-20241222-WA0022.jpg", "IMG-20241222-WA0108.jpg", "IMG-20250126-WA0003.jpg",
+        "WhatsApp Image 2025-05-20 at 15.54.02 (1).jpeg", "WhatsApp Image 2025-05-20 at 15.54.02 (2).jpeg", "WhatsApp Image 2025-05-20 at 15.54.02.jpeg",
+        "WhatsApp Image 2025-05-20 at 15.54.03.jpeg", "WhatsApp Image 2025-05-20 at 15.54.04 (1).jpeg", "WhatsApp Image 2025-05-20 at 15.54.04.jpeg",
+        "WhatsApp Image 2025-05-20 at 15.54.05 (1).jpeg", "WhatsApp Image 2025-05-20 at 15.54.05.jpeg", "WhatsApp Image 2025-05-20 at 15.54.06 (1).jpeg",
         "WhatsApp Image 2025-05-20 at 15.54.07 (1).jpeg",
       ]
       files.forEach(f => images.push(`${basePath}/${f}`))
@@ -777,12 +769,12 @@ const getProjectImages = (project: any): string[] => {
 
     case "dinosaur-park-panvel": {
       const files = [
-        "20250524_120553.jpg","20250524_120608.jpg","20250524_120612.jpg","20250524_120615.jpg","20250524_120621.jpg","20250524_120646.jpg",
-        "20250524_120657.jpg","20250524_120718.jpg","20250524_120726.jpg","20250524_120739.jpg","20250524_120901.jpg","20250524_120912.jpg",
-        "20250524_120958.jpg","20250524_121003.jpg","20250524_121149.jpg","20250524_121152.jpg","20250524_121228.jpg","20250524_121235.jpg",
-        "20250524_121250.jpg","20250524_121254.jpg","20250524_121504.jpg","20250524_121516.jpg","20250524_121528.jpg","20250524_121602.jpg",
-        "20250524_121618.jpg","20250524_121800.jpg","20250524_121809.jpg","20250524_121837.jpg","20250524_121846.jpg",
-        "IMG-20231204-WA0003.jpg","WhatsApp Image 2025-09-09 at 6.34.10 PM (1).jpeg","WhatsApp Image 2025-09-09 at 6.34.10 PM.jpeg","WhatsApp Image 2025-09-09 at 6.34.11 PM.jpeg",
+        "20250524_120553.jpg", "20250524_120608.jpg", "20250524_120612.jpg", "20250524_120615.jpg", "20250524_120621.jpg", "20250524_120646.jpg",
+        "20250524_120657.jpg", "20250524_120718.jpg", "20250524_120726.jpg", "20250524_120739.jpg", "20250524_120901.jpg", "20250524_120912.jpg",
+        "20250524_120958.jpg", "20250524_121003.jpg", "20250524_121149.jpg", "20250524_121152.jpg", "20250524_121228.jpg", "20250524_121235.jpg",
+        "20250524_121250.jpg", "20250524_121254.jpg", "20250524_121504.jpg", "20250524_121516.jpg", "20250524_121528.jpg", "20250524_121602.jpg",
+        "20250524_121618.jpg", "20250524_121800.jpg", "20250524_121809.jpg", "20250524_121837.jpg", "20250524_121846.jpg",
+        "IMG-20231204-WA0003.jpg", "WhatsApp Image 2025-09-09 at 6.34.10 PM (1).jpeg", "WhatsApp Image 2025-09-09 at 6.34.10 PM.jpeg", "WhatsApp Image 2025-09-09 at 6.34.11 PM.jpeg",
       ]
       files.forEach(f => images.push(`${basePath}/${f}`))
       break
@@ -790,14 +782,14 @@ const getProjectImages = (project: any): string[] => {
 
     case "rainbow-garden-panvel": {
       const files = [
-        "20250519_174927.jpg","20250519_174930.jpg","20250519_174950.jpg","20250519_175007.jpg","20250519_175011.jpg","20250519_175032.jpg",
-        "20250519_175048.jpg","20250519_175053.jpg","20250519_175152.jpg","20250524_122754.jpg","20250524_122756.jpg","20250524_122803.jpg",
-        "20250524_122815.jpg","20250524_122817.jpg","20250524_122832.jpg","20250524_122836.jpg","20250524_122840.jpg","20250524_122904.jpg",
-        "20250524_122909.jpg","20250524_122912.jpg","20250524_122915.jpg","20250524_122923.jpg","20250524_122934.jpg","20250524_122948.jpg",
-        "20250524_122957.jpg","20250524_123002.jpg","20250524_123005.jpg","20250524_123010.jpg","20250524_123014.jpg","20250524_123037.jpg",
-        "20250524_123111.jpg","20250524_123145.jpg","20250524_123213.jpg","20250524_123231.jpg","20250524_123251.jpg","20250524_123305.jpg",
-        "20250524_123347.jpg","20250524_123350.jpg","20250524_123416.jpg","20250524_123440.jpg","20250524_123459.jpg","20250524_123503.jpg",
-        "20250524_123520.jpg","20250524_123524.jpg",
+        "20250519_174927.jpg", "20250519_174930.jpg", "20250519_174950.jpg", "20250519_175007.jpg", "20250519_175011.jpg", "20250519_175032.jpg",
+        "20250519_175048.jpg", "20250519_175053.jpg", "20250519_175152.jpg", "20250524_122754.jpg", "20250524_122756.jpg", "20250524_122803.jpg",
+        "20250524_122815.jpg", "20250524_122817.jpg", "20250524_122832.jpg", "20250524_122836.jpg", "20250524_122840.jpg", "20250524_122904.jpg",
+        "20250524_122909.jpg", "20250524_122912.jpg", "20250524_122915.jpg", "20250524_122923.jpg", "20250524_122934.jpg", "20250524_122948.jpg",
+        "20250524_122957.jpg", "20250524_123002.jpg", "20250524_123005.jpg", "20250524_123010.jpg", "20250524_123014.jpg", "20250524_123037.jpg",
+        "20250524_123111.jpg", "20250524_123145.jpg", "20250524_123213.jpg", "20250524_123231.jpg", "20250524_123251.jpg", "20250524_123305.jpg",
+        "20250524_123347.jpg", "20250524_123350.jpg", "20250524_123416.jpg", "20250524_123440.jpg", "20250524_123459.jpg", "20250524_123503.jpg",
+        "20250524_123520.jpg", "20250524_123524.jpg",
       ]
       files.forEach(f => images.push(`${basePath}/${f}`))
       break
@@ -805,13 +797,13 @@ const getProjectImages = (project: any): string[] => {
 
     case "sensory-garden-panvel": {
       const files = [
-        "20250524_113628.jpg","20250524_113636.jpg","20250524_113644.jpg","20250524_113737.jpg","20250524_113749.jpg","20250524_113753.jpg",
-        "20250524_113828.jpg","20250524_113850.jpg","20250524_113908.jpg","20250524_113927.jpg","20250524_113933.jpg","20250524_114048.jpg",
-        "20250524_114111.jpg","20250524_114120.jpg","20250524_114138.jpg","20250524_114149.jpg","20250524_114248.jpg","20250524_114257.jpg",
-        "20250524_114303.jpg","20250524_114346.jpg","20250524_114418.jpg","20250524_114606.jpg","20250524_114611.jpg","20250524_114619.jpg",
-        "20250524_114626.jpg","20250524_114650.jpg","20250524_114654.jpg","20250524_114718.jpg","20250524_114737.jpg","20250524_114803.jpg",
-        "20250524_114813.jpg","20250524_114817.jpg","20250524_114835.jpg","20250524_115022.jpg","20250524_115027.jpg",
-        "4143ac99-4119-49d6-8447-af34ac547971.jpg","c70c147a-27a3-438b-961b-4a4946c174cb.jpg","WhatsApp Image 2025-06-24 at 13.06.19.jpeg",
+        "20250524_113628.jpg", "20250524_113636.jpg", "20250524_113644.jpg", "20250524_113737.jpg", "20250524_113749.jpg", "20250524_113753.jpg",
+        "20250524_113828.jpg", "20250524_113850.jpg", "20250524_113908.jpg", "20250524_113927.jpg", "20250524_113933.jpg", "20250524_114048.jpg",
+        "20250524_114111.jpg", "20250524_114120.jpg", "20250524_114138.jpg", "20250524_114149.jpg", "20250524_114248.jpg", "20250524_114257.jpg",
+        "20250524_114303.jpg", "20250524_114346.jpg", "20250524_114418.jpg", "20250524_114606.jpg", "20250524_114611.jpg", "20250524_114619.jpg",
+        "20250524_114626.jpg", "20250524_114650.jpg", "20250524_114654.jpg", "20250524_114718.jpg", "20250524_114737.jpg", "20250524_114803.jpg",
+        "20250524_114813.jpg", "20250524_114817.jpg", "20250524_114835.jpg", "20250524_115022.jpg", "20250524_115027.jpg",
+        "4143ac99-4119-49d6-8447-af34ac547971.jpg", "c70c147a-27a3-438b-961b-4a4946c174cb.jpg", "WhatsApp Image 2025-06-24 at 13.06.19.jpeg",
       ]
       files.forEach(f => images.push(`${basePath}/${f}`))
       break
@@ -819,11 +811,11 @@ const getProjectImages = (project: any): string[] => {
 
     case "farm-land-park-panvel": {
       const files = [
-        "WhatsApp Image 2025-07-04 at 1.24.41 PM.jpeg","WhatsApp Image 2025-07-04 at 1.24.42 PM (2).jpeg","WhatsApp Image 2025-07-04 at 1.24.42 PM (3).jpeg",
-        "WhatsApp Image 2025-07-04 at 1.24.43 PM (1).jpeg","WhatsApp Image 2025-07-04 at 1.24.43 PM.jpeg","WhatsApp Image 2025-07-04 at 1.24.45 PM (2).jpeg",
-        "WhatsApp Image 2025-07-04 at 1.24.45 PM (3).jpeg","WhatsApp Image 2025-07-04 at 1.24.45 PM.jpeg","WhatsApp Image 2025-07-04 at 1.24.46 PM (1).jpeg",
-        "WhatsApp Image 2025-07-04 at 1.24.46 PM (2).jpeg","WhatsApp Image 2025-07-04 at 1.24.46 PM (3).jpeg","WhatsApp Image 2025-07-04 at 1.24.46 PM (4).jpeg",
-        "WhatsApp Image 2025-07-04 at 1.24.46 PM.jpeg","WhatsApp Image 2025-07-04 at 1.24.47 PM (1).jpeg","WhatsApp Image 2025-07-04 at 1.24.47 PM (2).jpeg","WhatsApp Image 2025-07-04 at 1.24.47 PM.jpeg",
+        "WhatsApp Image 2025-07-04 at 1.24.41 PM.jpeg", "WhatsApp Image 2025-07-04 at 1.24.42 PM (2).jpeg", "WhatsApp Image 2025-07-04 at 1.24.42 PM (3).jpeg",
+        "WhatsApp Image 2025-07-04 at 1.24.43 PM (1).jpeg", "WhatsApp Image 2025-07-04 at 1.24.43 PM.jpeg", "WhatsApp Image 2025-07-04 at 1.24.45 PM (2).jpeg",
+        "WhatsApp Image 2025-07-04 at 1.24.45 PM (3).jpeg", "WhatsApp Image 2025-07-04 at 1.24.45 PM.jpeg", "WhatsApp Image 2025-07-04 at 1.24.46 PM (1).jpeg",
+        "WhatsApp Image 2025-07-04 at 1.24.46 PM (2).jpeg", "WhatsApp Image 2025-07-04 at 1.24.46 PM (3).jpeg", "WhatsApp Image 2025-07-04 at 1.24.46 PM (4).jpeg",
+        "WhatsApp Image 2025-07-04 at 1.24.46 PM.jpeg", "WhatsApp Image 2025-07-04 at 1.24.47 PM (1).jpeg", "WhatsApp Image 2025-07-04 at 1.24.47 PM (2).jpeg", "WhatsApp Image 2025-07-04 at 1.24.47 PM.jpeg",
       ]
       files.forEach(f => images.push(`${basePath}/${f}`))
       break
@@ -831,8 +823,8 @@ const getProjectImages = (project: any): string[] => {
 
     case "topiary-park-pune": {
       const files = [
-        "566051.jpeg","566071.jpeg","566073.jpeg","566079.jpeg","IMG_20220205_114732.jpg","IMG-20211124-WA0064.jpg",
-        "IMG-20211124-WA0065.jpg","IMG-20211124-WA0067.jpg","IMG-20211124-WA0068.jpg",
+        "566051.jpeg", "566071.jpeg", "566073.jpeg", "566079.jpeg", "IMG_20220205_114732.jpg", "IMG-20211124-WA0064.jpg",
+        "IMG-20211124-WA0065.jpg", "IMG-20211124-WA0067.jpg", "IMG-20211124-WA0068.jpg",
       ]
       files.forEach(f => images.push(`${basePath}/${f}`))
       break
@@ -953,7 +945,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
         <div className="flex items-center justify-center min-h-[calc(100vh-80px)] pt-20">
           <div className="text-center">
             <h1 className="text-2xl font-light mb-4">Project not found</h1>
-            <Button 
+            <Button
               onClick={() => router.push('/#works')}
               variant="outline"
               className="border-white/20 text-[#FEFCE1] hover:bg-white/10"
@@ -970,11 +962,11 @@ export default function ProjectPage({ params }: ProjectPageProps) {
   return (
     <div className="min-h-screen bg-[#0e0f0f] text-[#FEFCE1]">
       <Navbar />
-      
+
       <div className="mx-auto max-w-[1365px] px-5 md:px-8 pt-24 md:pt-28 pb-16 md:pb-20">
         {/* Back Button */}
         <div className="mb-8">
-          <Button 
+          <Button
             onClick={() => router.push('/#works')}
             variant="ghost"
             className="text-[#FEFCE1]/70 hover:text-[#FEFCE1] hover:bg-white/5 p-0"
@@ -1009,7 +1001,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
         {projectDetails[project.id] && (
           <div className="mb-16">
             <h2 className="text-2xl font-light text-[#FEFCE1] mb-8">Project Details</h2>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
               {/* Project Specifications */}
               <div className="lg:col-span-1 space-y-6">
