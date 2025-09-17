@@ -63,9 +63,10 @@ export default function Navbar() {
               }}
             >
               <img 
-                src="/images/logo-01.png" 
+                src={`/images/aseem maam animates-01.gif?t=${Date.now()}`}
                 alt="AGH Design Logo" 
                 className="h-full w-full object-contain"
+                key={Date.now()}
               />
             </div>
           </div>
@@ -155,9 +156,10 @@ export default function Navbar() {
                     }}
                   >
                   <img 
-                    src="/images/logo-01.png" 
+                    src={`/images/aseem maam animates-01.gif?t=${Date.now()}`}
                     alt="AGH Design Logo" 
                     className="h-full w-full object-contain"
+                    key={Date.now()}
                   />
                 </div>
               </div>
